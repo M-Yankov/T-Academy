@@ -1,0 +1,5 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\10.ReformatCode\bin\Debug\10.ReformatCode.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\10.ReformatCode\bin\Debug\10.ReformatCode.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\10.ReformatCode\bin\Debug\10.ReformatCode.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\10.ReformatCode\obj\Debug\10.ReformatCode.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\10.ReformatCode\obj\Debug\10.ReformatCode.pdb

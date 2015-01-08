@@ -1,0 +1,5 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\4.HelloWorld\bin\Debug\4.HelloWorld.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\4.HelloWorld\bin\Debug\4.HelloWorld.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\4.HelloWorld\bin\Debug\4.HelloWorld.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\4.HelloWorld\obj\Debug\4.HelloWorld.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\4.HelloWorld\obj\Debug\4.HelloWorld.pdb

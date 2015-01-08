@@ -1,0 +1,5 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\7.PrintFirstAndLastName\bin\Debug\7.PrintFirstAndLastName.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\7.PrintFirstAndLastName\bin\Debug\7.PrintFirstAndLastName.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\7.PrintFirstAndLastName\bin\Debug\7.PrintFirstAndLastName.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\7.PrintFirstAndLastName\obj\Debug\7.PrintFirstAndLastName.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\7.PrintFirstAndLastName\obj\Debug\7.PrintFirstAndLastName.pdb

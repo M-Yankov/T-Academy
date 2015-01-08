@@ -1,0 +1,6 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\bin\Debug\UseBrakPoiint.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\bin\Debug\UseBrakPoiint.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\bin\Debug\UseBrakPoiint.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\obj\Debug\UseBrakPoiint.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\obj\Debug\UseBrakPoiint.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\UseBrakPoiint\obj\Debug\UseBrakPoiint.pdb
