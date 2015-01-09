@@ -26,6 +26,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7B504C72-9AF1-4783-AFCE-C0EF60593E3B}"
 	ProjectSection(SolutionItems) = preProject
 		11.Programming-languages = 11.Programming-languages
+		12.List-of-IDEs = 12.List-of-IDEs
 	EndProjectSection
 EndProject
 Global

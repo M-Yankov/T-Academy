@@ -3,3 +3,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\6.P
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\6.PrintNumbers\bin\Debug\6.PrintNumbers.pdb
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\6.PrintNumbers\obj\Debug\6.PrintNumbers.exe
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\6.PrintNumbers\obj\Debug\6.PrintNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\6.PrintNumbers\bin\Debug\6.PrintNumbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\6.PrintNumbers\obj\Debug\6.PrintNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\6.PrintNumbers\obj\Debug\6.PrintNumbers.pdb

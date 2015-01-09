@@ -1,9 +1,16 @@
-c++ - Used for Console Applications. C# inerhit C++ and developed it. The syntax is equal - semicolons used for end ot statements, curly brackets around statements(body) , 
+1. C++ - Used for Console Applications. C# inerhit C++ and developed it. The syntax is equal - semicolons used for end ot statements, curly brackets around statements(body) , 
 variables etc. But some command are changed like- 'cout<<' and 'cin>>' in c# they are Console.WriteLine() and Console.ReadLine(). Develeper is Microsoft.
 
-Java - class-based, object-oriented. Java applications are typically compiled to bytecode that can run on any Java virtual machine. Like C#, Java inherit syntax 
+2. Java - class-based, object-oriented. Java applications are typically compiled to bytecode that can run on any Java virtual machine. Like C#, Java inherit syntax 
 of 'c' and 'c++'. It's says that Java is cousin of C# and his parent is C++. Once java code is wroten it can be runed on any platform whitout recompile. Current Developer - Oracle Corp.
 
-PhP - PHP is a server-side scripting language designed for web development and uses in most web sites.
-JavaScript - 
-Objective-C -
+3. PhP - PHP is a server-side scripting language designed for web development and uses in most web sites and web servers. PHP code is used to generate HTML forms as results from searches, queries etc.
+In terms of keywords and language syntax, PHP is similar to most high level languages that follow the C style syntax. if conditions, for and while loops, and function returns are similar in syntax 
+to languages such as C, C++, C#, Java and Perl. Developer PHP group.
+
+4. JavaScript -  is a dynamic computer programming language. Uses in Web sites with HTML code - For Designe, Functionality. It is also used in server-side network programming with runtime environments 
+such as Node.js, game development and the creation of desktop and mobile applications. Changes in this lang are difficult, because the develorers of JavaScript is Netscape, Mozilla, Google, Apple, 
+Oracle  any many others corporations. And if a new feature is available, all coprorations must agree the new feature. In C# is easy. Microsoft decides to improve C# and it's done.  
+
+5. Objective-C - object-oriented programming language. Developer Apple use it for create own mobile applications (APIs). Objective-C and C# are very different languages both syntactically and from a 
+runtime standpoint. Objective-C is a dynamic language and uses a message passing scheme, whereas C# is statically typed. 
