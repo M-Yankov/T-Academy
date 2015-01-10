@@ -6,3 +6,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\14.
 C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\bin\Debug\14.CurrentDateAndTime.exe.config
 C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\obj\Debug\14.CurrentDateAndTime.exe
 C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\obj\Debug\14.CurrentDateAndTime.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\bin\Debug\14.CurrentDateAndTime.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\bin\Debug\14.CurrentDateAndTime.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\14.CurrentDateAndTime\obj\Debug\14.CurrentDateAndTime.csprojResolveAssemblyReference.cache

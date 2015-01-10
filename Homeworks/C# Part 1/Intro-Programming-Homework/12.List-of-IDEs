@@ -9,4 +9,11 @@ It is also an application platform framework for Java desktop applications and o
 applications.  This IDE supports many program languages -  Ada, ABAP, C, C++, COBOL, Fortran, Haskell, JavaScript, Lasso, Natural, Perl, PHP, Prolog, Python, R, Ruby 
 (including Ruby on Rails framework), Scala, Clojure, Groovy, Scheme, and Erlang. Developers are Eclipse Foundation.
 
-4. Zend studio - 
+4. Zend studio -  is a commercial, proprietary integrated development environment (IDE) for PHP developed by Zend Technologies, based on the PHP Development Tools (PDT) plugin 
+for the Eclipse platform. Zend Studio is tightly integrated with Zend Server, Zend's pre-integrated, tested PHP application stack. The integration enables developers to quickly 
+set up a complete PHP environment and speed up root cause analysis[1] of problems detected in testing or in the production environment. Zend Studio is also integrated with Zend 
+Framework. For example, it provides an MVC view for easy code navigation and integration with Zend_Tool for automated code generation.
+
+5. Gedit - is the official editor of the gnome desktop and comes installed once the system is setup. Very useful for the user that is casually editing code and not undertaking 
+major projects. This would be a good companion to Netbeans or Eclipse. gedit offers the ability to highlight your code and figure out where the bugs are by giving you a fresh 
+perspective. This can also be used for web development, to help developers see where the start of nodes are and where to submit the end nodes, doing this could cut down drastically on XHTML issues.

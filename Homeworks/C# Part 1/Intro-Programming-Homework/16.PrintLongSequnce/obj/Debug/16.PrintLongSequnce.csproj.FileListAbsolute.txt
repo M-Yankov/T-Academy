@@ -3,3 +3,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\16.
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\16.PrintLongSequnce\bin\Debug\16.PrintLongSequnce.pdb
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\16.PrintLongSequnce\obj\Debug\16.PrintLongSequnce.exe
 C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\16.PrintLongSequnce\obj\Debug\16.PrintLongSequnce.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\16.PrintLongSequnce\bin\Debug\16.PrintLongSequnce.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\16.PrintLongSequnce\obj\Debug\16.PrintLongSequnce.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\16.PrintLongSequnce\obj\Debug\16.PrintLongSequnce.pdb

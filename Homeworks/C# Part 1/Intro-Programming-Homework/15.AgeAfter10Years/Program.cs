@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _15.AgeAfter10Years
+namespace AgeAfter10Years
 {
     class Program
     {

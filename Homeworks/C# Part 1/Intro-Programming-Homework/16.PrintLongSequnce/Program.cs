@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _16.PrintLongSequnce
+namespace PrintLongSequnce
 {
     class Program
     {
