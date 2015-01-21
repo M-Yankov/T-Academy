@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem1SumOfThreeNumbers\bin\Debug\Problem1SumOfThreeNumbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem1SumOfThreeNumbers\bin\Debug\Problem1SumOfThreeNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem1SumOfThreeNumbers\bin\Debug\Problem1SumOfThreeNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem1SumOfThreeNumbers\obj\Debug\Problem1SumOfThreeNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem1SumOfThreeNumbers\obj\Debug\Problem1SumOfThreeNumbers.pdb

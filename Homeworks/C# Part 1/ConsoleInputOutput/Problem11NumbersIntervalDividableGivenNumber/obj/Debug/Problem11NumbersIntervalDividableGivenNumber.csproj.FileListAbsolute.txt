@@ -1,0 +1,6 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\bin\Debug\Problem11NumbersIntervalDividableGivenNumber.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\bin\Debug\Problem11NumbersIntervalDividableGivenNumber.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\bin\Debug\Problem11NumbersIntervalDividableGivenNumber.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\obj\Debug\Problem11NumbersIntervalDividableGivenNumber.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\obj\Debug\Problem11NumbersIntervalDividableGivenNumber.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem11NumbersIntervalDividableGivenNumber\obj\Debug\Problem11NumbersIntervalDividableGivenNumber.pdb

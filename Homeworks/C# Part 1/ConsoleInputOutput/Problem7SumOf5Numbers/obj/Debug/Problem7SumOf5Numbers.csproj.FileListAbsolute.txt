@@ -1,0 +1,6 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\bin\Debug\Problem7SumOf5Numbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\bin\Debug\Problem7SumOf5Numbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\bin\Debug\Problem7SumOf5Numbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\obj\Debug\Problem7SumOf5Numbers.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\obj\Debug\Problem7SumOf5Numbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem7SumOf5Numbers\obj\Debug\Problem7SumOf5Numbers.pdb

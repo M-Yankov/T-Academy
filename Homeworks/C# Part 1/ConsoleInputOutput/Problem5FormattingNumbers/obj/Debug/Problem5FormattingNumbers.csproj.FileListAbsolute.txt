@@ -1,0 +1,6 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\bin\Debug\Problem5FormattingNumbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\bin\Debug\Problem5FormattingNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\bin\Debug\Problem5FormattingNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\obj\Debug\Problem5FormattingNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\obj\Debug\Problem5FormattingNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem5FormattingNumbers\obj\Debug\Problem5FormattingNumbers.csprojResolveAssemblyReference.cache

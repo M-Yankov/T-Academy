@@ -1,0 +1,6 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\bin\Debug\Problem9SumOfNNumbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\bin\Debug\Problem9SumOfNNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\bin\Debug\Problem9SumOfNNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\obj\Debug\Problem9SumOfNNumbers.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\obj\Debug\Problem9SumOfNNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem9SumOfNNumbers\obj\Debug\Problem9SumOfNNumbers.pdb

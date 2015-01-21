@@ -1,0 +1,6 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\bin\Debug\Problem2PrintCompanyInformation.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\bin\Debug\Problem2PrintCompanyInformation.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\bin\Debug\Problem2PrintCompanyInformation.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\obj\Debug\Problem2PrintCompanyInformation.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\obj\Debug\Problem2PrintCompanyInformation.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem2PrintCompanyInformation\obj\Debug\Problem2PrintCompanyInformation.pdb

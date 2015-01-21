@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem3CirclePerimeterAndArea\bin\Debug\Problem3CirclePerimeterAndArea.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem3CirclePerimeterAndArea\bin\Debug\Problem3CirclePerimeterAndArea.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem3CirclePerimeterAndArea\bin\Debug\Problem3CirclePerimeterAndArea.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem3CirclePerimeterAndArea\obj\Debug\Problem3CirclePerimeterAndArea.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem3CirclePerimeterAndArea\obj\Debug\Problem3CirclePerimeterAndArea.pdb

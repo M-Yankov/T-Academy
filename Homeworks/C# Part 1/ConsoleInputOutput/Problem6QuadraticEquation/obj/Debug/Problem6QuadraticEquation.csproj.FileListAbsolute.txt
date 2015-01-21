@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem6QuadraticEquation\bin\Debug\Problem6QuadraticEquation.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem6QuadraticEquation\bin\Debug\Problem6QuadraticEquation.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem6QuadraticEquation\bin\Debug\Problem6QuadraticEquation.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem6QuadraticEquation\obj\Debug\Problem6QuadraticEquation.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem6QuadraticEquation\obj\Debug\Problem6QuadraticEquation.pdb
