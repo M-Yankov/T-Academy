@@ -1,5 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem2.GracitationOnTheMoon\bin\Debug\Problem2.GracitationOnTheMoon.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem2.GracitationOnTheMoon\bin\Debug\Problem2.GracitationOnTheMoon.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem2.GracitationOnTheMoon\bin\Debug\Problem2.GracitationOnTheMoon.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem2.GracitationOnTheMoon\obj\Debug\Problem2.GracitationOnTheMoon.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem2.GracitationOnTheMoon\obj\Debug\Problem2.GracitationOnTheMoon.pdb

@@ -1,5 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem3DevideBy7And5\bin\Debug\Problem3DevideBy7And5.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem3DevideBy7And5\bin\Debug\Problem3DevideBy7And5.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem3DevideBy7And5\bin\Debug\Problem3DevideBy7And5.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem3DevideBy7And5\obj\Debug\Problem3DevideBy7And5.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem3DevideBy7And5\obj\Debug\Problem3DevideBy7And5.pdb

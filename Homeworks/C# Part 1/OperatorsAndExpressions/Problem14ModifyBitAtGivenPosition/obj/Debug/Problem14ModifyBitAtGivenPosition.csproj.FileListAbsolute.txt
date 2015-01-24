@@ -1,5 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem14ModifyBitAtGivenPosition\bin\Debug\Problem14ModifyBitAtGivenPosition.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem14ModifyBitAtGivenPosition\bin\Debug\Problem14ModifyBitAtGivenPosition.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem14ModifyBitAtGivenPosition\bin\Debug\Problem14ModifyBitAtGivenPosition.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem14ModifyBitAtGivenPosition\obj\Debug\Problem14ModifyBitAtGivenPosition.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem14ModifyBitAtGivenPosition\obj\Debug\Problem14ModifyBitAtGivenPosition.pdb

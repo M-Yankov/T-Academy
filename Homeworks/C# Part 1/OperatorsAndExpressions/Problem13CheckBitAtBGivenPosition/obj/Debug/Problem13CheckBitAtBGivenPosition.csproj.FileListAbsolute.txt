@@ -1,1 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem13CheckBitAtBGivenPosition\bin\Debug\Problem13CheckBitAtBGivenPosition.exe.config

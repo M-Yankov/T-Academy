@@ -1,1 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem7PointInsideCircle\bin\Debug\Problem7PointInsideCircle.exe.config

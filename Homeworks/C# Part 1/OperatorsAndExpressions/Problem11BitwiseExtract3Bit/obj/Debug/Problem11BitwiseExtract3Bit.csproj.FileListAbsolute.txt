@@ -1,5 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem11BitwiseExtract3Bit\bin\Debug\Problem11BitwiseExtract3Bit.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem11BitwiseExtract3Bit\bin\Debug\Problem11BitwiseExtract3Bit.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem11BitwiseExtract3Bit\bin\Debug\Problem11BitwiseExtract3Bit.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem11BitwiseExtract3Bit\obj\Debug\Problem11BitwiseExtract3Bit.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem11BitwiseExtract3Bit\obj\Debug\Problem11BitwiseExtract3Bit.pdb
