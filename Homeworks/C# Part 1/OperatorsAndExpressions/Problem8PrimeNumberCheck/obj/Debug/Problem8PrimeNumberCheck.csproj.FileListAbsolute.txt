@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem8PrimeNumberCheck\bin\Debug\Problem8PrimeNumberCheck.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem8PrimeNumberCheck\bin\Debug\Problem8PrimeNumberCheck.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem8PrimeNumberCheck\bin\Debug\Problem8PrimeNumberCheck.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem8PrimeNumberCheck\obj\Debug\Problem8PrimeNumberCheck.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem8PrimeNumberCheck\obj\Debug\Problem8PrimeNumberCheck.pdb

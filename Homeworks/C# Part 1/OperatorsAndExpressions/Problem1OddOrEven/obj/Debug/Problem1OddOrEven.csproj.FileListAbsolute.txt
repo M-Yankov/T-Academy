@@ -1,1 +1,6 @@
 C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\bin\Debug\Problem1OddOrEven.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\bin\Debug\Problem1OddOrEven.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\bin\Debug\Problem1OddOrEven.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\obj\Debug\Problem1OddOrEven.csprojResolveAssemblyReference.cache
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\obj\Debug\Problem1OddOrEven.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem1OddOrEven\obj\Debug\Problem1OddOrEven.pdb

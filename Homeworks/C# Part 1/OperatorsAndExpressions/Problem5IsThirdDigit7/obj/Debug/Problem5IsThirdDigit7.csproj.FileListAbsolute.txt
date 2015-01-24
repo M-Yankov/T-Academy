@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem5IsThirdDigit7\bin\Debug\Problem5IsThirdDigit7.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem5IsThirdDigit7\bin\Debug\Problem5IsThirdDigit7.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem5IsThirdDigit7\bin\Debug\Problem5IsThirdDigit7.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem5IsThirdDigit7\obj\Debug\Problem5IsThirdDigit7.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem5IsThirdDigit7\obj\Debug\Problem5IsThirdDigit7.pdb

@@ -13,7 +13,7 @@ class Program
     static void Main()
     {
         Console.Write("Enter your weight: ");
-        double weight = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture);
+        double weight = Convert.ToDouble(Console.ReadLine(), CultureInfo.InvariantCulture); // Can enter double values with dot like 23.334
         weight = (weight * 17) / 100;
         Console.WriteLine("Your weight on the Moon will be: " + Math.Round(weight,3) + "Kg.");
     }

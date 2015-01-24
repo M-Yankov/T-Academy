@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12ExtractBitFromInteger\bin\Debug\Problem12ExtractBitFromInteger.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12ExtractBitFromInteger\bin\Debug\Problem12ExtractBitFromInteger.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12ExtractBitFromInteger\bin\Debug\Problem12ExtractBitFromInteger.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12ExtractBitFromInteger\obj\Debug\Problem12ExtractBitFromInteger.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12ExtractBitFromInteger\obj\Debug\Problem12ExtractBitFromInteger.pdb

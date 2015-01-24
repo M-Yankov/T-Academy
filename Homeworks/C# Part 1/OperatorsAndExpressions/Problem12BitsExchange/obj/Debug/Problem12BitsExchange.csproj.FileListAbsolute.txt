@@ -1,0 +1,5 @@
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12BitsExchange\bin\Debug\Problem12BitsExchange.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12BitsExchange\bin\Debug\Problem12BitsExchange.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12BitsExchange\bin\Debug\Problem12BitsExchange.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12BitsExchange\obj\Debug\Problem12BitsExchange.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\OperatorsAndExpressions\Problem12BitsExchange\obj\Debug\Problem12BitsExchange.pdb

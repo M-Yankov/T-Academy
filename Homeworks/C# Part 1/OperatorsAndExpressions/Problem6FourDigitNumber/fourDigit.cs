@@ -16,13 +16,13 @@ class fourDigit
     {
         Console.Write("Enter Four digit number: ");
         string four = Console.ReadLine();
-        if (four.Length < 4 || four.Length > 4)//Validation for correct number Lenght
+        if (four.Length < 4 || four.Length > 4)  //Validation for correct number Lenght
         {
             Console.WriteLine("###Error###\n\tTry again.");
-            return;//This will cause exit from program
+            return; //This will cause exit from program
         }
         //string str = four.ToString();
-        string substr1 = four.Substring(0, 1);//I use again substringing for each digit
+        string substr1 = four.Substring(0, 1);  //I use again substringing for each digit
         string substr2 = four.Substring(1, 1);
         string substr3 = four.Substring(2, 1);
         string substr4 = four.Substring(3, 1);
