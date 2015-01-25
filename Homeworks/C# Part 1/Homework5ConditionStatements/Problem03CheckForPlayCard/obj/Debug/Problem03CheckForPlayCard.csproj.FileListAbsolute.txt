@@ -1,0 +1,6 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\bin\Debug\Problem03CheckForPlayCard.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\bin\Debug\Problem03CheckForPlayCard.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\bin\Debug\Problem03CheckForPlayCard.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\obj\Debug\Problem03CheckForPlayCard.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\obj\Debug\Problem03CheckForPlayCard.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem03CheckForPlayCard\obj\Debug\Problem03CheckForPlayCard.csprojResolveAssemblyReference.cache

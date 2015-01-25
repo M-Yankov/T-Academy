@@ -1,0 +1,6 @@
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\bin\Debug\Problem05TheBiggestOf3Numbers.exe.config
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\bin\Debug\Problem05TheBiggestOf3Numbers.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\bin\Debug\Problem05TheBiggestOf3Numbers.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\obj\Debug\Problem05TheBiggestOf3Numbers.exe
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\obj\Debug\Problem05TheBiggestOf3Numbers.pdb
+C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem05TheBiggestOf3Numbers\obj\Debug\Problem05TheBiggestOf3Numbers.csprojResolveAssemblyReference.cache
