@@ -1,6 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\bin\Debug\Problem8NumbersFrom1ToN.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\bin\Debug\Problem8NumbersFrom1ToN.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\bin\Debug\Problem8NumbersFrom1ToN.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\obj\Debug\Problem8NumbersFrom1ToN.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\obj\Debug\Problem8NumbersFrom1ToN.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem8NumbersFrom1ToN\obj\Debug\Problem8NumbersFrom1ToN.pdb

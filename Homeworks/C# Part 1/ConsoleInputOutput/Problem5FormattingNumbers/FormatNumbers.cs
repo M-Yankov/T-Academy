@@ -24,13 +24,13 @@ class FormatNumbers
     {
         Console.Write("Enter value for A (0-500) = ");
         int numberA = int.Parse(Console.ReadLine());
-        string hexNumA = numberA.ToString("X"); //Converting NumberA to hexadecimal format
-        string binaryNumA = Convert.ToString(numberA, 2); //Convert NumberA to binary
+        string hexNumA = numberA.ToString("X");             // Converting NumberA to hexadecimal format
+        string binaryNumA = Convert.ToString(numberA, 2);   // Convert NumberA to binary
         //-- 
         Console.Write("Enter value for floating-point B = ");
         float floatNumB = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); 
-        int someint = (int)floatNumB / 1; //here I get whohe number  before decimal point from floatNumB
-        int wholelenghtB = someint.ToString().Length; //I get the lenght of the whole number
+        int someint = (int)floatNumB / 1;                   // here I get whohe number  before decimal point from floatNumB
+        int wholelenghtB = someint.ToString().Length;       // I get the lenght of the whole number
         if (wholelenghtB > 7)
         {
             Console.WriteLine("Please enter number with lenght <=7 before decimal point.");
@@ -45,23 +45,23 @@ class FormatNumbers
         if (wholelenght > 7) //because in the current problem we must use float numbers, so they aren't precision after 7th digit !
         {
             Console.WriteLine("Please enter number with lenght <=7 before decimal point.");
-            return;//exit from program
+            return;         // exit from program
         }
         
-        for (int i = 1, k = 12; i <= 7; i++, k--)//It's complicated. I've made a loop that assign number from formula for padding bellow in code.*
+        for (int i = 1, k = 12; i <= 7; i++, k--) // It's complicated. I've made a loop that assign number from formula for padding bellow in code.*
         {
 
             if(i== wholelenghtB)
             {
-                wholelenghtB = k; //assign necessary number.
-                break; //exit from loop
+                wholelenghtB = k; // assign necessary number.
+                break; // exit from loop
             }
              
         }
-        if (floatNumB < 0)
-        {
-            wholelenghtB--;
-        }
+        //if (floatNumB < 0)
+        //{
+        //    wholelenghtB--;
+        //}
         for (int i = 1, k = 11; i <= 7; i++, k--)
         {
             if (i == wholelenght)
@@ -71,14 +71,14 @@ class FormatNumbers
             } 
 
         }
-        if (floatNumC < 0)
-        {
-           wholelenght--;
-        }
+        //if (floatNumC < 0)  
+        //{
+        //   wholelenght--;
+        //}
         Console.WriteLine();
         Console.WriteLine("| A in hex | Binary A |    B     |     C    |");
         Console.WriteLine("|" + hexNumA.PadRight(10, '-') + "|" + binaryNumA.PadLeft(10, '0') + "|" +
-             "{0:F2}".PadLeft(wholelenghtB, '-') + "|" + "{1:F3}".PadRight(wholelenght, '-') + "|", floatNumB, floatNumC); //I pad 'cells with '-' so it can be counted.
+             "{0:F2}".PadLeft(wholelenghtB, '-') + "|" + "{1:F3}".PadRight(wholelenght, '-') + "|", floatNumB, floatNumC); // I pad 'cells with '-' so it can be counted and easy to see.
 
 
         /* *Detail explain: I made somthing like a formula for padding , because it can't be a constant number. 
@@ -87,7 +87,7 @@ class FormatNumbers
          * shows on the console like "1234.34-" This is not 10 characters. There is my formula:
          * |====================|===================|
          * |whole part lenght   | number for padding|
-         * |--------------------|-------------------|
+         * |--------------------|------------------|
          * |    1               |   12              |
          * |    2               |   11              |
          * |    3               |   10              |

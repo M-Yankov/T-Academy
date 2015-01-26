@@ -3,3 +3,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\P
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\bin\Debug\Problem06TheBiggestOfFiveNumbers.pdb
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\obj\Debug\Problem06TheBiggestOfFiveNumbers.exe
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\obj\Debug\Problem06TheBiggestOfFiveNumbers.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\bin\Debug\Problem06TheBiggestOfFiveNumbers.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\obj\Debug\Problem06TheBiggestOfFiveNumbers.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem06TheBiggestOfFiveNumbers\obj\Debug\Problem06TheBiggestOfFiveNumbers.pdb

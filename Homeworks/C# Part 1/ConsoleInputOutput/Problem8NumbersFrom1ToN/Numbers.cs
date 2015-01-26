@@ -11,10 +11,20 @@ class Numbers
     static void Main()
     {
         Console.Write("Enater a number: ");
-        int number = int.Parse(Console.ReadLine());
+        int number = 0;
+        try
+        {
+            number = int.Parse(Console.ReadLine());
+        }
+        catch (Exception)
+        {
+
+            Console.WriteLine("Error input!");
+        }
+        
         for (int i = 1; i <= number; i++)
         {
             Console.WriteLine(i);
-        }//Po-prosto ot tova nqma nakude
+        }
     }
 }

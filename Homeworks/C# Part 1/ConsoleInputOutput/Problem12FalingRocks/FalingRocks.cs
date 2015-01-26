@@ -501,6 +501,7 @@ class FalingRocks
             PrintInfo(62, 6, "Damage: " + damage, damageColor);
             if (fallingRocks.Count < 5)                                     //-----shows witch level starts //and when player dies it shows up again
             {
+                if (symbols.Count < 10) 
                 PrintPosition(23, 20, "Level: " + leveL, ConsoleColor.White);
             }
 

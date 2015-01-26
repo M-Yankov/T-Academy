@@ -16,6 +16,6 @@ using System.Text;
             Console.OutputEncoding = Encoding.Unicode;
             Console.Write("Enter radius of the circle: ");
             double radius = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            Console.WriteLine("Perimeter of circle is: {0:F2}cm \nArea of circle is: {1:F2}cm\u00B2", radius * 2 * Math.PI, radius * radius * Math.PI);
+            Console.WriteLine("Perimeter of circle is: {0:F2}cm \nArea of circle is: {1:F2}cm\u00B2", radius * 2 * Math.PI, radius * radius * Math.PI); //\u00B2 special character
         }
     }

@@ -1,5 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem4NumberComparer\bin\Debug\Problem4NumberComparer.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem4NumberComparer\bin\Debug\Problem4NumberComparer.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem4NumberComparer\bin\Debug\Problem4NumberComparer.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem4NumberComparer\obj\Debug\Problem4NumberComparer.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem4NumberComparer\obj\Debug\Problem4NumberComparer.pdb

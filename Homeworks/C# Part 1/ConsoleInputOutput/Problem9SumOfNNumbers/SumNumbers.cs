@@ -13,7 +13,7 @@ class SumNumbers
         Console.Write("How many numbers want to sum? ");
         double number = double.Parse(Console.ReadLine());
         double sum = 0;
-        for (int i = 1; i <= number; i++)//This is loop 
+        for (int i = 1; i <= number; i++) //This is loop 
         {
             Console.Write("Enter value for " + i + " number: " );
             sum += double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture); //adding entered number to 'sum'

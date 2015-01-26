@@ -3,3 +3,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\P
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem02BonusScore\bin\Debug\Problem02BonusScore.pdb
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem02BonusScore\obj\Debug\Problem02BonusScore.exe
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem02BonusScore\obj\Debug\Problem02BonusScore.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem02BonusScore\bin\Debug\Problem02BonusScore.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem02BonusScore\obj\Debug\Problem02BonusScore.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem02BonusScore\obj\Debug\Problem02BonusScore.pdb
