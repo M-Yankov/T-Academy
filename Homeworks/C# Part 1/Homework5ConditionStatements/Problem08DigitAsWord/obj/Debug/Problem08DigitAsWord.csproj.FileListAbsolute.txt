@@ -4,3 +4,6 @@ C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\P
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem08DigitAsWord\obj\Debug\Problem08DigitAsWord.csprojResolveAssemblyReference.cache
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem08DigitAsWord\obj\Debug\Problem08DigitAsWord.exe
 C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem08DigitAsWord\obj\Debug\Problem08DigitAsWord.pdb
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem08DigitAsWord\bin\Debug\Problem08DigitAsWord.exe.config
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem08DigitAsWord\obj\Debug\Problem08DigitAsWord.exe
+C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem08DigitAsWord\obj\Debug\Problem08DigitAsWord.pdb
