@@ -1,6 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\bin\Debug\Problem11NumberWords.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\bin\Debug\Problem11NumberWords.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\bin\Debug\Problem11NumberWords.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\obj\Debug\Problem11NumberWords.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\obj\Debug\Problem11NumberWords.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem11NumberWords\obj\Debug\Problem11NumberWords.pdb

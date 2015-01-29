@@ -1,2 +1,0 @@
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\5.PrintMyName\bin\Debug\5.PrintMyName.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\5.PrintMyName\bin\Debug\5.PrintMyName.exe.config

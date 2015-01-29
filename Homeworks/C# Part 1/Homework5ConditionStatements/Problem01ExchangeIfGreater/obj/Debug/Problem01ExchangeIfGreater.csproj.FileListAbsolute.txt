@@ -1,9 +1,0 @@
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\bin\Debug\Problem01ExchangeIfGreater.exe.config
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\bin\Debug\Problem01ExchangeIfGreater.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\bin\Debug\Problem01ExchangeIfGreater.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\obj\Debug\Problem01ExchangeIfGreater.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\obj\Debug\Problem01ExchangeIfGreater.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem01ExchangeIfGreater\obj\Debug\Problem01ExchangeIfGreater.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem01ExchangeIfGreater\bin\Debug\Problem01ExchangeIfGreater.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem01ExchangeIfGreater\obj\Debug\Problem01ExchangeIfGreater.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem01ExchangeIfGreater\obj\Debug\Problem01ExchangeIfGreater.pdb

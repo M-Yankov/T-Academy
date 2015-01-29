@@ -1,6 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\bin\Debug\Problem12FalingRocks.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\bin\Debug\Problem12FalingRocks.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\bin\Debug\Problem12FalingRocks.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\obj\Debug\Problem12FalingRocks.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\obj\Debug\Problem12FalingRocks.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\ConsoleInputOutput\Problem12FalingRocks\obj\Debug\Problem12FalingRocks.pdb

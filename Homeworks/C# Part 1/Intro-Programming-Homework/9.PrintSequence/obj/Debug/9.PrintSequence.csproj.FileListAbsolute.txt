@@ -1,9 +1,0 @@
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\bin\Debug\9.PrintSequence.exe.config
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\bin\Debug\9.PrintSequence.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\bin\Debug\9.PrintSequence.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\obj\Debug\9.PrintSequence.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\obj\Debug\9.PrintSequence.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\9.PrintSequence\obj\Debug\9.PrintSequence.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\9.PrintSequence\bin\Debug\9.PrintSequence.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\9.PrintSequence\obj\Debug\9.PrintSequence.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\9.PrintSequence\obj\Debug\9.PrintSequence.pdb

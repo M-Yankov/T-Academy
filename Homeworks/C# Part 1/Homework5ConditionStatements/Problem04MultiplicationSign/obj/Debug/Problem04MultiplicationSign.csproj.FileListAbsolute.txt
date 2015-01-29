@@ -1,6 +1,0 @@
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\bin\Debug\Problem04MultiplicationSign.exe.config
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\bin\Debug\Problem04MultiplicationSign.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\bin\Debug\Problem04MultiplicationSign.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\obj\Debug\Problem04MultiplicationSign.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\obj\Debug\Problem04MultiplicationSign.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Homework5ConditionStatements\Problem04MultiplicationSign\obj\Debug\Problem04MultiplicationSign.csprojResolveAssemblyReference.cache

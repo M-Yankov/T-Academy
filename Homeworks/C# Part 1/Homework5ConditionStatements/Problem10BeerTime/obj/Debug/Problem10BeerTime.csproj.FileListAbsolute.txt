@@ -1,6 +1,0 @@
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\bin\Debug\Problem10BeerTime.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\obj\Debug\Problem10BeerTime.csprojResolveAssemblyReference.cache
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\bin\Debug\Problem10BeerTime.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\bin\Debug\Problem10BeerTime.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\obj\Debug\Problem10BeerTime.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Homework5ConditionStatements\Problem10BeerTime\obj\Debug\Problem10BeerTime.pdb

@@ -1,8 +1,0 @@
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\8.SquareRoot\bin\Debug\8.SquareRoot.exe.config
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\8.SquareRoot\bin\Debug\8.SquareRoot.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\8.SquareRoot\bin\Debug\8.SquareRoot.pdb
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\8.SquareRoot\obj\Debug\8.SquareRoot.exe
-C:\Users\My\Documents\Visual Studio 2012\Projects\Intro-Programming-Homework\8.SquareRoot\obj\Debug\8.SquareRoot.pdb
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\8.SquareRoot\bin\Debug\8.SquareRoot.exe.config
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\8.SquareRoot\obj\Debug\8.SquareRoot.exe
-C:\Users\My\Documents\GitHub\T-Academy\Homeworks\C# Part 1\Intro-Programming-Homework\8.SquareRoot\obj\Debug\8.SquareRoot.pdb
