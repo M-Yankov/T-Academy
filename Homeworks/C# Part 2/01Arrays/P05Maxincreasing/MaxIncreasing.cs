@@ -36,13 +36,26 @@ class MaxIncreasing
             }
         }
         lastIndex++;
-        int startIndex =  (lastIndex -(temp -1));
+        int startIndex = (lastIndex - (temp - 1));
         string finres = "";// string.Join(", ", finito);
-        for (int i = startIndex ; i <= lastIndex; i++)
+        for (int i = startIndex; i <= lastIndex; i++)
         {
             finres += myList[i] + " ";
         }
-        Console.WriteLine(finres); // bah mama my i zadacha znam si algoritama no ne moga da go implementiram  :X //DA si popravq predishanta zadacha
+        if (finres.Length > 1)
+        {
+            Console.WriteLine(finres); // bah mama my i zadacha znam si algoritama no ne moga da go implementiram  :X //DA si popravq predishanta zadacha
+
+        }
+        else
+        {
+            Console.WriteLine("No sequence!");
+        }
+
+
+
+        // nothing important bewol :
+        ///////////// ---------------- https://msdn.microsoft.com/en-us/library/ms245462.aspx
     }
 }
 

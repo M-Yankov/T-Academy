@@ -10,45 +10,57 @@ using System.Collections.Generic;
 using System.Text;
 
 
-class LetsTryAgain 
+class LetsTryAgain
 {
     static void Main()
     {
         Console.Write("Array Lenght: ");
         int range = int.Parse(Console.ReadLine());
         int[] myArray = new int[range];
-        int?[] final = new int?[range];  // This is array with null values 
-       // int?[] nullable = new int?[2]; 
+        int count = 1;
+        int lastindex = 0;
         for (int i = 0; i < range; i++)
         {
             Console.Write("Enter " + i + " index: ");
             myArray[i] = int.Parse(Console.ReadLine());
         }
         int temp = 0;
-        for (int j  = 0; j  < myArray.Length -1 ; j ++)
+        for (int j = 0; j < myArray.Length - 1; j++)
         {
-            if(myArray[j] == myArray[j + 1])
+            if (myArray[j] == myArray[j + 1])
             {
-                final[temp] = myArray[j];
-                final[temp + 1] = myArray[j + 1];
-                temp++;
+                count++;
+                if (count > temp)
+                {
+                    temp = count;
+                    lastindex = j;
+                }
+
             }
             else
             {
-                temp = 0;
+                count = 1;
             }
         }
+        lastindex++;
         //string finres = string.Join(", ", final);
-        
-        foreach (var s in final)
+        string result = "";
+        int startIndex = (lastindex - (temp - 1));
+        for (int i = startIndex; i <= lastindex; i++)
         {
-            
-            if(s != null)
-            Console.Write(s + ", ");
+            result += myArray[i] + " ";
         }
-        //Console.WriteLine(finres);   ///               string[] numberStrigs = Console.REadLine().Split(' ');
-        Console.WriteLine();
+        //Console.WriteLine(finres);
+        if (result.Length > 1)
+        {
+            Console.WriteLine(result);// (string.Join(", ", result));
+
+        }
+        else
+        {
+            Console.WriteLine("No Sequence" );
+        }///               string[] numberStrigs = Console.REadLine().Split(' ');
         // int[] numbres = Console.ReadLine().split(' ').Select(int.parse).ToArray();
-        
+
     }
 }
