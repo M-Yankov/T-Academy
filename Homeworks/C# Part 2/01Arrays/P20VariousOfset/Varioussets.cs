@@ -18,14 +18,24 @@ class Varioussets
         int n = int.Parse(Console.ReadLine());
         int k = int.Parse(Console.ReadLine());
         int[] array = new int[k];
-        for (int i = 1; i <= n; i++)
+
+
+        Various(0, array,k,n);
+        
+    }
+    static void Various(int index, int[] result, int k, int n)
+    {
+        if (index == k)
         {
-            array[0] = i;
-            for (int j = 1; j <= n; j++)
-            {
-                array[1] = j;
-                Console.WriteLine(string.Join(", ", array));   // two variations
-            }
+            for (int i = 0; i < k; i++)
+                Console.Write("{0,3}", result[i]);
+            Console.WriteLine();
+            return;
+        }
+        for (int i = 0; i < n; i++)
+        {
+            result[index] = i + 1;
+            Various(index + 1,result , k , n );
         }
     }
 }

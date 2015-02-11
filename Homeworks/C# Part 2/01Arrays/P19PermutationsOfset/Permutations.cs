@@ -18,12 +18,6 @@ class Permutations
         Console.Write("Enter array lenght: ");
         int input = int.Parse(Console.ReadLine());
 
-        int[] gosho = new int[input];
-        for (int i = 0; i < input; i++)
-        {
-            gosho[i] = i + 1;
-            Console.WriteLine(string.Join(", ", gosho));
-        }
     }
 }
 
