@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01FillTheMatrixx", "P01Fil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02MaxicalSum", "P02MaxicalSum\P02MaxicalSum.csproj", "{5A9A5CCE-AC3D-407A-99BE-DF74A7CDB466}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03SequenceNmatrix", "P03SequenceNmatrix\P03SequenceNmatrix.csproj", "{F65CAEEF-047E-4985-AC53-60D1DF02B015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04BinarySearch", "04BinarySearch\P04BinarySearch.csproj", "{50D2A7F8-22A1-455B-AA7D-45BAC7293BEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5A9A5CCE-AC3D-407A-99BE-DF74A7CDB466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A9A5CCE-AC3D-407A-99BE-DF74A7CDB466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A9A5CCE-AC3D-407A-99BE-DF74A7CDB466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65CAEEF-047E-4985-AC53-60D1DF02B015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65CAEEF-047E-4985-AC53-60D1DF02B015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65CAEEF-047E-4985-AC53-60D1DF02B015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65CAEEF-047E-4985-AC53-60D1DF02B015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D2A7F8-22A1-455B-AA7D-45BAC7293BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D2A7F8-22A1-455B-AA7D-45BAC7293BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D2A7F8-22A1-455B-AA7D-45BAC7293BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D2A7F8-22A1-455B-AA7D-45BAC7293BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

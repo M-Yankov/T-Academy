@@ -125,7 +125,7 @@ class Multi
         bool exit = false;
         while (true)
         {
-            for (int z = 0; z < multi.GetLength(1) - dokade; z++)   // z < n - dokade
+            for (int z = 0 + dokade; z < multi.GetLength(1) - dokade; z++)   // z < n - dokade
             {
                 multi[col, z] = ineer;                    // |      /// array[ col , row ] ???
                 if (ineer == n * n)
@@ -139,7 +139,7 @@ class Multi
             {
                 break;
             }
-            for (int c = 1; c < multi.GetLength(0) - dokade; c++)  /// ------->
+            for (int c = 1 + dokade; c < multi.GetLength(0) - dokade; c++)  /// ------->
             {
                 multi[c, row] = ineer;
                 if (ineer == n * n)
@@ -168,7 +168,7 @@ class Multi
                 break;
             }
             dokade++;
-            for (int le = col - 1; le > -1 + dokade; le--)     /// <-------   //// col - 1 - dokade
+            for (int le = col - 1 ; le > -1 + dokade; le--)     /// <-------   //// col - 1 - dokade
             {
                 multi[le, row] = ineer;
                 if (ineer == n * n)
@@ -185,6 +185,7 @@ class Multi
         }
         Console.WriteLine("\n\nd)");
         Print(multi);
+        Console.WriteLine("\nI've made it!!!!");
     }
     static void Print(int[,] array)
     {
