@@ -30,11 +30,11 @@ class HTMLExtractor
     static void Main()
     {
         StreamReader reader = new StreamReader("..\\..\\input.txt");
-        Console.SetIn(reader);
+        //Console.SetIn(reader);
         Console.WriteLine("Enter text below: ");
         using (reader)
         {
-
+            
             string inputHTML = reader.ReadToEnd();
             //Regex ex = new Regex(@"<[A-Za-z][A-Za-z0-9]*>");
             Regex title = new Regex(@"<title>.+</title>");   // for title 

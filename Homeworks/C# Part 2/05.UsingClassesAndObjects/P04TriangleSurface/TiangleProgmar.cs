@@ -101,7 +101,7 @@ namespace P04TriangleSurface
         }
         public double Surface2()  // a b c 
         {
-            double p = sideA + sideB + sideC;
+            double p = sideA + sideB + sideC;  // eee BIg Error p must be semiperimeter witch means... (a+b+c)/2
             double surface = Math.Sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
             return surface;
         }
