@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0710A3FA-C783-4764-B05E-50497570F8FB}</ProjectGuid>
+    <ProjectGuid>{D8766288-1610-4AF2-A2BC-1B18429FBDEB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>P01OddLines</RootNamespace>
-    <AssemblyName>P01OddLines</AssemblyName>
+    <RootNamespace>P04CompareTextFiles</RootNamespace>
+    <AssemblyName>P04CompareTextFiles</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OddLines.cs" />
+    <Compile Include="Compare.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
