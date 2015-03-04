@@ -1,0 +1,14 @@
+Below is text from file1
+System.IO.StreamReader
+The easiest way to read a text file
+Implements methods for reading text lines and sequences of characters 
+Constructed by file name or other stream 
+Can specify the text encoding 
+For Cyrillic use UTF8 Works like Console.Read() / ReadLine() but over text files 
+System.IO.StreamReader 
+The easiest way to read a text file Implements methods for reading text lines and sequences of characters
+Constructed by file name or other stream 
+Can specify the text encoding 
+For Cyrillic use UTF8 
+Works like Console.Read() / ReadLine() but over text files
+Source: Text files presentations

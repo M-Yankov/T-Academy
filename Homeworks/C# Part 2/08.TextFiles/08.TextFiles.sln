@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03LineNumber", "P03LineNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04CompareTextFiles", "P04CompareTextFiles\P04CompareTextFiles.csproj", "{D8766288-1610-4AF2-A2BC-1B18429FBDEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05SumInSquare", "P05SumInSquare\P05SumInSquare.csproj", "{A08F8F6F-C3A7-4BD8-ABCC-869A7F8202A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06SaveSortedNames", "P06SaveSortedNames\P06SaveSortedNames.csproj", "{3621994B-84ED-491E-9844-0D01869798CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{D8766288-1610-4AF2-A2BC-1B18429FBDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8766288-1610-4AF2-A2BC-1B18429FBDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8766288-1610-4AF2-A2BC-1B18429FBDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08F8F6F-C3A7-4BD8-ABCC-869A7F8202A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08F8F6F-C3A7-4BD8-ABCC-869A7F8202A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08F8F6F-C3A7-4BD8-ABCC-869A7F8202A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08F8F6F-C3A7-4BD8-ABCC-869A7F8202A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3621994B-84ED-491E-9844-0D01869798CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3621994B-84ED-491E-9844-0D01869798CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3621994B-84ED-491E-9844-0D01869798CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3621994B-84ED-491E-9844-0D01869798CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

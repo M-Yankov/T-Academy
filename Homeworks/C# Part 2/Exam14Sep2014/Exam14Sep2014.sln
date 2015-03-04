@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zerg", "Exam14Sep2014\Zerg.csproj", "{BD62B0B2-4041-483E-9E4B-A5774EB52F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingLetters", "MovingLetters\MovingLetters.csproj", "{36B817C7-DDD5-4F8D-8E5B-943575335E73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails3D", "Trails3D\Trails3D.csproj", "{F0836B65-9F0B-4F20-AB87-4E1723C869A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodeEncrypt", "EncodeEncrypt\EncodeEncrypt.csproj", "{C2F4592E-8472-4C74-974F-C28BFCA3D0C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Green", "Green\Green.csproj", "{F7E3192B-2BB4-4D67-B6CC-5F37A54CB8C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrangeLanf and Numbers", "StrangeLanf and Numbers\StrangeLanf and Numbers.csproj", "{5FA6ABEF-71AD-4519-8325-1D97DD2BA1FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD62B0B2-4041-483E-9E4B-A5774EB52F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD62B0B2-4041-483E-9E4B-A5774EB52F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD62B0B2-4041-483E-9E4B-A5774EB52F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD62B0B2-4041-483E-9E4B-A5774EB52F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B817C7-DDD5-4F8D-8E5B-943575335E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B817C7-DDD5-4F8D-8E5B-943575335E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B817C7-DDD5-4F8D-8E5B-943575335E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B817C7-DDD5-4F8D-8E5B-943575335E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0836B65-9F0B-4F20-AB87-4E1723C869A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0836B65-9F0B-4F20-AB87-4E1723C869A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0836B65-9F0B-4F20-AB87-4E1723C869A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0836B65-9F0B-4F20-AB87-4E1723C869A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F4592E-8472-4C74-974F-C28BFCA3D0C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F4592E-8472-4C74-974F-C28BFCA3D0C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F4592E-8472-4C74-974F-C28BFCA3D0C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F4592E-8472-4C74-974F-C28BFCA3D0C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7E3192B-2BB4-4D67-B6CC-5F37A54CB8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7E3192B-2BB4-4D67-B6CC-5F37A54CB8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7E3192B-2BB4-4D67-B6CC-5F37A54CB8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7E3192B-2BB4-4D67-B6CC-5F37A54CB8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FA6ABEF-71AD-4519-8325-1D97DD2BA1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FA6ABEF-71AD-4519-8325-1D97DD2BA1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FA6ABEF-71AD-4519-8325-1D97DD2BA1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FA6ABEF-71AD-4519-8325-1D97DD2BA1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
