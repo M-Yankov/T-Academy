@@ -61,7 +61,7 @@ class Multi
         Print(multi);
         Array.Clear(multi, 0, multi.Length);
 
-        ineer = 1;
+        ineer = 1;  //  = 0
         int ime = 1;
         int nameCol = 1;
         int col = 0;
@@ -87,7 +87,7 @@ class Multi
             }
             if (row == 0 && col == n - 1)
             {
-                multi[n - 1, 0] = n * n;
+                multi[n - 1, 0] = n * n;//ineer + 3 ;
                 break;
             }
             multi[col, row] = ineer;
@@ -100,6 +100,7 @@ class Multi
                 ime++;
                 col = 0;
                 lastRow = true;
+                //ineer += 3;
 
             }
             else if (col == n - 1)
