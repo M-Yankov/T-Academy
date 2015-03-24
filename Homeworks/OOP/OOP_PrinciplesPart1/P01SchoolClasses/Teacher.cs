@@ -15,7 +15,7 @@ namespace P01SchoolClasses
             this.Name = name;
             this.Disciplines = discipList;
             this.Comment = status;
-        }
+        } 
         public Teacher(string name, List<Discipline> discipList )
         {
             this.Name = name;
