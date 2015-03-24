@@ -54,7 +54,7 @@ class GSM
     public string Manufacturer
     {
         get { return this.manufacturer; } // Property 
-        set { this.manufacturer = value; }
+        private set { this.manufacturer = value; }
     }
     public double Price  // Property 
     {

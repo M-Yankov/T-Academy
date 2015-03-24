@@ -93,7 +93,9 @@ namespace DefiningClasses
                 Console.WriteLine(item);
                 Console.WriteLine();
             }
+            
             Console.WriteLine(GSM.iPhone4S);
+            // GSM.iPhone4S.Manufacturer = " apifjoas"; ha yes
             Console.WriteLine();
             Console.WriteLine("Press any key to continie with testing calls");
             Console.ReadLine();
