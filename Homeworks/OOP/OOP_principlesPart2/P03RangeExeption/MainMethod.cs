@@ -9,7 +9,7 @@ namespace P03RangeExeption
     using System;
     class MainMethod
     {
-        static DateTime lowerBoundary = new DateTime(1980, 1, 1);
+        static DateTime lowerBoundary = new DateTime(1980, 1, 1); 
         static DateTime uppedBoundary = new DateTime(2013, 12, 31);
         static int lowerIntBoundary = 1;
         static int uppedIntBoundary = 100;

@@ -8,6 +8,8 @@ namespace P01SchoolClasses
 {
     abstract class People
     {
+        
+
         private string name;
 
         public string Name

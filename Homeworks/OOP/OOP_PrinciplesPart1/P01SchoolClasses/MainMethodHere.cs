@@ -39,12 +39,14 @@ namespace P01SchoolClasses
         public static Teacher teacher3 = new Teacher("Asen Atanasov", new List<Discipline> { Maths }, "Bad");
         #endregion
 
+        
         public static Student std1 = new Student("Goshko Dvoikata", 231555);
         public static Student std2 = new Student("Ivan Tupoto", 231234, "Stick");
         public static Student std3 = new Student("Pesho Rakiata", 2323155, "Drinkboy");
         public static Student std4 = new Student("Skapani  Studenti", 45653);
         public static Student std5 = new Student("Kolio Terorista", 835522);
         public static Student std6 = new Student("Atanas Semenov", 231119, "Blackboy");
+        public static Student st7 = new Student("Gosho", 231119);
 
 
 
