@@ -1,0 +1,4 @@
+HirePilot Ivan
+ManufactureTank Tank 100 100
+Engage Ivan Tank
+Report Ivan
