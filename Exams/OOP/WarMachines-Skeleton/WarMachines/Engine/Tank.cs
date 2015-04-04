@@ -2,6 +2,7 @@
 {
 
     using System;
+    using System.Text;
     using WarMachines.Interfaces;
 
     public class Tank : Machine, IMachine, ITank
@@ -50,6 +51,34 @@
                 this.DefensePoints = this.DefensePoints + 30;
                 this.AttackPoints = this.AttackPoints - 40;
             }
+        }
+        public override string ToString()
+        {
+            string targetsString;
+            StringBuilder result = new StringBuilder();
+            result.AppendLine(String.Format("- {0}", this.Name));
+            result.AppendLine(" *Type: Tank");
+            result.AppendLine(String.Format(" *Health: {0}", this.HealthPoints));
+            result.AppendLine(String.Format(" *Attack: {0}", this.AttackPoints));
+            result.AppendLine(String.Format(" *Defense: {0}", this.DefensePoints));
+            if (this.Targets.Count == 0)
+            {
+                targetsString = "None";
+            }
+            else
+            {
+                targetsString = string.Join(", ", this.Targets);
+            }
+            result.AppendLine(String.Format(" *Targets: {0}", targetsString));
+            if (this.DefenseMode)
+            {
+                result.Append(" *Defense: ON");
+            }
+            else
+            {
+                result.Append(" *Defense: OFF");
+            }
+            return result.ToString();
         }
     }
 }

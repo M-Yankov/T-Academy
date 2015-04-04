@@ -89,7 +89,7 @@ namespace WarMachines.Engine
         {
             this.machineTargets.Add(target);
         }
-        public override string ToString() // override Machine To String
+        /*public override string ToString() // override Machine To String
         {
             string targetsString;
             StringBuilder result = new StringBuilder();
@@ -130,11 +130,11 @@ namespace WarMachines.Engine
                 var obj = (Tank)(IMachine)mytype; // <--- Hahahahah  nema takova  neshto :D
                 if (obj.DefenseMode)
                 {
-                    result.AppendLine(" *Defense: ON");
+                    result.Append(" *Defense: ON");
                 }
                 else
                 {
-                    result.AppendLine(" *Defense: OFF");
+                    result.Append(" *Defense: OFF");
                 }
             }
             else
@@ -150,6 +150,6 @@ namespace WarMachines.Engine
                 }
             }
             return result.ToString();
-        }
+        }*/
     }
 }

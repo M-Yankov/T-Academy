@@ -43,16 +43,24 @@ namespace WarMachines.Engine
             {
                 result.AppendLine(String.Format("{0} - {1} machines", this.Name, this.pilotEngagedMachnes.Count));
             }
-            foreach (var machine  in pilotEngagedMachnes
+            foreach (var machine in pilotEngagedMachnes
                 .OrderBy(x => x.HealthPoints)
                 .ThenBy(x => x.Name))
             {
-                result.Append(machine); //AppentLine??
+                if (this.pilotEngagedMachnes.Count == 1)
+                {
+                    result.Append(machine.ToString()); //AppentLine??
+                }
+                else
+                {
+                    result.AppendLine(machine.ToString()); //AppentLine??
+
+                }
             }
 
 
 
-            return result.ToString(); // 
+            return result.ToString().Trim(); // 
         }
     }
 }
