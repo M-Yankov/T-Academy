@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My table</title>
+    <style>
+        table.noborder {
+            border: none;
+        }
+        table.second {
+            border: 1px double black;
+        }
+
+            table.second tr th, td {
+                border: 1px groove gray;
+                text-align: center;
+            }
+
+        .left {
+            text-align: left;
+        }
+
+        .righdown {
+            text-align: right;
+            vertical-align: bottom;
+        }
+
+        table.second.pesho {
+            border: 1px solid #00ddff;
+        }
+
+            table.second.pesho tr td {
+                border: 1px solid #00ddff;
+                padding: 0px;
+            }
+    </style>
+
+
+</head>
+<body>
+    <table class="second">
+        <tbody>
+            <tr>
+                <td colspan="3">Titles goes here</td>
+                <td>A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="left">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+                <td>G</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td colspan="2">I</td>
+                <td rowspan="2" class="righdown">J</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>L</td>
+                <td>M</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td colspan="4">O</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="table2.html">To other table</a>
+</body>
+</html>
