@@ -1,0 +1,67 @@
+﻿button {
+    width: 22px;
+    height: 22px;
+    padding-top: 3px;
+    margin-left: 2px;
+    border: none;
+    border-radius: 3px;
+}
+
+img {
+    margin-top: -3px;
+    margin-left: -3px;
+    vertical-align: central;
+}
+
+.with {
+    width: 300px;
+}
+
+.with2 {
+    width: 150px;
+}
+
+.row {
+    background-color: #c9d4e5;
+}
+
+table {
+    font-size: 12px;
+    font-family: Arial;
+    border-radius: 5px;
+}
+
+p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+    p.fix:first-letter {
+        padding: 2px;
+        border: 1px solid #ff6a00;
+        border-radius: 3px;
+    }
+
+.backimage {
+    background-image: url(../images/leftleft.png);
+    background-position: center;
+}
+
+.absolute {
+    position: absolute;
+}
+
+td.rightalignment {
+    text-align: right;
+}
+
+.nobordersl {
+    border-left: none;
+    text-align: right;
+}
+
+.nobordersr {
+    
+    border-right: none;
+}

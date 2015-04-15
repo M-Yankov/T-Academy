@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>1-st task</title>
+    <style>
+        th {
+            text-align: right;
+            width: 100px;
+        }
+        td {
+            width: 220px;
+        }
+        textarea {
+            resize: none;
+        }
+        .center {
+            text-align:center;
+            background-color: #0094ff;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="">
+        <table border="1">
+            <tr>
+                <th>Last Name</th>
+                <td><input type="text" name="last-name" value="Nakov" /></td>
+            </tr>
+            <tr>
+                <th>First name</th>
+                <td><input type="text" name="first-name" value="Svetlin" /></td>
+            </tr>
+            <tr>
+                <th>Adress</th>
+                <td><textarea rows="3" name="adress" placeholder="17 Hristo Botev str. floor 5 , apt. 12" ></textarea> </td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td><input size="10" type="text" name="city" value="Sofia"/><b>State</b><input type="text" value=""  size="5"/></td>
+            </tr>
+            <tr>
+                <th>Zip/Postal Code</th>
+                <td><input size="20" type="text" name="postCode" value="9325" /></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td><select name="Country">
+                    <option value="svetia">Sweeden</option>
+                    <option value="Harvatska">Croatia</option>
+                    <option value="rymania">Romania</option>
+                    <option value="ispania">Spain</option>
+                    <option value="garcia">Greece</option>
+                    <option value="Maketata">Macedonia</option>
+                    <option value="srbin">Serbia</option>
+                    <option value="Ongaria">Hungary</option>
+                    <option selected="selected" value="bai-ganio">Bulgaria</option>
+                    <option value="goveda">Tyrkey</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>Phone(Counrty code, Area code, number)</th>
+                <td>(+<input type="text" name="Ccode" value="359" size="1" />)<input size="1" type="text" name="acode" value="02"/><input size="8" type="tel" name="tel" value=""/> </td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td><input  type="email" name="E-mail" value="nakov@office.org"/></td>
+            </tr>
+            <tr>
+                <th>Birth date</th>
+                <td><input type="date" name="date" value=""/></td><!--This must be a pop up field-->
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <select name="jivotno">
+                        <option value="none">---</option>
+                        <option value="man">Man</option>
+                        <option value="woman">Girl</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Starting date</th>
+                <td><input type="radio" name="2006" value="spring"/>Spring 2006<input type="radio" name="2006" value="summmer" />Summer 2006</td>
+            </tr>
+            <tr>
+                <th>Comments/Questions</th>
+                <td><textarea rows="4" placeholder="Your comment here..." name="Comment"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" value="Submit" />
+                    <input type="reset"  value="Clear this form" /><!--button type='reset' must DON'T have a name!-->
+                </td>
+            </tr>
+        </table>
+    </form>
+    <b>Note:</b><i> Input types, not supported by old web browsers, will behave as input type text.</i>
+</body>
+</html>
