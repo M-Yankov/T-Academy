@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Semantic task 3</title>
+</head>
+<body>
+    <header>
+        <h2><a href="http://linkedin.com">LinkedIN</a></h2>
+        <nav><ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                 <a href="?"><label for="won" style="cursor:pointer" >What is LinkedIn?</label></a>
+            </li>
+            <li>
+                <a href="?"><label for="register" style="cursor:pointer">Join Today</label></a>
+            </li>
+            <li>
+                <form method="get">
+                    <fieldset>
+                        <legend>Sign in</legend>
+                        <ul>
+                            <li>Email:<input type="email" name="email" id="email" />
+
+                            </li>
+                            <li>Password:<input type="password" id="pass" />
+
+                            </li>
+                            <li>
+                                <input type="submit" value="Sign in" disabled="disabled" />
+                            </li>
+
+                        </ul>
+                    </fieldset>
+                </form>
+            </li>
+        </ul>
+            </nav>
+    </header>
+    <hr />
+    <section id="won">
+        <h1>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunieties</h1>
+        <ul>
+            <li>
+                Stay informed about your contacts and industry
+            </li>
+            <li>
+                Find the poeple & knowledge you need to archive your goals
+            </li>
+            <li>
+                Control your professional identity online
+            </li>
+        </ul>
+        <h2>Join LinkedIn Today</h2>
+        <form method="get">
+            <fieldset>
+                <legend>Sign up</legend>
+                <ul>
+                    <li>
+                        First Name: <br />
+                        <input type="text" required="required" name="1name" id="register"/> *
+                    </li>
+                    <li>
+                        Last Name: <br />
+                        <input type="text"  required="required" name="lastname" /> *
+                     </li>
+                    <li>Email:<br />
+                        <input type="email" name="email" required="required" /> *
+
+                    </li>
+                    <li>Password:<br />
+                        <input type="password"  required="required"  /> *<br />
+                        <br />
+                        6 or more characters
+                    </li>
+
+                </ul>
+                <input type="submit" value="Join Now" />&nbsp;<a href="#">*</a><br />
+                Already on LinkedIn?&nbsp;<a href="?"><label for="email" style="cursor:pointer">Sign in</label></a>
+                
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <h3>Search someone by name:</h3>
+        <form method="get">
+            <ul>
+                <li>
+                    First Name <input type="search" name="searchengine" placeholder="First Name" />
+                </li>
+                <li>
+                    Last Name <input type="search" name="searchlastname" placeholder="Last Name" />
+
+                </li>
+            </ul>
+            <input type="submit" value="Go"/>
+        </form>
+    </footer>
+</body>
+</html>
