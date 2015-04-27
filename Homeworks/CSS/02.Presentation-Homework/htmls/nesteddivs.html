@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Zadanie3</title>
+    <link href="../styles/divstyle.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <p>Some text</p>
+    <h1>This is header</h1>
+    
+    <!-- Значи divovete се генерират чрез javascript който е сложен някрая в тялото <body> на страницата. Мързи ме да ги пиша.  -->
+    <script>
+        var html = "";
+        for (var i = 0; i < 61; i++) {
+            html += "<div>";
+        }
+        for (var i = 0; i < 61; i++) {
+            html += "</div>";
+        }
+        
+        document.body.innerHTML = html;
+
+    </script>
+</body>
+</html>
