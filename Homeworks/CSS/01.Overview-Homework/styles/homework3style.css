@@ -1,0 +1,49 @@
+﻿body {
+    background-color: rgb(169, 169, 169);
+}
+
+    /*body>head means that this style will be applied for the only header that is ecxactly in the body.*/
+    body > header {
+        text-align: center;
+    }
+
+/*We have only one <ul> element on the page so no need additional class for it.*/
+ul {
+    list-style-type: none;
+}
+
+body > header > h1 {
+    font-size: 2.4em;
+}
+
+h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+
+
+body > header > nav > ul > li > a {
+    font-weight: 700;
+    font-size: 2.0em;
+    color: white;
+    text-decoration: none;
+}
+
+a.current {
+    background-color: rgb(204, 204, 204);
+}
+
+body > header > nav > ul > li:last-of-type > a {
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body > footer {
+    text-align: center;
+}
+/*Without touching .HTML page*/

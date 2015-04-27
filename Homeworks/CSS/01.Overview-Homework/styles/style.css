@@ -1,0 +1,51 @@
+
+table {
+    background-color: gray;
+    font-family: Arial;
+    
+}
+
+    table tr th {
+        font-size: 20px;
+        /*font-family: Arial Narrow;*/
+        color: silver;
+        text-align: left;
+        font-weight: 300;
+    }
+
+    table td:first-of-type {
+        width: 180px;
+        font-style: italic;
+        font-size: 16px;
+        color: white;
+    }
+
+
+.yellow {
+    color: navajowhite;
+    font-size: 16px;
+}
+
+.red {
+    color: red;
+    font-size: 16px;
+}
+
+.silver {
+    color: silver;
+    font-size: 16px;
+}
+
+.orange {
+    color: orange;
+    font-size: 16px;
+}
+
+div {
+    color: green;
+    display: inline;
+}
+
+a:hover {
+    color: #270FFF;
+}
