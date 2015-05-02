@@ -1,0 +1,25 @@
+﻿a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+    ul.info {
+        list-style-type: circle;
+    }
+
+a:hover {
+    text-decoration: underline;
+}
+
+    a:hover + ul.hidden {
+        display: block;
+        color: gray;
+    }
+
+ul.hidden {
+    display: none;
+}

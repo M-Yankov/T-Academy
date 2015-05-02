@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5 - Laptop Store</title>
+    <link href="../styles/overwiew.css" rel="stylesheet" />
+    <link href="../styles/problemFive.css" rel="stylesheet" />
+    <style>
+        /*can be solved with divs with styles { display: table, table-row, table-cell } */
+        /*another tip: to avoid reapeat html code - It can br used <iframe> tag, witch disaplys a writen html.*/
+    </style>
+</head>
+<body>
+    <h2>Problem 5. Laptop store</h2>
+    <ul>
+        <li>Create the following HTML 5 Page</li>
+    </ul>
+    <em>Note: Do it without tables</em>
+    
+    <header>
+        <nav>
+            <a href="#">Apple</a>
+            <a href="#">Toshiba</a>
+            <a href="#">Lenovo</a>
+            <a href="#">Dell</a>
+            <a href="#">Asus</a>
+            <a href="#">Hacer</a>
+            <!-- Acer !!? -->
+            <a href="#">HP</a>
+        </nav>
+    </header>
+    <hr />
+    <aside>
+        <form>
+            <label>Min price: &nbsp;&nbsp;&nbsp;&nbsp;500 USD</label><br /><input type="range" name="price" min="500" max="1500" value="1000" /><br />
+            <label>Max price: &nbsp;&nbsp;&nbsp;&nbsp;1500 USD</label><br /><input type="range" name="price" min="500" max="1500" value="1000" /><br />
+            <label>Min RAM:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4GB</label><br /><input type="range" name="price" min="4" max="16" value="10" /><br />
+            <label>Max RAM:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16GB</label><br /><input type="range" name="price" min="4" max="16" value="10" />
+
+        </form>
+    </aside>
+    <section>
+        <div class="table">
+            <div class="row">
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+            </div>
+            <div class="row">
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+            </div>
+            <div class="row">
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+                <div class="cell"><iframe src="laptopPage.html"></iframe></div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

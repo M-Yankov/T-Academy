@@ -1,0 +1,97 @@
+﻿body {
+}
+
+section {
+    background-color: rgb(30,55,65);
+    height: 306px;
+    width: 590px;
+    padding: 5px 10px 19px 9px;
+    color: rgb(144,169,179);
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+    section ul {
+        list-style-type: none;
+    }
+
+        section ul.inlline {
+            position: relative;
+            padding: 0;
+        }
+
+            section ul.inlline > li {
+                display: inline;
+                background-color: rgb(75,95,103);
+                padding: 10px 12px 8px 10px;
+                margin: -1px;
+            }
+
+            section ul.inlline li[id=news]:first-of-type {
+                background-color: transparent;
+                /*I have problems wtih this selector if value is :none It can't be applicable*/
+                color: white;
+            }
+
+            section ul.inlline > li > ul {
+                position: absolute;
+                /* margin: 9px 0 0 -8px; */
+                width: 234px;
+                font-weight: bold;
+                left: -49px;
+                top: 31px;
+                /* padding: 0 15px 0 7px; */
+            }
+
+                section ul.inlline > li > ul > li {
+                    position: relative;
+                    color: rgb(144,169,179);
+                    /*background-color: green;*/
+                }
+
+                    section ul.inlline > li > ul > li:first-of-type {
+                        color: white;
+                        background-color: rgb(0,150,140);
+                    }
+
+                    section ul.inlline > li > ul > li > ul {
+                        position: absolute;
+                        top: -12px;
+                        left: 186px;
+                    }
+
+#ldnimage {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 111px;
+    left: 178px;
+    display: none;
+}
+
+ul ul li {
+    margin: 1px 0;
+    /* width: 230px; */
+    padding: 11px 14px 9px 8px;
+}
+
+
+img {
+    width: 342px;
+    height: 250px;
+}
+
+button {
+    position: absolute;
+    border: 3px solid rgba(255,255,255,0.8);
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 30px;
+    color: white;
+    top: 114px;
+    right: 164px;
+    width: 59px;
+    height: 59px;
+    font-size: 26px;
+    box-shadow: 0 0 13px black;
+    text-shadow: 0 0 5px black;
+}

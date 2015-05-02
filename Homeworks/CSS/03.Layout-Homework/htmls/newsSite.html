@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="windows-1251" />
+    <title>Problem 6 - News site</title>
+
+    <link href="../styles/overwiew.css" rel="stylesheet" />
+    <link href="../styles/problemSix.css" rel="stylesheet" />
+    <script>
+        function func() {
+            document.getElementById("mybutton").style.display = "none" ;
+            document.getElementById("ldnimage").style.display = "inline";
+        }
+    </script>
+</head>
+<body>
+    <h2>Problem 6. News site</h2>
+    <ul>
+        <li>Create the following Web page using HTML and external CSS.</li>
+    </ul>
+    <em>Note: Using tables, inline styles and deprecated tags is not allowed!</em>
+    <section>
+        <ul class="inlline">
+            <li id="news">
+                Новините
+                <ul>
+                    <li>
+                        Интернет новини - 13.07.2010 г.
+                        <ul>
+                            <li>
+                                <img src="../img/btvnovini.jpg" alt="novinite" />
+                                <button id="mybutton"  onclick="func()">&#9654;</button>
+                                <img src="../img/giphy.gif" alt="loading" id="ldnimage" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Проливни дъждове в Дания, Китай и Индия, необичайни горещини в Иран</li>
+                    <li>Над 200 хектара горят на територията на бивш военен полигон в Германия</li>
+                    <li>23-ма ранени при сблъсък на два пътнически влака в Полша</li>
+                    <li>Деференцират от догодина минималния осигурителен доход за самоосигуряващите се</li>
+                </ul>
+            </li>
+            <li>Спорт</li>
+            <li>Емисии</li>
+            <li>Любопитно</li>
+            <li>Аз, репортерът</li>
+            <li>Тази сутрин</li>
+        </ul>
+    </section>
+</body>
+</html>

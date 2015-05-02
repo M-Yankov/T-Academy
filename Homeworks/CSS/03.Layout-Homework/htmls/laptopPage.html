@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Corbel;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .table {
+            display: table;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+            margin: 5px;
+            width: 137px;
+            padding: 20px 0 0 22px;
+        }
+
+        fieldset {
+            width: 324px;
+            height: 208px;
+            padding: 0;
+        }
+
+        legend {
+            margin-left: 49px;
+            width: 223px;
+            border: 2px;
+        }
+
+        .image {
+            background-image: url(../img/laptop.png);
+            /*I can't find exactly same image*/
+            background-size: 171px 120px;
+        }
+
+        .downmargin {
+            margin-bottom: 0;
+        }
+
+        .upmargin {
+            margin-top: 0;
+        }
+
+        div.usd {
+            position: relative;
+            left: 22px;
+            top: -3px;
+        }
+
+        #top {
+        }
+
+        #midlle {
+            background-position: 0 -20px;
+        }
+
+        #down {
+            background-position: 0 -71px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Apple MacBook Air</legend>
+        <div class="table">
+            <div class="row">
+                <div id="top" class="cell image downmargin"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div id="midlle" class="cell image downmargin upmargin"></div>
+                <div class="cell">64GB SSD</div>
+            </div>
+            <div class="row">
+                <div id="down" class="cell image upmargin"></div>
+                <div class="cell">2GB DDR</div>
+            </div>
+            <div class="row">
+                <div class="cell usd">1300 USD</div>
+                <div class="cell">Intel Core i5</div>
+            </div>
+        </div>
+
+    </fieldset>
+</body>
+</html>

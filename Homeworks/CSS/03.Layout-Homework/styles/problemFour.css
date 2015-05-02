@@ -1,0 +1,147 @@
+﻿body {
+    background-color: #eee;
+}
+a {
+    color: #a20000;
+    display: block;
+    
+}
+
+    body > header {
+        position: relative;
+        width: 784px;
+        border: 1px solid black;
+        padding: 2px;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+    nav ul li:first-child {
+        font-weight: bold;
+        color: #a20000;
+    }
+
+body > header nav {
+    font-family: Arial;
+    position: relative;
+    width: 130px;
+}
+
+h3 {
+    background-image: url(../img/home.png);
+    background-size: 23px 25px;
+    background-repeat: no-repeat;
+    padding-left: 28px;
+    padding-top: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+}
+
+section {
+    border: 1px solid gray;
+    width: 512px;
+    position: absolute;
+    left: 140px;
+    top: 2px;
+    padding: 5px;
+    background-color: white;
+}
+
+    section input {
+        font-size: 12px;
+        width: 130px;
+    }
+
+        section input[value*=Next] {
+            text-align: right;
+        }
+
+        section input[value*=Prev] {
+            text-align: left;
+        }
+
+    section h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    section img {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+
+article {
+    font-size: 12px;
+}
+
+    article table p {
+        font-weight: bold;
+    }
+
+    article table tr td:last-of-type {
+        padding-right: 56px;
+        padding-left: 12px;
+    }
+
+    article h3 {
+        background-image: none;
+        padding: 1px 2px;
+        background-color: gray;
+        color: white;
+    }
+
+
+div {
+    width: 118px;
+    clear: both;
+    border: 1px solid gray;
+    margin: 1px;
+   
+}
+    div h4 {
+        text-align: center;
+        background-color: gray;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    div form {
+        margin: 8px;
+
+    }
+        div form input[type*=text] {
+            width: 60px;
+        }
+        
+    div.container {
+        font-size: 11px;
+        position: absolute;
+        top: 0;
+        right: 4px;
+        border: none;
+        
+        
+    }
+    div a {
+        text-align: center;
+        margin: 4px 0;
+        
+    }
+    div button {
+        margin: 2px 16px;
+        color: #00baba;
+        background-color: #97ffff;
+        border: 1px solid #00baba;
+        font-size: 12px;
+        height: 30px;
+    }
+hr {
+    background-color: gray;
+    height: 2px;
+}

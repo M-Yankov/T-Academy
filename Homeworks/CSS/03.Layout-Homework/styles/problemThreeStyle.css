@@ -1,0 +1,87 @@
+﻿p , article{
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 662px;
+    height: 299px;
+    background-color: rgb(59,59,59);
+}
+
+    section > header {
+        width: 100%;
+        height: 22%;
+        background-color: rgb(55,55,55);
+        -moz-box-shadow: rgb(36,36,36) 0 -12px 14px inset;
+        -webkit-box-shadow: rgb(36,36,36) 0 -12px 14px inset;
+        box-shadow: rgb(36,36,36) 0 -12px 14px inset;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+
+        section > header div {
+            position: relative;
+            display: inline;
+            bottom: 38%;
+        }
+
+            section > header div p {
+                display: inline;
+                color: white;
+                font-size: 23px;
+                font-family: 'Times New Roman';
+                margin-right: 10px;
+            }
+
+
+            section > header div input[type=text] {
+                padding: 2px;
+                width: 150px;
+                margin-right: 25px;
+            }
+
+            section > header div input[type=button] {
+                background-image: url(../img/button.gif);
+                width: 56px;
+                height: 28px;
+                border: none;
+                color: white;
+                /*border: 1px solid white;
+                color: white;
+                border-radius: 12px;
+                background-color: white;
+                
+                box-shadow: rgba(215,3,2,1) 0 -18px 20px inset;*/
+            }
+
+img {
+    width: 37px;
+    height: 43px;
+    margin: 10px;
+}
+
+article {
+    margin: 12px;
+    padding-right: 28px;
+}
+
+    article h2 {
+        font-family: Georgia;
+        font-size: 28px/68px;
+        color: yellow;
+        font-weight: 100;
+    }
+
+    article p {
+        margin: 0;
+        font: 13px/17px Verdana,Arial,Helvetica,sans-serif;
+        color: gray;
+    }
+
+        article p span {
+            color: white;
+            background-color: inherit;
+        }

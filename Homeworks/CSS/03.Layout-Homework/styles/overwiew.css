@@ -1,0 +1,19 @@
+﻿body {
+    font-family: Arial;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+    ul ul {
+        list-style-type: circle;
+    }
+
+        ul ul li {
+            margin-top: 5px;
+        }
+
+span {
+    background-color: #E1DEDE;
+}

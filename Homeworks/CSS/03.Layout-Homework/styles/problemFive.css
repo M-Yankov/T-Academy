@@ -1,0 +1,64 @@
+﻿body {
+    width: 1071px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+header {
+    text-align: center;
+    font-family: Corbel;
+}
+
+    header a {
+        color: rgb(0,173,239);
+        font-size: 38px;
+        margin: 1px;
+    }
+
+hr {
+    width: 98%;
+    height: 2px;
+    background-color: gray;
+}
+
+.table {
+    display: table;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
+
+section {
+    margin-left: 15px;
+    margin-bottom: 13px;
+    border: 2px solid gray;
+    width: 690px;
+    height: 671px;
+}
+
+    section iframe {
+        border: none;
+        width: 339px;
+        height: 228px;
+        margin: -2px 0 -14px -1px;
+    }
+
+aside {
+    float: right;
+    font-family: Corbel;
+    font-size: 35px;
+    position: relative;
+    top: 96px;
+    left: -14px;
+}
+
+    aside form input[type=range] {
+        width: 299px;
+        height: 39px;
+        margin: 13px 0 38px 0;
+    }
