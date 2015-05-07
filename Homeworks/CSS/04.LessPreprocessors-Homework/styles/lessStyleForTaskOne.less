@@ -1,0 +1,244 @@
+﻿
+.gradient(@color1: rgba(211,146,254,1), @clr1-percent: 8%, @color2: rgba(146,21,242,1), @clr2-percent: 31% ) {
+    background: rgb(211,146,254);
+    background: -moz-linear-gradient(top, @color1 @clr1-percent, @color2 @clr2-percent);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@clr1-percent,@color1), color-stop(@clr2-percent, @color2));
+    background: -webkit-linear-gradient(top, @color1 @clr1-percent,@color2 @clr2-percent);
+    background: -o-linear-gradient(top, @color1 @clr1-percent,@color2 @clr2-percent);
+    background: -ms-linear-gradient(top, @color1 @clr1-percent,@color2 @clr2-percent);
+    background: linear-gradient(to bottom, @color1 @clr1-percent, @color2 @clr2-percent);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d392fe', endColorstr='#9215f2',GradientType=0 );
+}
+
+
+.font(@size: 1.2em, @family: Arial, @style: normal) {
+    font-size: @size;
+    font-family: @family;
+    font-style: @style;
+}
+
+@w: white;
+@br: 1px solid black;
+@br-rad: 10px;
+@col-violet: #A5F;
+
+button {
+    border: 0 none;
+}
+
+body {
+    .gradient();
+    color: @w;
+
+    header {
+        padding: 10px 111px 0 16px;
+
+        label {
+            margin: 5px;
+        }
+
+        input {
+            width: 130px;
+            margin: 5px;
+            border: @br;
+            border-radius: @br-rad;
+            background-color: @col-violet;
+            padding: 2px 6px;
+        }
+
+        button#btn-register {
+            background-color: @col-violet;
+            border: 1px outset #603382;
+            border-radius: @br-rad - 1px;
+            padding: 5px 8px;
+            font-weight: bold;
+            color: white;
+            margin: 5px 157px 0 0;
+
+            &:hover {
+                border-style: inset;
+            }
+        }
+    }
+
+    aside {
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 300px;
+        width: 400px;
+        margin-right: 45px;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding: 10px;
+                border: @br;
+                border-radius: @br-rad - 5px;
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    a {
+                        text-decoration: none;
+                        color: #999;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    strong {
+                        color: #999;
+                    }
+
+                    em {
+                        color: #999;
+                    }
+                }
+
+                ul {
+                    li {
+                        padding: 0;
+                        border: none;
+                        list-style-image: url(/img/li-dot.png);
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+#reg-form-container {
+    margin-top: -97px;
+    text-align: right;
+}
+
+nav {
+    border: @br;
+    border-width: 2px;
+    border-radius: @br-rad;
+    margin: 53px 300px 36px 23px;
+}
+
+.nav-list {
+    list-style-type: none;
+
+    li {
+        a {
+            color: @w;
+            text-decoration: none;
+            padding: 0 10px 0 10px;
+            .font();
+            position: relative;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+ul#main-nav-list {
+    margin-left: -35px;
+
+    > li {
+        display: inline;
+
+        &:nth-of-type(2) {
+            position: relative;
+
+            &:hover > a + ul.sub-nav-list {
+                display: block;
+            }
+        }
+    }
+}
+
+ul.sub-nav-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 0, 234, 0.5);
+    border-radius: @br-rad;
+    left: 0;
+    /*right: -39px;*/
+    .font(0.7em, Arial, normal);
+    padding: 0;
+    width: 217px;
+
+
+    li {
+        border-bottom: @br;
+        padding: 10px 0;
+        margin: 0 15px;
+        width: auto;
+
+        a {
+            padding: 0;
+
+            &:hover {
+                text-decoration: underline;
+                color: gray;
+            }
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+/*Sorry soup with grapes :D a.k.a. manja s grozde*/
+section {
+    margin: 0 450px 0 20px;
+    padding: 0;
+
+    article {
+        padding: 10px 15px;
+        border: @br;
+        border-radius: @br-rad + 10;
+        margin: 30px 0;
+
+        header {
+            h1 {
+            }
+        }
+
+        p {
+            margin-top: -10px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        footer {
+            text-align: right;
+
+            p {
+                font-size: 16px;
+
+                a {
+                    text-decoration: none;
+                    color: #999;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                time {
+                    font-family: Consolas;
+                }
+            }
+        }
+    }
+}
+/*Now it's better for <section> element*/
+

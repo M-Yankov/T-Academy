@@ -1,0 +1,49 @@
+﻿ul, li, img, nav, figure, figcaption {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    header {
+        h1{
+            text-align: center;
+        }
+        nav {
+            ul {
+                list-style-type: none;
+
+                li {
+                    display: inline;
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        cursor: pointer;
+
+                        /*&:nth-of-type(1) {
+                            &:hover {
+                                height: 150px;
+                            }
+                        }*/
+                    }
+                }
+            }
+        }
+    }
+    section{
+        figure{
+            div{
+                width: 400px;
+                height: 400px;
+                background-size: 100% 100%;
+                text-align: center;
+                line-height: 200px;
+                border: 1px solid red;
+            }
+            figcaption{
+                font-size: 20px;
+                width: 400px;
+            }
+        }
+    }
+}

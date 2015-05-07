@@ -1,0 +1,180 @@
+﻿button {
+  border: 0 none;
+}
+body {
+  background: #d392fe;
+  background: -moz-linear-gradient(top, #d392fe 8%, #9215f2 31%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #d392fe), color-stop(31%, #9215f2));
+  background: -webkit-linear-gradient(top, #d392fe 8%, #9215f2 31%);
+  background: -o-linear-gradient(top, #d392fe 8%, #9215f2 31%);
+  background: -ms-linear-gradient(top, #d392fe 8%, #9215f2 31%);
+  background: linear-gradient(to bottom, #d392fe 8%, #9215f2 31%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d392fe', endColorstr='#9215f2', GradientType=0);
+  color: white;
+}
+body header {
+  padding: 10px 111px 0 16px;
+}
+body header label {
+  margin: 5px;
+}
+body header input {
+  width: 130px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #aa55ff;
+  padding: 2px 6px;
+}
+body header button#btn-register {
+  background-color: #aa55ff;
+  border: 1px outset #603382;
+  border-radius: 9px;
+  padding: 5px 8px;
+  font-weight: bold;
+  color: white;
+  margin: 5px 157px 0 0;
+}
+body header button#btn-register:hover {
+  border-style: inset;
+}
+body aside {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: 400px;
+  margin-right: 45px;
+}
+body aside ul {
+  list-style-type: none;
+}
+body aside ul li {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+body aside ul li h2 {
+  font-size: 20px;
+}
+body aside ul li p a {
+  text-decoration: none;
+  color: #999;
+}
+body aside ul li p a:hover {
+  text-decoration: underline;
+}
+body aside ul li p strong {
+  color: #999;
+}
+body aside ul li p em {
+  color: #999;
+}
+body aside ul li ul li {
+  padding: 0;
+  border: none;
+  list-style-image: url(/img/li-dot.png);
+}
+body footer {
+  text-align: center;
+}
+#reg-form-container {
+  margin-top: -97px;
+  text-align: right;
+}
+nav {
+  border: 1px solid black;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 53px 300px 36px 23px;
+}
+.nav-list {
+  list-style-type: none;
+}
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  font-size: 1.2em;
+  font-family: Arial;
+  font-style: normal;
+  position: relative;
+}
+.nav-list li a:hover {
+  text-decoration: underline;
+}
+ul#main-nav-list {
+  margin-left: -35px;
+}
+ul#main-nav-list > li {
+  display: inline;
+}
+ul#main-nav-list > li:nth-of-type(2) {
+  position: relative;
+}
+ul#main-nav-list > li:nth-of-type(2):hover > a + ul.sub-nav-list {
+  display: block;
+}
+ul.sub-nav-list {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 0, 234, 0.5);
+  border-radius: 10px;
+  left: 0;
+  /*right: -39px;*/
+  font-size: 0.7em;
+  font-family: Arial;
+  font-style: normal;
+  padding: 0;
+  width: 217px;
+}
+ul.sub-nav-list li {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  margin: 0 15px;
+  width: auto;
+}
+ul.sub-nav-list li a {
+  padding: 0;
+}
+ul.sub-nav-list li a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+ul.sub-nav-list li:last-of-type {
+  border-bottom: none;
+}
+/*Sorry soup with grapes :D a.k.a. manja s grozde*/
+section {
+  margin: 0 450px 0 20px;
+  padding: 0;
+}
+section article {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+section article p {
+  margin-top: -10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+section article footer {
+  text-align: right;
+}
+section article footer p {
+  font-size: 16px;
+}
+section article footer p a {
+  text-decoration: none;
+  color: #999;
+}
+section article footer p a:hover {
+  text-decoration: underline;
+}
+section article footer p time {
+  font-family: Consolas;
+}
+/*# sourceMappingURL=lessStyleForTaskOne.css.map */

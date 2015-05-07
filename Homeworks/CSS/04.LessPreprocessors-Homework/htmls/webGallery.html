@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 2 - Web Gallery</title>
+    <link rel="stylesheet" href="../styles/LESSwebGallery.min.css" />
+    <!-- Ako се чудиш защо CSS е писан на един погледни другия файл. ТОва е от ефекта minify ( който не завършва на .min) If you have problems Look open File with extenstion that not ends with .min -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script>
+
+        $(document).ready(function (){
+            $("img").click(function () {
+                var photo = ($(this).attr("src"));
+                var mytext = ($(this).attr("alt"));
+                var div = document.getElementById("hidden");
+                div.style.backgroundImage = "url("+photo+")";
+                div.textContent = "";
+                document.getElementById("description").textContent = mytext;
+                f
+            });
+        });
+
+            /*$(document).ready(function () {
+                $("img").click(function () {
+                    $(this).hide();
+                });
+            });
+            */
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome to my terrible zoo park</h1>
+        <nav>
+            <ul>
+                <li><img onclick="" id="one" src="../img/cerfureuil.png" alt="Катерица!?" /></li>
+                <li><img id="two" src="../img/egle.jpg" alt="A cross between a dog and an owl." /></li>
+                <li><img id="three" src="../img/sharkider.jpg" alt="A cross between a shark and a spider." /></li>
+                <li><img id="four" src="../img/lazydog.jpg" alt="A cross between a black lab and an orca whale. " /></li>
+                <li><img id="five" src="../img/llion.jpg" alt="A cross between a lion and a llama." /></li>
+                <li><img id="six" src="../img/wtf.jpg" alt="A cross between a bird and a monkey." /></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <figure>
+            <div id="hidden">Please click on the images.</div>
+            <figcaption id="description"></figcaption>
+        </figure>
+    </section>
+
+
+</body>
+</html>
