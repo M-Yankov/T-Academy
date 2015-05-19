@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Operators and Expressions</title>
+    <script src="../scriprts/operators.js"></script>
+    <style>
+        body {
+            font-family: Arial;
+            padding-left: 10px;
+        }
+        img {
+            width: 300px;
+            display: block;
+            margin: 10px 0;
+        }
+        li {
+            font-size: 16px;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        li span {
+            background-color: #ddd;
+        }
+
+        label {
+            border-bottom: 2px solid gray;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        form {
+            margin: 10px 0;
+        }
+
+        #p3height, #p3width, input[id*=p8] {
+            width: 50px;
+        }
+
+        aside {
+            float: right;
+            width: 50%;
+            margin-left: 10px;
+        }
+
+        textarea {
+            resize: none;
+            width: 100%;
+            font-size: 20px;
+            font-family: Consolas;
+            border: 3px groove gray;
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h3>My Console - for results</h3>
+        <textarea disabled="disabled" id="output" rows="30"></textarea>
+    </aside>
+    <h1>Operators and Expressions</h1>
+    <p>Enter a number and then press the button</p>
+    <form>
+        <label>Problem 1. Odd or Even</label>
+        <ul>
+            <li>Write an expression that checks if given integer is odd or even.</li>
+        </ul>
+        <input id="input" type="number" value="2" max="100" min="-5" maxlength="3" />
+        <input type="button" value="CHECK" onclick="oddEven()" />
+
+    </form>
+    <form>
+        <label>Problem 2. Divisible by 7 and 5</label>
+        <ul>
+            <li>Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.</li>
+        </ul>
+        <input id="p2input" type="number" value="0" max="105" min="-5" maxlength="3" />
+        <input type="button" value="CHECK" onclick="divSevenFive()" />
+
+    </form>
+    <form>
+        <label>Problem 3. Rectangle area</label>
+        <ul>
+            <li>Write an expression that calculates rectangle’s area by given width and height.</li>
+        </ul>
+        <span>Width:</span>
+        <input id="p3width" type="number" min="0" max="100" step="0.5" />
+        <span>Height:</span>
+        <input id="p3height" type="number" min="0" max="100" step="0.5" />
+        <input type="button" value="CHECK" onclick="rectArea()" />
+
+
+    </form>
+    <form>
+        <label>Problem 4. Third digit</label>
+        <ul>
+            <li>Write an expression that checks for given integer if its third digit (right-to-left) is 7.</li>
+        </ul>
+        <input type="text" id="p4input" maxlength="8" />
+        <input type="button" value="CHECK" onclick="thirdDigit()" />
+
+    </form>
+    <form>
+        <label>Problem 5. Third bit</label>
+        <ul>
+            <li>Write a boolean expression for finding if the bit #3 (counting from 0) of a given integer.</li>
+            <li>The bits are counted from right to left, starting from bit #0.</li>
+            <li>The result of the expression should be either 1 or 0.</li>
+        </ul>
+        <input type="number" value="0" id="p5input" />
+        <input type="button" value="CHECK" onclick="bitThird()" />
+    </form>
+    <form>
+        <label>Problem 6. Point in Circle</label>
+        <ul>
+            <li>Write an expression that checks if given point <span>P(x, y)</span> is within a circle <span>K(O, 5)</span>.</li>
+            <li><p>maybe the radius is 5cm with center {0,0}</p></li>
+        </ul>
+        <span>X:</span>
+        <input id="p6x" type="number" min="-10" max="10" />
+        <span>Y:</span>
+        <input id="p6y" type="number" min="-10" max="10" />
+        <input type="button" value="CHECK" onclick="circle()" />
+        
+        <img src="../img/problem6.jpeg" alt="circle" width="200" />
+    </form>
+    <form>
+        <label>Problem 7. Is prime</label>
+        <ul>
+            <li>Write an expression that checks if given positive integer number n (n ≤ 100) is prime.</li>
+        </ul>
+        <input type="number" id="p7input" value="" min="2" max="100" />
+        <input type="button" value="CHECK" onclick="primeNum()" />
+    </form>
+    <form>
+        <label>Problem 8. Trapezoid area</label>
+        <ul>
+            <li>Write an expression that calculates trapezoid's area by given sides <span>a</span> and <span>b</span> and height <span>h</span>.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>A:</td>
+                <td><input type="number" id="p8a" min="1" value="0.222" max="50" /></td>
+            </tr>
+            <tr>
+                <td>B:</td>
+                <td><input type="number" id="p8b" min="1" value="0.333" max="59" /></td>
+            </tr>
+            <tr>
+                <td>H:</td>
+                <td><input type="number" id="p8h" min="1" value="0.555" max="59" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="CHECK" onclick="trapezoiod()" /></td>
+            </tr>
+        </table>
+        <img src="../img/trapezoid.jpeg" alt="trapezoid"/>
+    </form>
+    <form>
+        <label>Problem 9. Point in Circle and outside Rectangle</label>
+        <ul>
+            <li>Write an expression that checks for given point <span>P(x, y)</span> if it is within the circle <span>K( (1,1), 3)</span> and out of the rectangle <span>R(top=1, left=-1, width=6, height=2).</span></li>
+        </ul>
+        <span>X:</span>
+        <input id="p9x" type="number" value="0" min="-20" max="50" step="0.5" />
+        <span>Y:</span>
+        <input id="p9y" type="number" value="0" min="-20" max="50" step="0.5" />
+        <input type="button" value="CHECK" onclick="inCircleOutRect()" />
+        <img src="../img/problem9.jpeg" alt="circleRectengle"/>
+    </form>
+</body>
+</html>
