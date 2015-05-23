@@ -3,40 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Homework Conditional statements</title>
-    <style>
-        body{
-            font-family: Arial;
-            padding: 10px;
-        }
-        aside{
-            width: 50%;
-            position: fixed;
-            right: 10px;
-        }
-        h3{
-            font-size: 24px;
-        }
-        textarea{
+    <link rel="stylesheet" href="style.css" />
+    <script src="conditionalStatements.js"></script>
 
-            resize: none;
-            width: 98%;
-            font-size: 20px;
-            font-family: Consolas;
-            border: 3px groove #808080;
-            background-color: black;
-            color: white;
-            padding: 5px;
-
-        }
-        section{
-            width: 48%;
-            display: block;
-            border: 2px solid blue;
-            background-color: cyan;
-            box-sizing: border-box;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
 <aside>
@@ -44,7 +13,101 @@
     <textarea name="" id="output" cols="30" rows="10" disabled="disabled"></textarea>
 </aside>
 <section>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate dignissimos inventore rerum! Accusantium alias amet atque dicta dolores eligendi est explicabo fuga, fugit harum incidunt nobis, nostrum obcaecati porro ratione, tempore velit voluptate! Accusamus adipisci aliquam animi at delectus dolores dolorum incidunt inventore laudantium magni nam nostrum omnis praesentium provident quasi, repellendus repudiandae, similique sint soluta tempore ut vero voluptates. Ab deserunt distinctio dolore, dolores, excepturi facere illum nostrum omnis recusandae sed voluptas, voluptatem. Autem cumque dolores ducimus in ipsam iste minus, modi nemo nostrum omnis rerum sit tempora voluptas. Laboriosam laudantium quasi rem. Animi asperiores dolorum minus totam?</p>
+    <h1>Conditional Statements</h1>
+
+    <form>
+        <label>Problem 1. Exchange if greater</label>
+        <ul>
+            <li>Write an <span>if</span> statement that takes two double variables <span>a</span> and <span>b</span> and
+                exchanges their values if the first one is greater than the second.
+            </li>
+            <li>As a result print the values <span>a</span> and <span>b</span>, separated by a space.</li>
+        </ul>
+        <span>A: </span><input type="number" id="p1a" value="5"/>
+        <span>B: </span><input type="number" id="p1b" value="2"/>
+        <input type="button" value="CHECK" onclick="exchange()"/>
+    </form>
+    <form>
+        <label>Problem 2. Multiplication Sign</label>
+        <ul>
+            <li>Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating
+                it.
+            </li>
+            <li>Use a sequence of <span>if</span> operators.</li>
+        </ul>
+        <span>A: </span><input type="number" value="-2" id="p2a"/>
+        <span>B: </span><input type="number" value="-2" id="p2b"/>
+        <span>C: </span><input type="number" value="1" id="p2c"/>
+        <input type="button" value="CHECK" onclick="multiplication()">
+    </form>
+    <form>
+        <label>Problem 3. The biggest of Three</label>
+        <ul>
+            <li>Write a script that finds the biggest of three numbers.</li>
+            <li>Use nested <span>if</span> statements</li>
+        </ul>
+        <span>A: </span><input type="number" value="5" id="p3a"/>
+        <span>B: </span><input type="number" value="2" id="p3b"/>
+        <span>C: </span><input type="number" value="2" id="p3c"/>
+        <input type="button" value="CHECK" onclick="threeBig()">
+    </form>
+    <form action="">
+        <label>Problem 4. Sort 3 numbers</label>
+        <ul>
+            <li>Sort 3 real values in descending order.</li>
+            <li>Use nested <span>if</span> statements.</li>
+        </ul>
+        <p>Note: Don’t use arrays and the built-in sorting functionality.</p>
+        <span>A: </span><input type="number" value="-1.1" id="p4a"/>
+        <span>B: </span><input type="number" value="-0.5" id="p4b"/>
+        <span>C: </span><input type="number" value="-0.1" id="p4c"/>
+        <input type="button" value="CHECK" onclick="sort()">
+
+    </form>
+    <form action="">
+        <label >Problem 5. Digit as word</label>
+        <ul>
+            <li> Write a script that asks for a digit <span>(0-9)</span>, and depending on the input, shows the digit as a word (in English).</li>
+            <!--prompt("text")-->
+            <li>Print <span>“not a digit”</span> in case of invalid input.</li>
+            <li>Use a <span>switch</span> statement.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="digitWord()" />
+        <p>A prompt box will be shown. "Cancel = 0"</p>
+    </form>
+    <form action="">
+        <label>Problem 6. Quadratic equation</label>
+        <ul>
+            <li>Write a script that reads the coefficients <span>a</span>, <span>b</span> and <span>c</span> of a quadratic equation ax² + bx + c = 0 and solves it (prints its real roots).</li>
+            <li>Calculates and prints its real roots.</li>
+        </ul>
+        <p>Note: Quadratic equations may have 0, 1 or 2 real roots.</p>
+        <span>A: </span><input type="number" value="2" id="p6a"/>
+        <span>B: </span><input type="number" value="5" id="p6b"/>
+        <span>C: </span><input type="number" value="-3" id="p6c"/>
+        <input type="button" value="CHECK" onclick="quadratic()">
+    </form>
+    <form action="">
+        <label >Problem 7. The biggest of five numbers</label>
+        <ul>
+            <li>Write a script that finds the greatest of given 5 variables.</li>
+            <li>Use nested <span>if</span> statements.</li>
+        </ul>
+        <span>A: </span><input type="number" value="-2" id="p7a"/>
+        <span>B: </span><input type="number" value="-22" id="p7b"/>
+        <span>C: </span><input type="number" value="1" id="p7c"/>
+        <span>D: </span><input type="number" value="0" id="p7d"/>
+        <span>E: </span><input type="number" value="0" id="p7e"/>
+        <input type="button" value="CHECK" onclick="fiveBiggest()">
+    </form>
+    <form action="">
+        <label >Problem 8. Number as words</label>
+        <ul>
+            <li>Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.</li>
+        </ul>
+        <span>Number: </span><input type="number" value="0" min="0" max="999" id="p8input"/>
+        <input type="button" value="CHECK" onclick="numberAsWord()">
+    </form>
 </section>
 
 </body>

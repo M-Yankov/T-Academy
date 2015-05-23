@@ -1,0 +1,70 @@
+body {
+    font-family: Arial;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+aside {
+    width: 50%;
+    position: fixed;
+    right: 10px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+textarea {
+
+    resize: none;
+    width: 98%;
+    font-size: 20px;
+    font-family: Consolas;
+    border: 3px groove #808080;
+    background-color: black;
+    color: white;
+    padding: 5px;
+
+}
+
+section {
+    width: 48%;
+
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+form {
+    margin: 10px 0;
+}
+
+form p {
+    font-style: italic;
+}
+
+ul > li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+li > span {
+    background-color: lightgray;
+    padding: 0px 5px;
+}
+
+input[type="number"] {
+    width: 70px;
+    text-align: center;
+
+}
+
+
+
+label {
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 3px ridge gray;
+}
