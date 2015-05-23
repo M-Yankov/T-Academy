@@ -152,7 +152,7 @@ function quadratic() {
         x2 = x1;
     }
     else {
-        x1 = "no real roots"
+        x1 = "no real roots";
         x2 = x1;
     }
     write("X1: " + x1 + " X2: " + x2);
