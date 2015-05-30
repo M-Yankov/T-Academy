@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Homework Loops</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+<aside>
+    <h3>Console for results</h3>
+    <textarea name="" id="output" cols="30" rows="10" disabled="disabled"></textarea>
+</aside>
+<section>
+    <h1>Loop Homework</h1>
+
+    <form>
+        <label>Problem 1. Numbers</label>
+        <ul>
+            <li>Write a script that prints all the numbers from <span>1</span> to <span>N</span>.</li>
+        </ul>
+        <span>Number: </span><input type="number" id="p1input" value=""/>
+        <input type="button" value="CHECK" onclick="fromOneToN()"/>
+    </form>
+    <form>
+        <label>Problem 2. Numbers not divisible</label>
+        <ul>
+            <li>Write a script that prints all the numbers from <span>1</span> to <span>N</span>, that are not divisible by
+                <span>3</span> and <span>7</span> at the same time</li>
+        </ul>
+        <span>Number: </span><input type="number" value="" min="1" id="p2input"/>
+        <input type="button" value="CHECK" onclick="notDevisibleTo3And7()">
+    </form>
+    <form>
+        <label>Problem 3. Min/Max of sequence</label>
+        <ul>
+            <li>Write a script that finds the <span>max</span> and <span>min</span> number from a sequence of numbers.</li>
+        </ul>
+        <span>Sequence of numbers: </span><input type="text" value="" id="p3input"/>
+        <input type="button" value="CHECK" onclick="minMax()">
+        <p>Note: use simple separator "," Example: "1,3,7,-3,-17,34,5,0";</p>
+        <p>Otherwise you can input like that: " &nbsp; 1,2 3 -3, -5 ,2.56 &nbsp; &nbsp; ,&nbsp; &nbsp; &nbsp; 2,-4 4.1  &nbsp; ".</p>
+    </form>
+    <form action="">
+        <label>Problem 4. Lexicographically smallest</label>
+        <ul>
+            <li>Write a script that finds the lexicographically smallest and largest property in <span>document</span>,
+                <span>window</span> and <span>navigator objects</span>.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="properties()">
+
+    </form>
+    <script src="loops.js"></script>
+</section>
+
+</body>
+</html>
