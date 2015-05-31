@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Homework Arrays</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<aside>
+    <h3>Console for results</h3>
+    <textarea name="" id="output" cols="30" rows="10" disabled="disabled"></textarea>
+</aside>
+<section>
+    <h1>Arrays Homework</h1>
+
+    <form>
+        <label>Problem 1. Increase array members</label>
+        <ul>
+            <li>Write a script that allocates array of 20 integers and initializes each element by its index multiplied
+                by
+                <span>5</span>.
+            </li>
+            <li>Print the obtained array on the console.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="simpleArray()"/>
+    </form>
+    <form>
+        <label>Problem 2. Lexicographically comparison</label>
+        <ul>
+            <li>Write a script that compares two char arrays lexicographically (letter by letter).</li>
+        </ul>
+        <span>Word: </span><input type="text" value="" placeholder="FirstCharArray" id="p2input1"/>
+        <span>Word: </span><input type="text" value="" placeholder="SecondCharArray" id="p2input2"/>
+        <input type="button" value="CHECK" onclick="">
+    </form>
+    <form>
+        <label>Problem 3. Maximal sequence</label>
+        <ul>
+            <li>Write a script that finds the <em>maximal sequence</em> of equal elements in an array</li>
+        </ul>
+        <span>Sequence of numbers: </span><input type="text" value="" placeholder="1,2,3..." id="p3input"/>
+        <input type="button" value="CHECK" onclick="maxSequence()">
+
+        <p>Note: use simple separator "," Example: "1,3,7,-3,-17,34,5,0";</p>
+
+        <p>Otherwise you can input like that: " &nbsp; 1,2 3 -3, -5 ,2.56 &nbsp; &nbsp; ,&nbsp; &nbsp; &nbsp; 2,-4 4.1
+            &nbsp; ".</p>
+
+        <p>Example:</p>
+        <table>
+            <tr>
+                <th>input</th>
+                <th>result</th>
+            </tr>
+            <tr>
+                <td>2, 1, 1, 2, 3, 3, 2, 2, 2, 1</td>
+                <td>2, 2, 2</td>
+            </tr>
+        </table>
+    </form>
+    <form action="">
+        <label>Problem 4. Maximal increasing sequence</label>
+        <ul>
+            <li>Write a script that finds the maximal increasing sequence in an array.</li>
+        </ul>
+        <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p4input"/>
+        <input type="button" value="CHECK" onclick="">
+        <p>Example</p>
+        <table>
+            <tr>
+                <th>input</th>
+                <th>result</th>
+            </tr>
+            <tr>
+                <td>3, 2, 3, 4, 2, 2, 4</td>
+                <td>2, 3, 4</td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <label>
+            Problem 5. Selection sort
+        </label>
+        <ul>
+            <li>Sorting an array means to arrange its elements in increasing order.</li>
+            <li>Write a script to sort an array.</li>
+            <li>Use the <a href="http://en.wikipedia.org/wiki/Selection_sort">selection sort</a> algorithm: Find the
+                smallest element, move it at the first position,
+                find the smallest from the rest, move it at the second position, etc.
+            </li>
+        </ul>
+        <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p5input"/>
+        <input type="button" value="CHECK" onclick="">
+        <p>Hint: Use a second array</p>
+    </form>
+    <form>
+        <label>Problem 6. Most frequent number</label>
+        <ul>
+            <li>Write a script that finds the most frequent number in an array.</li>
+        </ul>
+        <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p6input"/>
+        <input type="button" value="CHECK" onclick="">
+        <p>Example:</p>
+        <table>
+            <tr>
+                <td>input</td>
+                <td>result</td>
+            </tr>
+            <tr>
+                <td>4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3</td>
+                <td>4 (5 times)</td>
+            </tr>
+        </table>
+    </form>
+    <form><label>Problem 7. Binary search</label>
+        <ul>
+            <li>Write a script that finds the index of given element in a sorted array of integers by using the
+                <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a> algorithm.
+            </li>
+        </ul>
+        <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p7input"/>
+        <input type="button" value="CHECK" onclick="">
+    </form>
+    <script src="arrays.js"></script>
+</section>
+
+</body>
+</html>
