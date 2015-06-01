@@ -32,7 +32,8 @@
         </ul>
         <span>Word: </span><input type="text" value="" placeholder="FirstCharArray" id="p2input1"/>
         <span>Word: </span><input type="text" value="" placeholder="SecondCharArray" id="p2input2"/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="compareArrays()">
+        <p>Note: Cyrillic 'A' is not equal to latin 'A'!</p>
     </form>
     <form>
         <label>Problem 3. Maximal sequence</label>
@@ -65,7 +66,7 @@
             <li>Write a script that finds the maximal increasing sequence in an array.</li>
         </ul>
         <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p4input"/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="maxIncreaseSequence()">
         <p>Example</p>
         <table>
             <tr>
@@ -91,7 +92,7 @@
             </li>
         </ul>
         <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p5input"/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="selectionSort()">
         <p>Hint: Use a second array</p>
     </form>
     <form>
@@ -100,7 +101,7 @@
             <li>Write a script that finds the most frequent number in an array.</li>
         </ul>
         <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p6input"/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="mostFrequent()">
         <p>Example:</p>
         <table>
             <tr>
@@ -119,8 +120,18 @@
                 <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a> algorithm.
             </li>
         </ul>
-        <span>Array: </span><input type="text" value="" placeholder="1,2,3..." id="p7input"/>
-        <input type="button" value="CHECK" onclick="">
+        <table>
+            <tr>
+                <td><span>Array: </span></td>
+                <td><input type="text" value="" placeholder="1,2,3..." id="p7input"/></td>
+            </tr>
+            <tr>
+                <td><span>Search Value: </span></td>
+                <td><input type="text" placeholder="value" id="p7value"/></td>
+            </tr>
+        </table>
+        <br/>
+        <input type="button" value="CHECK" onclick="binarySearch()">
     </form>
     <script src="arrays.js"></script>
 </section>
