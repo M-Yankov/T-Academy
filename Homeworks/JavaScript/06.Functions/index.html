@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <title>Homework Functions</title>
     <link rel="stylesheet" href="style.css"/>
-
+    <style>
+        #p3input{
+            background-color: white;
+            color: black;
+            font: 12px Arial;
+            border: 1px solid grey;
+            height: 150px;
+        }
+        #p3input::selection{
+            color: blue;
+            background-color: darkgray;
+        }
+        label[for='p3checkbox']{
+            font-size: 16px;
+            font-weight: normal;
+            border-bottom: none;
+        }
+    </style>
 </head>
 <body>
 <aside>
@@ -74,23 +91,20 @@
             <li>The search can be case sensitive or case insensitive.</li>
             <li>Use function overloading.</li>
         </ul>
-        <span>Sequence of numbers: </span><input type="text" value="" placeholder="1,2,3..." id="p3input"/>
-        <input type="checkbox"/> CaseSensitive.
-        <input type="button" value="CHECK" onclick="">
-
-        <p>Note: use simple separator "," Example: "1,3,7,-3,-17,34,5,0";</p>
-
-        <p>Otherwise you can input like that: " &nbsp; 1,2 3 -3, -5 ,2.56 &nbsp; &nbsp; ,&nbsp; &nbsp; &nbsp; 2,-4 4.1
-            &nbsp; ".</p>
+        <span>Text: </span><textarea placeholder="Your text here..." id="p3input"></textarea>
+        <span>Search for: </span><input type="text" id="p3value" placeholder="Word..." />
+        <input type="checkbox" id="p3checkbox"/>
+        <label for="p3checkbox"> CaseSensitive.</label>
+        <input type="button" value="CHECK" onclick="occurrencesWord()">
+        <p>Make notice that cyrillic "e" is different than latin "e"!</p>
     </form>
     <form action="">
         <label>Problem 4. Number of elements</label>
         <ul>
-            <li>Write a function to count the number of div elements on the web page</li>
+            <li>Write a function to count the number of <span>div</span> elements on the web page</li>
         </ul>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="divElements()">
 
-        <p>Example</p>
 
     </form>
     <form>
@@ -110,7 +124,11 @@
             </tr>
         </table>
         <br/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="appearsValue()">
+        <p>Note: use simple separator "," Example: "1,3,7,-3,-17,34,5,0";</p>
+
+        <p>Otherwise you can input like that: " &nbsp; 1,2 3 -3, -5 ,2.56 &nbsp; &nbsp; ,&nbsp; &nbsp; &nbsp; 2,-4 4.1
+            &nbsp; ".</p>
     </form>
     <form>
         <label>Problem 6. Larger than neighbours</label>
@@ -130,7 +148,7 @@
             </tr>
         </table>
         <br/>
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="neighbours()">
 
     </form>
     <form><label>Problem 7. First larger than neighbours</label>
@@ -143,7 +161,7 @@
         <span>Array: </span>
         <input type="text" value="" placeholder="1,2,3..." id="p7input"/>
 
-        <input type="button" value="CHECK" onclick="">
+        <input type="button" value="CHECK" onclick="firstLarger()">
     </form>
     <script src="functions.js"></script>
 </section>
