@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Homework Objects</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<aside>
+    <h3>Console for results</h3>
+    <textarea name="" id="output" cols="30" rows="10" disabled="disabled"></textarea>
+</aside>
+<section>
+    <h1>USing Objects</h1>
+
+    <form>
+        <label>Problem 1. Planar coordinates</label>
+        <ul>
+            <li>Write functions for working with shapes in standard Planar coordinate system. </li>
+            <ul>
+                <li><strong>Points </strong>are represented by coordinate P(X, Y)</li>
+                <li><strong>Lines </strong> are represented by two points, marking their beginning and ending L(P1(X1, Y1), P2(X2, Y2))</li>
+            </ul>
+            <li>Calculate the distance between two points.</li>
+            <li>Check if three segments lines can form a triangle.</li>
+        </ul>
+
+        <input type="button" value="CHECK" onclick="planarCoords()"/>
+
+    </form>
+    <form>
+        <label>Problem 2. Remove elements</label>
+        <ul>
+            <li>Write a function that removes all elements with a given value.</li>
+            <li>Attach it to array type.</li>
+            <br/>
+            <li>Read about <strong>prototype</strong> and how to attach methods.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="removeElements()">
+        <p class="example">var arr = [1, 2, 1, 4, 1, 3, 4, 1, 111, 3, 2, 1, '1'];<br/>
+        arr.remove(1); // arr = [2, 4, 3, 4, 111, 3, 2, '1'];</p>
+
+    </form>
+    <form>
+        <label>Problem 3. Deep copy</label>
+        <ul>
+            <li>Write a function that makes a deep copy of an object.</li>
+            <li>The function should work for both primitive and reference types.</li>
+
+        </ul>
+
+        <input type="button" value="CHECK" onclick="deepCopy()">
+
+    </form>
+    <form action="">
+        <label>Problem 4. Has property</label>
+        <ul>
+            <li>Write a function that checks if a given object contains a given property.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="hasProp()">
+        <p class="example">
+            var obj =  ...; <br/>
+            var hasProp = hasProperty(obj, 'length');
+        </p>
+
+
+    </form>
+    <form>
+        <label>Problem 5. Youngest person</label>
+        <ul>
+            <li>Write a function that finds the youngest person in a given array of people and prints his/her full name</li>
+            <li>Each person has properties firstname, lastname and age.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="youngestPerson()">
+        <p>Example:</p>
+        <p class="example">
+            var people = [ <br/>
+            { firstname : 'Gosho', lastname: 'Petrov', age: 32 }, <br/>
+            { firstname : 'Bay', lastname: 'Ivan', age: 82 }, ... ];
+        </p>
+
+    </form>
+    <form>
+        <label>Problem 6. nameless</label>
+        <ul>
+            <li>Write a function that groups an array of people by age, first or last name.
+            </li>
+            <li>The function must return an associative array, with keys - groups, and values - array with people in this gruops</li>
+            <li>Use function overloading (i.e. just one function)</li>
+        </ul>
+
+
+        <input type="button" value="CHECK" onclick="groupBy()">
+
+        <p>Example:</p>
+        <p class="example">
+            var people = {...}; <br/>
+            var groupedByFname = group(people, 'firstname'); <br/>
+            var groupedByAge = group(people, 'age');
+        </p>
+
+    </form>
+    <script src="objects.js"></script>
+    <script src="objectsLast.js"></script>
+</section>
+
+</body>
+</html>
