@@ -233,8 +233,11 @@ function youngestPerson() {
 }
 
 
-var myBigArray = [1, 2, 3];
-for (var x in myBigArray) {
-    console.log(x);
+function something() {
+    var myBigArray = [1, 2, 3];
+    for (var x in myBigArray) {
+        console.log(x);
+    }
+
 }
-//can yoy answer me when use for( in ) loop it reaches a prototype function like 'reMOVE' and 'print'
+//why when use for( in ) loop it reaches a prototype function like 'reMOVE' and 'print'
