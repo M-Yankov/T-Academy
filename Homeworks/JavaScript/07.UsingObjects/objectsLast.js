@@ -2,18 +2,13 @@
 
 function groupBy() {
     var MakePerson = function (a, b, c) {
-        return {
-            name: a,
-            family: b,
-            age: c,
-            toString : function(){
-                return this.name + ' ' + this.family + ' Age: ' + this.age;
-            }
-        };
+        this.name = a;
+        this.family = b;
+        this.age = c;
     };
-    /*MakePerson.prototype.toString = function() {
+    MakePerson.prototype.toString = function() {
         return this.name + ' ' + this.family + ' Age: ' + this.age;
-    };*/
+    };
     var resultAge,
         resultName,
         resultFamily,

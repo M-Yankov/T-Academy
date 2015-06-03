@@ -9,7 +9,8 @@ function add(text) {
 /*** Problem 1 ***/
 function planarCoords() {
     show('Task 1:');
-    var p1 = pointBuilder(3, 5),
+    var z,
+        p1 = pointBuilder(3, 5),
         p2 = pointBuilder(-1, 2),
         p3 = pointBuilder(0, 3),
         p4 = pointBuilder(-2, -4),
@@ -19,8 +20,8 @@ function planarCoords() {
         line1 = lineBuilder(p1, p2),
         line2 = lineBuilder(p3, p4),
         line3 = lineBuilder(p5, p6);
-    for (var obj in points) {
-        add('p' + ((obj - 0) + 1) + ': ' + points[obj]);
+    for ( z = 0; z < points.length; z += 1) {
+        add('p' + (z + 1) + ': ' + points[z]);
     }
     add('line 1: ' + line1);
     add('line2: ' + line2);
