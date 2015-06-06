@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Homework Strings</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        .normal{
+            background-color: white;
+            border: 1px solid lightgray;
+            color: black;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 10px 0;
+            height: 50px;
+        }
+        .normal::selection{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<aside>
+    <h3>Console for results</h3>
+    <textarea name="" id="output" cols="30" rows="10" disabled="disabled"></textarea>
+</aside>
+<section>
+    <h1>Strings</h1>
+
+    <form>
+        <label>Problem 1. Reverse string</label>
+        <ul>
+            <li>Write a JavaScript function that reverses a string and returns it.</li>
+        </ul>
+        <input type="text" value="" placeholder="Text..." id="p1input" />
+        <input type="button" value="CHECK" onclick="reversing()"/>
+        <p>Example:</p>
+        <table>
+            <tr>
+                <th>Input</th>
+                <th>Output</th>
+            </tr>
+            <tr>
+                <td>sample</td>
+                <td>elpmas</td>
+            </tr>
+        </table>
+
+    </form>
+    <form>
+        <label>Problem 2. Correct brackets</label>
+        <ul>
+            <li>Write a JavaScript function to check if in a given expression the brackets are put correctly.</li>
+        </ul>
+        <input type="text" value="" placeholder="Text..." id="p2input" />
+        <input type="button" value="CHECK" onclick="correctBracets()">
+        <p>Example of correct expression: <span class="marked">((a+b)/5-d)</span>. Example of incorrect expression: <span class="marked">)(a+b))</span>.</p>
+    </form>
+    <form>
+        <label>Problem 3. Sub-string in text</label>
+        <ul>
+            <li>Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).</li>
+        </ul>
+        <span>Search for: </span>
+        <input type="text" value="" placeholder="Value..." id="p3key" /> <br/>
+        <span>In this text: </span>
+        <textarea id="p3text" class="normal" placeholder="Text..."></textarea>
+        <input type="button" value="CHECK" onclick="search()">
+        <p>Example:</p>
+        <div>The Target substring is <span class="marked">in</span></div>
+        <div>
+            The text is as follows: We are liv<strong><strong>in</strong></strong>g <strong>in</strong> an yellow
+            submar<strong>in</strong>e. We don't have anyth<strong>in</strong>g else. <strong>in</strong>side the
+            submar<strong>in</strong>e is very tight. So we are dr<strong>in</strong>k<strong>in</strong>g all the day.
+            We will move out of it <strong>in</strong> 5 days.
+        </div>
+        <div>
+            The result is: <span class="marked">9</span>
+        </div>
+
+    </form>
+    <form action="">
+        <label>Problem 4. Parse tags</label>
+        <ul>
+            <li>You are given a text. Write a function that changes the text in all regions:</li>
+        </ul>
+        <span>Your text here: </span>
+        <textarea id="p4text" class="normal" placeholder="Text..."></textarea>
+        <input type="button" value="CHECK" onclick="parseTags()">
+        <p class="example">
+            &lt;upcase&gt;text&lt;/upcase&gt; to uppercase. <br/>
+            &lt;lowcase&gt;text&lt;/lowcase&gt; to lowercase <br/>
+            &lt;mixcase&gt;text&lt;/mixcase&gt; to mix casing(random)
+        </p>
+        <p>Example:</p>
+        <div>
+            We are <span class="marked">&lt;mixcase&gt;living&lt;/mixcase&gt;</span>  in a <span class="marked">&lt;upcase&gt;yellow submarine&lt;/upcase&gt;</span>.
+            We <span class="marked">&lt;mixcase&gt;don't&lt;/mixcase&gt;</span>
+            have <span class="marked">&lt;lowcase&gt;anything&lt;/lowcase&gt;</span> else.
+        </div>
+        <p>Expected result:</p>
+        <div>We are LiVinG in a YELLOW SUBMARINE. We dOn'T have anything else.</div>
+        <p>Note: regions can be nested.</p>
+
+    </form>
+    <form>
+        <label>Problem 5. nbsp</label>
+        <ul>
+            <li>Write a function that replaces non breaking white-spaces in a text with <span>&amp;nbsp</span>;</li>
+        </ul>
+        <span>Type below:</span>
+        <textarea id="p5text" class="normal" placeholder="Text..."></textarea>
+        <input type="button" value="CHECK" onclick="notbreakSpace()">
+
+    </form>
+    <form>
+        <label>Problem 6. Extract text from HTML</label>
+        <ul>
+            <li>Write a function that extracts the content of a html page given as text.</li>
+            <li>That function shoud return anything that is a tag, without the tags</li>
+        </ul>
+        <span>HTML code: </span>
+        <textarea id="p6text" class="normal" placeholder="Text..."></textarea>
+
+        <input type="button" value="CHECK" onclick="extractTextFromHTML()">
+
+        <p>Example:</p>
+        <pre class="example">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Sample site&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div&gt;text
+        &lt;div&gt;more text&lt;/div&gt;
+        and more...
+    &lt;/div&gt;
+    in body
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <p>Result:</p>
+        <div>Sample sitetextmore textand more...in body</div>
+
+    </form>
+    <form>
+        <label>Problem 7. Parse URL</label>
+        <ul>
+            <li>Write a script that parses a URL address given in the format: <br/>
+            <span>[protocol]://[server]/[resource]</span> and extracts from in the <br/>
+            <span>[protocol]</span>, <span>[server]</span> and <span>[resource]</span> elements.</li>
+            <li>Return the elements is a JSON object.</li>
+        </ul>
+        <span>URL: </span>
+        <input type="text" value="" id="p7input" placeholder="http://abv.bg/user123/mail/" />
+        <input type="button" value="CHECK" onclick="urlParser()">
+        <p>Example:</p>
+        <table>
+            <tr>
+                <th>URL</th>
+                <th>result</th>
+            </tr>
+            <tr>
+                <td><span class="marked">http://telerikacademy.com/Courses/Courses/Details/239</span></td>
+                <td>{ protocol: <span class="marked">http</span>, <br/>
+                server: <span class="marked">telerikacademy.com</span> <br/>
+                resource: <span class="marked">/Courses/Courses/Details/239</span></td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <label>Problem 8. Replace tags</label>
+        <ul>
+            <li>Write a JavaScript function that replaces in a HTML document given as string all the tags
+                <span>&lt;a href="...."&gt;...&lt;a&gt;</span> with corresponding tags <span>[URL=...]...[/URL] </span>.</li>
+        </ul>
+        <span>link: </span>
+        <input type="text"  value="" id="p8input"  placeholder="<a href=&quot;http://telerikacademy.bg> Telerik Academy</a>" >
+        <input type="button" value="CHECK" onclick="link()">
+        <p>Example:</p>
+        <table>
+            <tr>
+                <th>input</th>
+                <th>output</th>
+            </tr>
+            <tr>
+                <td><span class="marked">&lt;p&gt;Please visit &lt;a href="http://academy.telerik.com"&gt;our site&lt;/a&gt; to choose a 
+                    training course. Also visit &lt;a href="www.devbg.org"&gt;our forum&lt;/a&gt; to discuss the courses.&lt;/p&gt;</span></td>
+                <td><span class="marked">&lt;p&gt;Please visit [URL=http://academy.telerik.com]our site[/URL] to choose a 
+                    training course. Also visit [URL=www.devbg.org]our forum[/URL] to discuss the courses.&lt;/p&gt;</span></td>
+            </tr>
+        </table>
+
+    </form>
+    <form>
+        <label>
+            Problem 9. Extract e-mails
+        </label>
+        <ul>
+            <li>Write a function for extracting all email addresses from given text.</li>
+            <li>All sub-strings that match the format @... should be recognized as emails.</li>
+            <li>Return the emails as arrays of strings.</li>
+        </ul>
+        <span>email here: </span>
+        <input type="text"  value="" id="p9input"  placeholder="pesho@gmail.com" />
+        <input type="button" value="CHECK" onclick="mail()">
+    </form>
+    <form >
+        <label >Problem 10. Find palindromes</label>
+        <ul>
+            <li>Write a program that extracts from a given text all palindromes, e.g "ABBA", "lamal", "exe".</li>
+        </ul>
+        <span>Type here: </span>
+        <input type="text"  value="" id="p10input"  placeholder="lamal" />
+        <input type="button" value="CHECK" onclick="palindromes()">
+    </form>
+    <form action="">
+        <label >Problem 11. String format</label>
+        <ul>
+            <li>Write a function that formats a string using placeholders.</li>
+            <li>The function should work up to 30 placeholders and all types.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="notFinished()">
+        <p>Examples:</p>
+        <p class="example">
+            var str = stringFormat('Hello {0}!', 'Peter'); <br/>
+            //str = 'Hello Peter!'; <br/>
+
+            var frmt = '{0}, {1}, {0} text {2}'; <br/>
+            var str = stringFormat(frmt, 1, 'Pesho', 'Gosho'); <br/>
+            //str = '1, Pesho, 1 text Gosho' <br/>
+        </p>
+    </form>
+    <form>
+        <label>Problem 12. Generate list</label>
+        <ul>
+            <li>Write a function that creates a HTML <span>&lt;ul&gt;</span> using template for every HTML <span>&lt;li&gt;</span>.</li>
+            <li>The source  of the list should be an array of elements.</li>
+            <li>Replace all placeholders marked with -{...}- with the value of the corresponding property of the object.</li>
+        </ul>
+        <input type="button" value="CHECK" onclick="notFinished()">
+        <p>Example HTML:</p>
+        <p class="example">
+        &lt;div data-type="template" id="list-item"&gt; <br/>
+            &lt;strong&gt;-{name}-&lt;/strong&gt; &lt;span&gt;-{age}-&lt;/span&gt; <br/>
+            &lt;/div&gt;
+        </p>
+        <p>JavaScript:</p>
+        <p class="example"> var people = [{name: 'Peter', age: 14},…]; <br/>
+            var tmpl = document.getElementById('list-item').innerHtml; <br/>
+            var peopleList = generateList(people, template); <br/>
+            //peopleList = '&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Peter&lt;/strong&gt; &lt;span&gt;14&lt;/span&gt;&lt;/li&gt;&lt;li&gt;…&lt;/li&gt;…&lt;/ul&gt;'</p>
+    </form>
+    <script src="strings.js"></script>
+    <script src=""></script>
+
+
+
+</section>
+
+</body>
+</html>
