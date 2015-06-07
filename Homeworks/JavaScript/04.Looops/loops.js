@@ -74,7 +74,7 @@ function minMax() {
     show(numbers);
     // there is another methods in stackoverflow
 }
-function properties() {
+function props() {
     var min = 'z',
         max = 'a';
     for (var key in document) {
