@@ -93,5 +93,7 @@ console.log(test.bind(test, {name: 'Elena', link: 'http://telerikacademy.com'}))
 var example = '<div data-bind-content="name"></div>';
 console.log(example.bind(example, {name : 'Steven'}));
 
+// You will see that results have also a data-bind tags , I prefer to remove them. I don't know for what they're.
+
 // Tag a don's have attribute content!
 // Result it's not the same but that's it.
