@@ -63,10 +63,10 @@ function solve() {
 
             if (len < 3 || len > 20) {
                 throw 'Error in name length!';
-            }
-
-            if (regExer.test(name)) {
+            } else if (regExer.test(name)) {
                 throw 'cyrillic letters are NOT allowed!';
+            } else if (!(/^[A-Za-z]{3,20}$/.test(name))) {
+                throw 'Only latin letters without any symbols please!';
             }
         }
 
