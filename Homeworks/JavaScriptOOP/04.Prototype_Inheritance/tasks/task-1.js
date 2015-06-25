@@ -34,6 +34,15 @@ function solve() {
                 return this;
             },
 
+            removeAttribute: function(name){
+                if(this.attributes.hasOwnProperty(name)){
+                    delete this.attributes[name];
+                    return this;
+                } else {
+                    throw new Error('Removing property is invalid.');
+                }
+
+            },
 
             type: {
                 get: function () {
@@ -126,83 +135,5 @@ function solve() {
     }());
     return domElement;
 }
-
-/*var style = Object.create(solve())
-        .init('style')
-        .appendChild('#big {\nfont-size: 144pt;\n}'),
-    link = Object.create(solve())
-        .init('link')
-        .addAttribute('src', 'css/fancy.css'),
-    meta = Object.create(solve())
-        .init('meta')
-        .addAttribute('charset', 'utf-8'),
-    title = Object.create(solve())
-        .init('title')
-        .appendChild('Super-Mega awesome S173'),
-    script = Object.create(solve())
-        .init('script')
-        .addAttribute('lang', 'javascript')
-        .appendChild('function init(){}'),
-    head = Object.create(solve())
-        .init('head')
-        .appendChild(meta)
-        .appendChild(title)
-        .appendChild(link)
-        .appendChild(style)
-        .appendChild(script),
-    heading = Object.create(solve())
-        .init('h1'),
-    luser = Object.create(solve())
-        .init('label')
-        .addAttribute('for', 'username')
-        .addAttribute('class', 'big'),
-    lpass = Object.create(solve())
-        .init('label')
-        .addAttribute('for', 'password'),
-    user = Object.create(solve())
-        .init('input')
-        .addAttribute('name', 'username')
-        .addAttribute('id', 'username')
-        .addAttribute('type', 'input')
-        .addAttribute('tab-index', 1),
-    pass = Object.create(solve())
-        .init('input')
-        .addAttribute('name', 'password')
-        .addAttribute('id', 'password')
-        .addAttribute('type', 'password')
-        .addAttribute('tab-index', 2),
-    submit = Object.create(solve())
-        .init('input')
-        .addAttribute('type', 'submit')
-        .addAttribute('value', 'natis'),
-    form = Object.create(solve())
-        .init('form')
-        .appendChild(luser)
-        .appendChild(user)
-        .addAttribute('action', 'vlez/mi/u/profila')
-        .appendChild(lpass)
-        .addAttribute('method', 'post')
-        .appendChild(pass)
-        .appendChild(submit),
-    footer = Object.create(solve())
-        .init('footer'),
-    body = Object.create(solve())
-        .init('body')
-        .appendChild(heading)
-        .appendChild(form)
-        .appendChild('reklamata')
-        .appendChild(footer),
-    html = Object.create(solve())
-        .init('html')
-        .appendChild(head)
-        .appendChild(body);
-
-heading.content = 'tova izliza v golemi bukvi';
-head.content = 'tova ne trqbva da izliza';
-luser.content = 'Username: ';
-lpass.content = 'Password: ';
-footer.content = 'stiga tolkoz';
-
-console.log(html.innerHTML);*/
 
 module.exports = solve;
