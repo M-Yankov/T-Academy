@@ -18,7 +18,7 @@ function solve() {
             appendChild: function (child) {
                 if (typeof child === 'object') {
                     child.parent = this;
-                    this.childs.push(child.innerHTML); // pushing childs like a string.
+                    this.childs.push(child); // pushing childs like a objects.
                 } else {
                     // string
                     this.childs.push(child);
@@ -90,8 +90,14 @@ function solve() {
                 }
 
                 for (i = 0; i < that.childs.length; i += 1) {
-                    childrenToString += that.childs[i];
+                    if(typeof that.childs[i] === 'string'){
+                        childrenToString += that.childs[i];
+                    } else{
+
+                        childrenToString += that.childs[i].innerHTML;
+                    }
                 }
+
                 return '<' + this.type + attributes + '>' + childrenToString + this.content + '</' + this.type + '>';
             }
         };
@@ -198,11 +204,5 @@ lpass.content = 'Password: ';
 footer.content = 'stiga tolkoz';
 
 console.log(html.innerHTML);*/
-
-var a  = Object.create(solve()).init('div');
-var b = Object.create(solve()).init('p').appendChild(a);
-var c = Object.create(solve()).init('body').appendChild(b);
-a.content = "Some variavble";
-console.log(c.innerHTML);
 
 module.exports = solve;
