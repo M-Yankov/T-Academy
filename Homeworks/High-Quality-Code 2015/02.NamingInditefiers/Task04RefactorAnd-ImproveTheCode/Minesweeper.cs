@@ -295,24 +295,24 @@ namespace Minesweeper
             return playground;
         }
 
-        /*
-        private static void smetki(char[,] pole)
+        
+        private static void MinesAroundField(char[,] playground)
         {
-            int kol = pole.GetLength(0);
-            int red = pole.GetLength(1);
+            int col = playground.GetLength(0);
+            int row = playground.GetLength(1);
 
-            for (int i = 0; i < kol; i++)
+            for (int i = 0; i < col; i++)
             {
-                for (int j = 0; j < red; j++)
+                for (int j = 0; j < row; j++)
                 {
-                    if (pole[i, j] != '*')
+                    if (playground[i, j] != '*')
                     {
-                        char kolkoo = CalculateMinesAroundField(pole, i, j);
-                        pole[i, j] = kolkoo;
+                        char numberOfMines = CalculateMinesAroundField(playground, i, j);
+                        playground[i, j] = numberOfMines;
                     }
                 }
             }
-        }*/
+        }
 
         private static char CalculateMinesAroundField(char[,] board, int row, int column)
         {
