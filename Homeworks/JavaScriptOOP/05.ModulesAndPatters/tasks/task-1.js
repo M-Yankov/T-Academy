@@ -60,10 +60,6 @@ function solve() {
             };
         }()),
 
-        presentations: [],
-
-        students: [],
-
         init: function (title, presentations) {
             validation(title);
             if (presentations.length === 0) {
