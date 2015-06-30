@@ -50,16 +50,6 @@ function solve() {
     }
 
     var Course = {
-        // Singleton function
-        getId: (function () {
-            var id = 0;
-            return {
-                get: function () {
-                    return ++id;
-                }
-            };
-        }()),
-
         init: function (title, presentations) {
             validation(title);
             if (presentations.length === 0) {
@@ -76,6 +66,7 @@ function solve() {
             this.title = title;
             this.presentations = presentations.slice();
             this.students = [];
+            this.studentID = 0;
             return this;
         },
 
@@ -88,7 +79,7 @@ function solve() {
 
             student.firstname = firstName;
             student.lastname = lastName;
-            student.id = this.getId.get();
+            student.id = ++this.studentID;
 
             this.students.push(student);
             return student.id;
@@ -155,16 +146,5 @@ function solve() {
     };
     return Course;
 }
-
-function test() {
-    var id,
-        jsoop = Object.create(solve());
-    jsoop.init('JavaScriptOOP', ['Wall hack']);
-    id = jsoop.addStudent('Myname' + ' ' + 'Islong');
-    jsoop.submitHomework(id, 1);
-    console.log(jsoop.getAllStudents());
-}
-
-test();
 
 module.exports = solve;
