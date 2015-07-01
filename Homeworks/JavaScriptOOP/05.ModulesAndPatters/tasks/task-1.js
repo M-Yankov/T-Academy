@@ -39,13 +39,13 @@ function solve() {
         array.forEach(function (element) {
            arrayOfIDs.push(element.StudentID);
         });
+
         for (k = 0; k < arrLength; k += 1) {
             if(arrayForKeepStudents.indexOf(arrayOfIDs[k]) !== -1){
                 throw new Error('Ids can\'t duplicate! --> pushExamResults()!');
             } else {
                 arrayForKeepStudents.push(arrayOfIDs[k]);
             }
-
         }
     }
 
@@ -63,6 +63,7 @@ function solve() {
             if(!hasCorrectNamesPresentation){
                 throw new Error('Presentation with empty names are not allowed');
             }
+
             this.title = title;
             this.presentations = presentations.slice();
             this.students = [];
@@ -110,6 +111,10 @@ function solve() {
         },
 
         pushExamResults: function (results) {
+            if(results === undefined || results === null || results.length < 1 || !Array.isArray(results)){
+                throw new Error('Must push array as parameter in pushExamResults!');
+            }
+
             this.students.forEach(function (element, index, array) {
                 array[index].score = 0;
             });
@@ -121,7 +126,7 @@ function solve() {
                     return element.StudentID <= lenStudents;
                 }),
                 allStudentsHasScoreFromTypeNumber = results.every(function (element, index, array) {
-                    return !isNaN(element.Score);
+                    return !isNaN(element.score);
                 });
 
             if (!allStudentsHasCorrectIDs) {
@@ -135,7 +140,7 @@ function solve() {
             checkDuplicateIds(results);
 
             for (z = 0; z < lenResults; z += 1) {
-                this.students[results[z].StudentID].score = results[z].Score;
+                this.students[(results[z].StudentID) - 1].score = results[z].score;
             }
 
         },
@@ -144,6 +149,7 @@ function solve() {
 
         }
     };
+
     return Course;
 }
 
