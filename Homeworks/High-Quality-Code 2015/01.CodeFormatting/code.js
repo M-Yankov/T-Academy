@@ -1,41 +1,41 @@
 "use strict";
 
-var theLayer; // I think it's better to add a variable with this name here.
-var b = navigator.appName;
-var addScroll = false;
+var theLayer, // I think it's better to add a variable with this name here.
+    b = navigator.appName,
+    addScroll = false,
+    off = 0,
+    txt = "",
+    pX = 0,
+    pY = 0;
+
 
 if ((navigator.userAgent.indexOf('MSIE 5') > 0) || (navigator.userAgent.indexOf('MSIE 6')) > 0) {
     addScroll = true;
 }
 
-var off = 0;
-var txt = "";
-var pX = 0;
-var pY = 0;
 
-document.onmousemove = mouseMove;
-if (b === "Netscape") {
-    document.captureEvents(Event.MOUSEMOVE)
-}
 
 function mouseMove(evn) {
     if (b === "Netscape") {
         pX = evn.pageX - 5;
         pY = evn.pageY;
-    } else {
-        pX = event.x - 5;
-        pY = event.y;
-    }
 
-    if (b === "Netscape") {
         if (document.layers['ToolTip'].visibility === 'show') {
             PopTip();
         }
     } else {
+        pX = event.x - 5;
+        pY = event.y;
+
         if (document.all['ToolTip'].style.visibility === 'visible') {
             PopTip();
         }
     }
+}
+
+document.onmousemove = mouseMove;
+if (b === "Netscape") {
+    document.captureEvents(Event.MOUSEMOVE)
 }
 
 function PopTip() {
@@ -99,7 +99,6 @@ function ShowMenu1() {
     }
 }
 
-//
 function HideMenu2() {
     if (b === "Netscape") {
         document.layers['menu2'].visibility = 'hide';
