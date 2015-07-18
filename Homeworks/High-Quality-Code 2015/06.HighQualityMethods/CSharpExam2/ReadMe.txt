@@ -1,0 +1,1 @@
+My solution from exim is in "OldSolutions", the same solution, but refactored is in "Refactored". Main Method are named different just for testing purposes. Example : OldMain, OldMainMethod e.t.c.
