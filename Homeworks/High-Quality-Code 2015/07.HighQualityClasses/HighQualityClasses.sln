@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodAbstraction", "..\..\..\HighQualityClasses\GoodAbstraction\GoodAbstraction.csproj", "{39315CDE-678C-41FD-96A5-B53B6E36C69D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CohesionAndCoupling", "CohesionAndCoupling\CohesionAndCoupling.csproj", "{1BB55DAB-8A9B-4EC2-86ED-B4167CF01CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceAndPolymorphism", "InheritanceAndPolymorphism\InheritanceAndPolymorphism.csproj", "{FF4579F4-F551-49A1-8276-0FC0AA1FEB7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39315CDE-678C-41FD-96A5-B53B6E36C69D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39315CDE-678C-41FD-96A5-B53B6E36C69D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39315CDE-678C-41FD-96A5-B53B6E36C69D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39315CDE-678C-41FD-96A5-B53B6E36C69D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB55DAB-8A9B-4EC2-86ED-B4167CF01CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB55DAB-8A9B-4EC2-86ED-B4167CF01CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB55DAB-8A9B-4EC2-86ED-B4167CF01CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB55DAB-8A9B-4EC2-86ED-B4167CF01CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4579F4-F551-49A1-8276-0FC0AA1FEB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4579F4-F551-49A1-8276-0FC0AA1FEB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4579F4-F551-49A1-8276-0FC0AA1FEB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4579F4-F551-49A1-8276-0FC0AA1FEB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
