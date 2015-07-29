@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVG DOM API Windows 8 Metro</title>
+    <script src="Script/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <svg id="svg-draw" width="600" height="400">
+        <filter id="colorMeMatrix">
+            <feColorMatrix in="SourceGraphic"
+                           type="matrix"
+                           values="1 1 1 1 0
+                                   1 1 1 1 0
+                                   1 1 1 1 0
+                                   0 0 0 1 0" />
+        </filter>
+    </svg>
+    <script src="Script/windows8screen.js"></script>
+    <script type="text/javascript">
+        /* bug to fix with stuped image*/
+        $('#svg-draw rect').mouseenter(function() {
+            $(this).css('stroke','rgb(51, 204, 239)');
+            $(this).css('stroke-width','5px');
+            $(this).css('stroke-opacity','0.6');
+        });
+        $('#svg-draw rect').mouseleave(function() {
+            $(this).css('stroke','none');
+        });
+    </script>
+</body>
+</html>

@@ -1,7 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolarSystem", "SolarSystem.csproj", "{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compare Simple Math", "..\CompareTasks\Compare Simple Math.csproj", "{6CAA16E7-D164-4846-8265-095FB530315D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareAdvacedMath", "..\CompareAdvacedMath\CompareAdvacedMath.csproj", "{4DBA8A1A-9827-44A3-9AC1-88663F824A12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareSortAlgorithms", "CompareSortAlgorithms\CompareSortAlgorithms.csproj", "{AECC7B5B-FC33-4535-9E65-D4B942B7FA2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +21,18 @@ Global
 		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F30E9AF-8256-40AF-B356-EA14E55CE9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAA16E7-D164-4846-8265-095FB530315D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAA16E7-D164-4846-8265-095FB530315D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAA16E7-D164-4846-8265-095FB530315D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAA16E7-D164-4846-8265-095FB530315D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBA8A1A-9827-44A3-9AC1-88663F824A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBA8A1A-9827-44A3-9AC1-88663F824A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBA8A1A-9827-44A3-9AC1-88663F824A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBA8A1A-9827-44A3-9AC1-88663F824A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECC7B5B-FC33-4535-9E65-D4B942B7FA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECC7B5B-FC33-4535-9E65-D4B942B7FA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECC7B5B-FC33-4535-9E65-D4B942B7FA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECC7B5B-FC33-4535-9E65-D4B942B7FA2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
