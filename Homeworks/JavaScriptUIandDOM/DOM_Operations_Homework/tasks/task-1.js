@@ -19,8 +19,7 @@
 var solve = function () {
     return function (element, contents) {
         validation(element, contents);
-        var fragment = document.createDocumentFragment(),
-            len = contents.length,
+        var len = contents.length,
             typeOfElement = typeof (element),
             htmlCode = '',
             i,
