@@ -27,8 +27,8 @@ function solve() {
 
 		$('.button').html('hide');
 		$(selector).on('click', '.button', function () {
-			var currentButton = $(this),
-				contentElement = currentButton.next() || undefined,
+			var $currentButton = $(this),
+				contentElement = $currentButton.next() || undefined,
 				displayProp;
 
 			if (!contentElement) {
@@ -44,10 +44,10 @@ function solve() {
 
 			if (displayProp === '' || displayProp === 'block' || displayProp === 'inline-block' || displayProp === 'inline') {
 				contentElement.css('display', 'none');
-				currentButton.html('show');
+				$currentButton.html('show');
 			} else {
 				contentElement.css('display', '');
-				currentButton.html('hide');
+				$currentButton.html('hide');
 			}
 		});
 
