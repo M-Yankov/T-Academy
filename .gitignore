@@ -240,3 +240,4 @@ FakesAssemblies/
 *.opt
 
 *.StyleCop
+.idea/
