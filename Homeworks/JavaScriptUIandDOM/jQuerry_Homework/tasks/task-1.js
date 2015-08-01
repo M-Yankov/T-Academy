@@ -26,7 +26,7 @@ function solve() {
 		validation(selector, count);
 
 		var DOMElement = $(selector),
-			ul = $('<ul />').addClass('items-list'),
+			$ul = $('<ul />').addClass('items-list'),
 			len = count - 0,
 			li,
 			i;
@@ -37,10 +37,10 @@ function solve() {
 
 		for (i = 0; i < len; i += 1) {
 			li = $('<li />').addClass('list-item').html('List item #' + i);
-			ul.append(li);
+			$ul.append(li);
 		}
 
-		DOMElement.append(ul);
+		DOMElement.append($ul);
 
 		function validation(selector, number) {
 			if(typeof (selector) !== 'string'){
