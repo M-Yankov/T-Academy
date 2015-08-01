@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Example Templates</title>
+    <script src="handlebars-v3.0.3.js"></script>
+    <style>
+        .details {
+            font: 12px Consolas;
+            float: right;
+        }
+
+        .message {
+            width: 300px;
+        }
+
+        .author {
+            border: 2px solid #38751e;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <span>other content</span>
+
+    <script id="template" type="text/x-handlebars-template">
+        <h3>Last posts</h3>
+        <ul>
+            {{#each items}}
+            <li id="post#{{@index}}">
+                <span class="author">
+
+                    {{# if stats}}
+                    {{author}}[<a href="#">{{stats}}</a>]
+                    {{else}}
+                    {{author}}
+                    {{/ if}}
+                    said:
+                </span>
+                <p class="message">
+                    {{{message}}}<br />
+                    {{#with this.location.town}}
+                    <span class="details">From:{{name}}[{{code}}]</span>
+                    {{/with}}
+                </p>
+
+            </li>
+            {{/ each}}
+        </ul>
+    </script>
+    <script>
+        var doc = document.getElementById("template").innerHTML;
+        var template = Handlebars.compile(doc);
+        var forumPosts = {
+            items: [
+                {
+                    id: 1,
+                    author: "Peter",
+                    message: "Hello, I'm Peter and I use Visual Studio.",
+                    stats: 156,
+                    location: {
+                        town: {
+                            name: "Sofia",
+                            code: "1400"
+                        }
+                    }
+                },
+                {
+                    id: 2,
+                    author: "Ivan",
+                    message: "Hi there, I have a problem installing this IDE.",
+                    location: {
+                        town: {
+                            name: "London",
+                            code: "6500"
+                        }
+                    }
+                },
+                {
+                    id: 3,
+                    author: "John",
+                    message: "Please use this link <a href=\"http://microsoft.com\">Installation</a> guide.",
+                    stats: 106,
+                    location: {
+                        town: {
+                            name: "Paris",
+                            code: "4564"
+                        }
+                    }
+                }
+            ]
+        };
+
+        var htmlCompiledCode = template(forumPosts);
+        document.body.innerHTML = htmlCompiledCode;
+    </script>
+</body>
+
+</html>
