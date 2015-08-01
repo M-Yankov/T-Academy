@@ -240,4 +240,5 @@ FakesAssemblies/
 *.opt
 
 *.StyleCop
-.idea/
+.idea/*
+/Homeworks/JavaScriptUIandDOM/jQuerry_Homework/.idea/libraries/jQuerry_Homework_node_modules.xml
