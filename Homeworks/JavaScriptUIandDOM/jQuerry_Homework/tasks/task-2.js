@@ -56,7 +56,7 @@ function solve() {
 				throw new Error('No params Provided!');
 			}
 
-			if (!(object instanceof jQuery) && typeof (object) !== 'string') {
+			if (typeof (object) !== 'string') {
 				throw new ReferenceError('Selector is not a jQuery or a string type!');
 			}
 
