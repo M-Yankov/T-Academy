@@ -1,5 +1,5 @@
 Hi,
-Plaese open UnitTestingHomework.sln in Visual Studio. In Solution Explorer You will see two directories: Task1; Task2 and Task3;
+Please open UnitTestingHomework.sln in Visual Studio. In Solution Explorer You will see two directories: Task1; Task2 and Task3;
 
 	• Tests for task1 is in StudentsAndCoursesTest/. To see results from Code Coverage I exports it in folder next to .sln file. Open Code Coverage Results window in VS and click on inport results then navigate to user_LENOVO-TestResultsForStudentsTest. Somethimes Test>Analyze code coverage> all tests not works property.
 
