@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Santase.Logic.CardWinner" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CardWinner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.GameHand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABBAAAAGAAAIBAQQCoAAACKAAAAEAEQAkBAAAIAAA=</HashCode>
+      <FileName>GameHand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.GameRound" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACQAAIAAwYCIAAAAIBAAANAEVCGBACAACAg=</HashCode>
+      <FileName>GameRound.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.InternalGameException" Collapsed="true">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InternalGameException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.PlayerActionValidater" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PlayerActionValidater.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.SantaseGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAEAAAAIAIAAAAAAAgEABAISABIAAAAAA=</HashCode>
+      <FileName>SantaseGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.Cards.Card" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAIAAAAAAEgAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Cards\Card.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.Cards.CardExtensions" Collapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Cards\CardExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.Cards.Deck" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAABAAAAAAAgEAAAQAEAAAAAJA=</HashCode>
+      <FileName>Cards\Deck.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.Extensions.EnumerableExtensions" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Extensions\EnumerableExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.Extensions.RandomProvider" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\RandomProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.Players.BasePlayer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAAAAAAAAAAAAgBAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Players\BasePlayer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Santase.Logic.Players.PlayerAction" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Players\PlayerAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.Players.PlayerTurnContext" Collapsed="true">
+    <Position X="15" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAECAAkAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Players\PlayerTurnContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.RoundStates.BaseRoundState" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAgABAgAAACKAAAA=</HashCode>
+      <FileName>RoundStates\BaseRoundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.RoundStates.FinalRoundState" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAgABAAAAACIAAAA=</HashCode>
+      <FileName>RoundStates\FinalRoundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.RoundStates.MoreThanTwoCardsLeftRoundState" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAgABAAAAACIAAAA=</HashCode>
+      <FileName>RoundStates\MoreThanTwoCardsLeftRoundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.RoundStates.StartRoundState" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAgABAAAAACIAAAA=</HashCode>
+      <FileName>RoundStates\StartRoundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Santase.Logic.RoundStates.TwoCardsLeftRoundState" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAEAgABAAAAACIAAAA=</HashCode>
+      <FileName>RoundStates\TwoCardsLeftRoundState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Santase.Logic.ICardWinner" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ICardWinner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.IGameHand" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAABAAACgAAAAIAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>IGameHand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.IGameRound" Collapsed="true">
+    <Position X="15" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAAAIAAwAAAAAAAABAAAAAAAACAAAAACAA=</HashCode>
+      <FileName>IGameRound.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.IPlayerActionValidater" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPlayerActionValidater.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.ISantaseGame" Collapsed="true">
+    <Position X="13.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISantaseGame.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.Cards.IDeck" Collapsed="true">
+    <Position X="11.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAEAAAAAEAAAAABA=</HashCode>
+      <FileName>Cards\IDeck.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Santase.Logic.Players.IPlayer" Collapsed="true">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Players\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Santase.Logic.Announce" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAAA=</HashCode>
+      <FileName>Announce.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Santase.Logic.PlayerPosition" Collapsed="true">
+    <Position X="9.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>PlayerPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Santase.Logic.Cards.CardSuit" Collapsed="true">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAACAACA=</HashCode>
+      <FileName>Cards\CardSuit.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Santase.Logic.Cards.CardType" Collapsed="true">
+    <Position X="13.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAggAAAAAAAAAAAAAAABAAAAAAAAAAAAEE=</HashCode>
+      <FileName>Cards\CardType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Santase.Logic.Players.PlayerActionType" Collapsed="true">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEgAAAAA=</HashCode>
+      <FileName>Players\PlayerActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
