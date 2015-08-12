@@ -189,5 +189,160 @@
 
             Assert.AreEqual(results.Count, countOfAllTrueResults);
         }
+
+        // One pair
+        [Test]
+        public void TestOnePair()
+        {
+            IList<ICard> onePair = new List<ICard>();
+
+            onePair.Add(new Card(CardFace.King, CardSuit.Clubs));
+            onePair.Add(new Card(CardFace.Seven, CardSuit.Spades));
+            onePair.Add(new Card(CardFace.Ten, CardSuit.Hearts));
+            onePair.Add(new Card(CardFace.Ten, CardSuit.Spades));
+            onePair.Add(new Card(CardFace.Ace, CardSuit.Spades));
+
+            Hand cards = new Hand(onePair);
+            Assert.IsTrue(this.checker.IsOnePair(cards));
+        }
+
+        [Test]
+        public void TestFakeOnePair()
+        {
+            IList<ICard> threeOfAKind = new List<ICard>();
+
+            threeOfAKind.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            threeOfAKind.Add(new Card(CardFace.Seven, CardSuit.Spades));
+            threeOfAKind.Add(new Card(CardFace.Ace, CardSuit.Hearts));
+            threeOfAKind.Add(new Card(CardFace.Seven, CardSuit.Diamonds));
+            threeOfAKind.Add(new Card(CardFace.Ace, CardSuit.Spades));
+
+            Hand cards = new Hand(threeOfAKind);
+            Assert.IsFalse(this.checker.IsOnePair(cards));
+        }
+
+        // Two pairs
+        [Test]
+        public void TestTwopairs()
+        {
+            IList<ICard> twoPairs = new List<ICard>();
+
+            twoPairs.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            twoPairs.Add(new Card(CardFace.Seven, CardSuit.Spades));
+            twoPairs.Add(new Card(CardFace.Ace, CardSuit.Hearts));
+            twoPairs.Add(new Card(CardFace.Seven, CardSuit.Diamonds));
+            twoPairs.Add(new Card(CardFace.King, CardSuit.Spades));
+
+            Hand cards = new Hand(twoPairs);
+            Assert.IsTrue(this.checker.IsTwoPair(cards));
+        }
+
+        [Test]
+        public void TestTwoFakePairs()
+        {
+            IList<ICard> twoFakePairs = new List<ICard>();
+
+            twoFakePairs.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            twoFakePairs.Add(new Card(CardFace.Seven, CardSuit.Spades));
+            twoFakePairs.Add(new Card(CardFace.Ace, CardSuit.Spades));
+            twoFakePairs.Add(new Card(CardFace.Seven, CardSuit.Diamonds));
+            twoFakePairs.Add(new Card(CardFace.Seven, CardSuit.Clubs));
+
+            Hand cards = new Hand(twoFakePairs);
+            Assert.IsFalse(this.checker.IsTwoPair(cards));
+        }
+
+        // Three of a kind
+        [Test]
+        public void TestThreeOfAKind()
+        {
+            IList<ICard> threeKind = new List<ICard>();
+
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Spades));
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Hearts));
+            threeKind.Add(new Card(CardFace.Seven, CardSuit.Hearts));
+            threeKind.Add(new Card(CardFace.Queen, CardSuit.Hearts));
+
+            Hand cards = new Hand(threeKind);
+            Assert.IsTrue(this.checker.IsThreeOfAKind(cards));
+        }
+
+        [Test]
+        public void TestFakeThreeOfAKind()
+        {
+            IList<ICard> threeKind = new List<ICard>();
+
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Spades));
+            threeKind.Add(new Card(CardFace.Ace, CardSuit.Hearts));
+            threeKind.Add(new Card(CardFace.Queen, CardSuit.Hearts));
+            threeKind.Add(new Card(CardFace.Queen, CardSuit.Clubs));
+
+            Hand cards = new Hand(threeKind);
+            Assert.IsFalse(this.checker.IsThreeOfAKind(cards));
+        }
+
+        // Strait
+        [Test]
+        public void TestStrait()
+        {
+            IList<ICard> strait = new List<ICard>();
+
+            strait.Add(new Card(CardFace.Nine, CardSuit.Clubs));
+            strait.Add(new Card(CardFace.Queen, CardSuit.Spades));
+            strait.Add(new Card(CardFace.Jack, CardSuit.Hearts));
+            strait.Add(new Card(CardFace.Ten, CardSuit.Hearts));
+            strait.Add(new Card(CardFace.King, CardSuit.Clubs));
+
+            Hand cards = new Hand(strait);
+            Assert.IsTrue(this.checker.IsStraight(cards));
+        }
+
+        [Test]
+        public void TestAnotherStrait()
+        {
+            IList<ICard> strait = new List<ICard>();
+
+            strait.Add(new Card(CardFace.Four, CardSuit.Clubs));
+            strait.Add(new Card(CardFace.Five, CardSuit.Spades));
+            strait.Add(new Card(CardFace.Six, CardSuit.Hearts));
+            strait.Add(new Card(CardFace.Seven, CardSuit.Hearts));
+            strait.Add(new Card(CardFace.Eight, CardSuit.Clubs));
+
+            Hand cards = new Hand(strait);
+            Assert.IsTrue(this.checker.IsStraight(cards));
+        }
+
+        // IsHighCard 
+        [Test]
+        public void TestHighCard()
+        {
+            IList<ICard> differentFaces = new List<ICard>();
+
+            differentFaces.Add(new Card(CardFace.Ace, CardSuit.Clubs));
+            differentFaces.Add(new Card(CardFace.Five, CardSuit.Spades));
+            differentFaces.Add(new Card(CardFace.Six, CardSuit.Hearts));
+            differentFaces.Add(new Card(CardFace.Jack, CardSuit.Hearts));
+            differentFaces.Add(new Card(CardFace.Eight, CardSuit.Clubs));
+
+            Hand cards = new Hand(differentFaces);
+            Assert.IsTrue(this.checker.IsHighCard(cards));
+        }
+
+        [Test]
+        public void TestFakeHighCard()
+        {
+            IList<ICard> differentFaces = new List<ICard>();
+
+            differentFaces.Add(new Card(CardFace.Four, CardSuit.Clubs));
+            differentFaces.Add(new Card(CardFace.Five, CardSuit.Spades));
+            differentFaces.Add(new Card(CardFace.Six, CardSuit.Hearts));
+            differentFaces.Add(new Card(CardFace.Seven, CardSuit.Hearts));
+            differentFaces.Add(new Card(CardFace.Eight, CardSuit.Clubs));
+
+            Hand cards = new Hand(differentFaces);
+            Assert.IsFalse(this.checker.IsHighCard(cards));
+        }
     }
 }
