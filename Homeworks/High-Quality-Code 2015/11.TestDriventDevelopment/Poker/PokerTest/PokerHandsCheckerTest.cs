@@ -344,5 +344,168 @@
             Hand cards = new Hand(differentFaces);
             Assert.IsFalse(this.checker.IsHighCard(cards));
         }
+
+        // FullHouse 3 kind + pair
+        [Test]
+        public void TestFullHouse()
+        {
+            IList<ICard> fullHouse = new List<ICard>();
+
+            fullHouse.Add(new Card(CardFace.Four, CardSuit.Clubs));
+            fullHouse.Add(new Card(CardFace.Four, CardSuit.Spades));
+            fullHouse.Add(new Card(CardFace.Six, CardSuit.Hearts));
+            fullHouse.Add(new Card(CardFace.Four, CardSuit.Hearts));
+            fullHouse.Add(new Card(CardFace.Six, CardSuit.Clubs));
+
+            Hand cards = new Hand(fullHouse);
+            Assert.IsTrue(this.checker.IsFullHouse(cards));
+        }
+
+        // Straight flush
+        [Test]
+        public void TestStraightFlush()
+        {
+            IList<ICard> straightFlush = new List<ICard>();
+
+            straightFlush.Add(new Card(CardFace.Six, CardSuit.Clubs));
+            straightFlush.Add(new Card(CardFace.Seven, CardSuit.Clubs));
+            straightFlush.Add(new Card(CardFace.Eight, CardSuit.Clubs));
+            straightFlush.Add(new Card(CardFace.Nine, CardSuit.Clubs));
+            straightFlush.Add(new Card(CardFace.Ten, CardSuit.Clubs));
+
+            Hand cards = new Hand(straightFlush);
+
+            Assert.IsTrue(this.checker.IsFlush(cards));
+            Assert.IsTrue(this.checker.IsStraight(cards));
+            Assert.IsTrue(this.checker.IsStraightFlush(cards));
+        }
+
+        // Compare full house /to do other situations
+        [Test]
+        public void TestCompareStraightFlushes()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Nine, CardSuit.Clubs),
+                new Card(CardFace.Nine, CardSuit.Hearts),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Six, CardSuit.Diamonds),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Six, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+                new Card(CardFace.Six, CardSuit.Hearts),
+            });
+
+            Assert.AreEqual(1, checker.CompareHands(firstHand, secondHand));
+        }
+
+        // Compare straight flush / To do: Test more cases!
+        [Test]
+        public void TestCompareStraightFlush()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+                new Card(CardFace.Queen, CardSuit.Clubs),
+                new Card(CardFace.King, CardSuit.Clubs),
+                new Card(CardFace.Nine, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.King, CardSuit.Hearts),
+                new Card(CardFace.Ace, CardSuit.Hearts),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Queen, CardSuit.Hearts),
+            });
+
+            Assert.AreEqual(-1, checker.CompareHands(firstHand, secondHand));
+        }
+        
+        // Compare FourOfaKiind test other cases
+        [Test]
+        public void TestFourOfAkind()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Clubs),
+                new Card(CardFace.Jack, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+            });
+
+            Assert.IsTrue(this.checker.IsFourOfAKind(firstHand) && this.checker.IsFourOfAKind(secondHand));
+            Assert.AreEqual(0, checker.CompareHands(firstHand, secondHand));
+        }
+
+        // Compare Flush
+        [Test]
+        public void TestFlush()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                new Card(CardFace.Two, CardSuit.Diamonds),
+                new Card(CardFace.Seven, CardSuit.Diamonds),
+                new Card(CardFace.Queen, CardSuit.Diamonds),
+                new Card(CardFace.Ten, CardSuit.Diamonds),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Queen, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Spades),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Seven, CardSuit.Spades),
+                new Card(CardFace.Two, CardSuit.Spades),
+            });
+
+            Assert.IsTrue(this.checker.IsFlush(firstHand) && this.checker.IsFlush(secondHand));
+            Assert.AreEqual(0, checker.CompareHands(firstHand, secondHand));
+        }
+
+        // Compare Straights
+        [Test]
+        public void TestStraight()
+        {
+            Hand firstHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Nine, CardSuit.Diamonds),
+                new Card(CardFace.Eight, CardSuit.Hearts),
+                new Card(CardFace.Queen, CardSuit.Diamonds),
+                new Card(CardFace.Jack, CardSuit.Spades),
+                new Card(CardFace.Ten, CardSuit.Clubs),
+            });
+
+            Hand secondHand = new Hand(new List<ICard>
+            {
+                new Card(CardFace.Nine, CardSuit.Clubs),
+                new Card(CardFace.Ten, CardSuit.Hearts),
+                new Card(CardFace.Eight, CardSuit.Spades),
+                new Card(CardFace.Seven, CardSuit.Hearts),
+                new Card(CardFace.Jack, CardSuit.Spades),
+            });
+
+            Assert.IsTrue(this.checker.IsStraight(firstHand) && this.checker.IsStraight(secondHand));
+            Assert.AreEqual(1, checker.CompareHands(firstHand, secondHand));
+        }
     }
 }

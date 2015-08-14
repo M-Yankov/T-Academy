@@ -35,7 +35,12 @@
 
         public bool IsStraightFlush(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!IsValidHand(hand) || !IsFlush(hand) || !IsStraight(hand))
+            {
+                return false;
+            }
+
+            return true;
         }
 
         public bool IsFourOfAKind(IHand hand)
@@ -65,7 +70,46 @@
 
         public bool IsFullHouse(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!IsValidHand(hand))
+            {
+                return false;
+            }
+
+            if (IsFlush(hand) || IsStraight(hand) || IsStraightFlush(hand))
+            {
+                return false;
+            }
+
+            Dictionary<CardFace, int> values = new Dictionary<CardFace, int>();
+
+            for (int i = 0; i < hand.Cards.Count; i++)
+            {
+                if (values.ContainsKey(hand.Cards[i].Face))
+                {
+                    values[hand.Cards[i].Face] += 1;
+                }
+                else
+                {
+                    values.Add(hand.Cards[i].Face, 1);
+                }
+            }
+
+            if (values.Count != 2)
+            {
+                return false;
+            }
+
+            int countOfpairs = values.Values.Count(val => val == 2);
+            int countOfthreeKind = values.Values.Count(val => val == 3);
+
+            if (countOfpairs == 1 && countOfthreeKind == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public bool IsFlush(IHand hand)
@@ -91,7 +135,7 @@
             List<ICard> sortedCollection = new List<ICard>();
             sortedCollection = (List<ICard>)hand.Cards;
             SortCardsByFace(sortedCollection);
-            
+
             int valueOfFirst = (int)sortedCollection[0].Face;
 
             if (valueOfFirst > (int)CardFace.Ten)
@@ -104,7 +148,7 @@
                 if ((int)sortedCollection[i].Face != valueOfFirst + i)
                 {
                     return false;
-                }   
+                }
             }
 
             return true;
@@ -113,6 +157,11 @@
         public bool IsThreeOfAKind(IHand hand)
         {
             if (!IsValidHand(hand))
+            {
+                return false;
+            }
+
+            if (IsFlush(hand) || IsFourOfAKind(hand) || IsFullHouse(hand) || IsStraight(hand) || IsStraightFlush(hand))
             {
                 return false;
             }
@@ -142,7 +191,11 @@
                 return false;
             }
 
-            //to dO
+            if (IsFlush(hand) || IsFourOfAKind(hand) || IsThreeOfAKind(hand) ||
+                IsFullHouse(hand) || IsStraight(hand) || IsStraightFlush(hand))
+            {
+                return false;
+            }
 
             Dictionary<CardFace, int> values = new Dictionary<CardFace, int>();
 
@@ -175,17 +228,21 @@
             if (!IsValidHand(hand))
             {
                 return false;
-            } 
+            }
 
-            //to dO
+            if (IsFlush(hand) || IsFourOfAKind(hand) || IsThreeOfAKind(hand) ||
+                IsTwoPair(hand) || IsFullHouse(hand) || IsStraight(hand) || IsStraightFlush(hand))
+            {
+                return false;
+            }
 
-            Dictionary<CardFace, int> values = new Dictionary<CardFace,int>();
+            Dictionary<CardFace, int> values = new Dictionary<CardFace, int>();
 
             for (int i = 0; i < hand.Cards.Count; i++)
             {
                 if (values.ContainsKey(hand.Cards[i].Face))
                 {
-                    values[hand.Cards[i].Face] += 1; 
+                    values[hand.Cards[i].Face] += 1;
                 }
                 else
                 {
@@ -212,7 +269,8 @@
                 return false;
             }
 
-            if (IsFlush(hand) || IsFourOfAKind(hand))
+            if (IsFlush(hand) || IsFourOfAKind(hand) || IsThreeOfAKind(hand) || IsOnePair(hand) ||
+                IsTwoPair(hand) || IsFullHouse(hand) || IsStraight(hand) || IsStraightFlush(hand))
             {
                 return false;
             }
@@ -235,12 +293,57 @@
             }
         }
 
+        /// <summary>
+        /// Compares two poker hands
+        /// </summary>
+        /// <param name="firstHand"></param>
+        /// <param name="secondHand"></param>
+        /// <returns>
+        /// 1: first hand is bigger,
+        /// -1: second hand is bigger,
+        /// 0: the two hands are equal;
+        /// </returns>
         public int CompareHands(IHand firstHand, IHand secondHand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(firstHand) || !this.IsValidHand(secondHand))
+            {
+                throw new InvalidOperationException("Some of hands are invalid!");
+            }
+
+            // Straight flush
+            if (this.IsStraightFlush(firstHand) || this.IsStraightFlush(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoStraightFlushHands(firstHand, secondHand);
+            }
+
+            // FOur of a kind
+            if (this.IsFourOfAKind(firstHand) || this.IsFourOfAKind(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFourOfAKindHands(firstHand, secondHand);
+            }
+
+            // Full house
+            if (this.IsFullHouse(firstHand) || this.IsFullHouse(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFullHouseHands(firstHand, secondHand);
+            }
+
+            // Flush
+            if (this.IsFlush(firstHand) || this.IsFlush(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoFlushHands(firstHand, secondHand);
+            }
+
+            // Straight
+            if (this.IsStraight(firstHand) || this.IsStraight(secondHand))
+            {
+                return ComparingHandsMethods.CompareTwoStraightHands(firstHand, secondHand);
+            }
+
+            throw new NotImplementedException("High card is at last");
         }
 
-        private static void SortCardsByFace(IList<ICard> cards)
+        internal static void SortCardsByFace(IList<ICard> cards)
         {
             int currentMin; // = (int)CardFace.Two;
             int nextMin = (int)CardFace.Ace;
