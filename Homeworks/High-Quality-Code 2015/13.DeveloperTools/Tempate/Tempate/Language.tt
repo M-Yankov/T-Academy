@@ -1,0 +1,32 @@
+﻿﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<# string[] langs = new string[] { "JavaScript","Java","Perl","XML","CSharp","PHP" }; #>
+namespace Template{
+using System;
+using System.Collections;
+public class Language
+{
+
+	public Language( <# for(int i = 0; i < 6; i++) { #> <# if(i == 5) { #> int <#=langs[i].ToLower()#>Mark <#} else { #> int <#=langs[i].ToLower()#>Mark,<# } #> <# } #>)
+	{
+	
+<# for(int i = 0; i < 6; i++) { #>
+    this.<#=langs[i]#> = <#=langs[i].ToLower()#>Mark;
+
+<# } #>
+	}
+
+	<# for(int i = 0; i < 6; i++) { #>
+
+    public int <#=langs[i]#> { get; set; }
+
+<# } #>
+
+    public void Method()
+    {
+    }
+}
+}
