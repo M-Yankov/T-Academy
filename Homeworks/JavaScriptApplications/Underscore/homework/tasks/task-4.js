@@ -55,40 +55,4 @@ function solve() {
     };
 }
 
-/*var animals = [{
-    name: 'jack',
-    species: 'aaaaaa',
-    legsCount: 9
-}, {
-    name: 'back',
-    species: 'zblabla',
-    legsCount: 4
-}, {
-    name: 'boby',
-    species: 'beta',
-    legsCount: 4
-}, {
-    name: 'jack',
-    species: 'beta',
-    legsCount: 4
-}, {
-    name: 'petar',
-    species: 'aaaaaa',
-    legsCount: 1
-}, {
-    name: 'back',
-    species: 'aaaaaa',
-    legsCount: 3
-}, {
-    name: 'boby',
-    species: 'zblabla',
-    legsCount: 2
-}, {
-    name: 'zich',
-    species: 'aaaaaa',
-    legsCount: 4
-}];
-
-solve()(animals);*/
-
 module.exports = solve;

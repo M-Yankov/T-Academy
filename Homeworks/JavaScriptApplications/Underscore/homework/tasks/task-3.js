@@ -32,38 +32,20 @@ function solve() {
             throw new Error('One or more object are invalid!');
         }
 
-        var greatestStudent = _.chain(students)
+        var nerdStudent = _.chain(students)
             .sortBy(function (student) {
-                var len = student.marks.length,
-                    sum = 0,
-                    i;
-
-                for (i = 0; i < len; i += 1) {
-                    sum += student.marks[i];
-                }
-
-                student.avg = sum / len;
-                return sum / len;
+                var sum = _.reduce(student.marks, function (callback, current) {
+                    return callback + current;
+                }, 0);
+                student.avg = sum / student.marks.length;
+                return student.avg;
             })
             .last()
             .value();
 
-        var fullnames = greatestStudent.firstName + ' ' + greatestStudent.lastName;
-        console.log(fullnames + ' has an average score of ' + greatestStudent.avg);
+        var fullNameOfNerd = nerdStudent.firstName + ' ' + nerdStudent.lastName;
+        console.log(fullNameOfNerd + ' has an average score of ' + nerdStudent.avg);
     };
 }
-var studs = [{
-    firstName: 'Strahil',
-    lastName: 'Ivan',
-    age: 5,
-    marks: [2, 3, 5, 2]
-}, {
-    firstName: 'Ivan',
-    lastName: 'Ivan',
-    age: 18,
-    marks: [3, 6, 6, 5]
-}];
-
-solve()(studs);
 
 module.exports = solve;

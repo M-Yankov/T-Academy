@@ -35,39 +35,11 @@ function solve() {
                 return student.firstName + ' ' + student.lastName;
             })
             .reverse()
-            .each(function(student) {
+            .each(function (student) {
                 console.log(student.firstName + ' ' + student.lastName);
             })
             .value();
     };
 }
-
-/*var mineStudents = [{
-    firstName: 'Pesho',
-    lastName: 'Ivanonv'
-}, {
-    firstName: 'Strahil',
-    lastName: 'Popov'
-}, {
-    firstName: 'Borislav',
-    lastName: 'Staminov'
-}, {
-    firstName: 'Anton',
-    lastName: 'Shaibov'
-}, {
-    firstName: 'Domagoi',
-    lastName: 'Shtefan'
-}, {
-    firstName: 'Atanas',
-    lastName: 'Pavlov'
-}, {
-    firstName: 'Dimiter',
-    lastName: 'Demirov'
-},{
-    firstName: 'Anton',
-    lastName: 'Iordanov'
-}];
-
-solve(mineStudents);*/
 
 module.exports = solve;
