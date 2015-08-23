@@ -1,0 +1,47 @@
+div#container {
+    width: 30%;
+    border: 1px dashed red;
+    padding-top: 5px;
+    text-align: center;
+}
+
+div#container > a.button {
+    text-transform: capitalize;
+    color: white;
+    padding: 1px 5px;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: green;
+    border: 3px solid darkgreen;
+}
+
+div#container > a.button:hover {
+    border-color: greenyellow;
+}
+
+div#container ul.items-list {
+    width: 40%;
+    list-style-type: none;
+}
+
+div#container ul.items-list li {
+    background-color: #00ccff;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+div#container ul.items-list li a.button {
+    text-decoration: none;
+    margin-right: 0;
+    float: right;
+    font-family: Arial;
+    width: 20px;
+    border-radius: 10px;
+}
+
+div#container ul.items-list li a.button:hover {
+    background-color: #dd0000;
+}

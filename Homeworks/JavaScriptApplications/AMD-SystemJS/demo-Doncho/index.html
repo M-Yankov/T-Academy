@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doncho-demo</title>
+    <style>
+    </style>
+</head>
+<body>
+<h1>Demos:</h1>
+
+<div id="container"></div>
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+    System.import('css');
+    System.import('app/app')
+            .then(function (module) {
+                module.init('#container');
+            });
+
+    System.import('app/style.css!')
+            .then(console.log('loaded CSS'));
+</script>
+</body>
+</html>
