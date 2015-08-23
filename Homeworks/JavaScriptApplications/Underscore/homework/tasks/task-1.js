@@ -27,7 +27,7 @@ function solve() {
             throw new Error('One or more object are invalid!');
         }
 
-        var studs = _.chain(students)
+        _.chain(students)
             .filter(function (student) {
                 return student.firstName < student.lastName;
             })

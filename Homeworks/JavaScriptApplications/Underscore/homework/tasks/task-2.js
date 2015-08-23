@@ -30,7 +30,7 @@ function solve() {
             throw new Error('One or more object are invalid!');
         }
 
-        var sortedStudents = _.chain(students)
+        _.chain(students)
             .filter(function (student) {
                 return  (MIN_AGE <= student.age  && student.age <= MAX_AGE);
             })

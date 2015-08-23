@@ -19,23 +19,17 @@ function solve() {
             return book.author.firstName + ' ' + book.author.lastName;
         });
 
-        var authors = _.chain(groupedByAuthor).keys().sortBy().value();
-        var sortedBooksByLength = _.sortBy(groupedByAuthor, function (value, key, list) {
-            /*console.log(value.length);*/
-            return -list[key].length;
-        });
-
-        var c = _.chain(groupedByAuthor)
+        _.chain(groupedByAuthor)
             .pairs()
-            .sortBy(function(item, index, list) {
+            .sortBy(function (item) {
                 return -item[1].length;
             })
             .filter(function (item, index, list) {
-                var maxLength  = list[0][1].length;
+                var maxLength = list[0][1].length;
                 return maxLength === item[1].length;
             })
-            .map(function (authorBooks, index, list) {
-              return _.first(authorBooks);
+            .map(function (authorBooks) {
+                return _.first(authorBooks);
             })
             .sortBy()
             .each(function (item) {
