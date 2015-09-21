@@ -30,6 +30,9 @@
  Представям две диаграми от придружаващия код. Едната е класическа диаграма .cd, другата е малко по-
  шарена но там се огромния coopling между обектите(манджа). На втората ако се загледате по-внимателно
  може да видите точната връзка на патерна. 
+ 
+ ![Link1](https://github.com/M-Yankov/T-Academy/blob/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/ClassDiagram1.png)
+ ![Link2](https://github.com/M-Yankov/T-Academy/blob/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/Diagrma.png)
 
 5. **Демо**
 
