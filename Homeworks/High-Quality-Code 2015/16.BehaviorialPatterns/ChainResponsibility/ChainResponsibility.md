@@ -31,8 +31,8 @@
  шарена но там се огромния coopling между обектите(манджа). На втората ако се загледате по-внимателно
  може да видите точната връзка на патерна. 
  
- ![Link1](https://github.com/M-Yankov/T-Academy/blob/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/ClassDiagram1.png)
- ![Link2](https://github.com/M-Yankov/T-Academy/blob/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/Diagrma.png)
+ ![Link1](https://raw.githubusercontent.com/M-Yankov/T-Academy/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/ClassDiagram1.png)
+ ![Link2](https://raw.githubusercontent.com/M-Yankov/T-Academy/master/Homeworks/High-Quality-Code%202015/16.BehaviorialPatterns/ChainResponsibility/Diagrma.png)
 
 5. **Демо**
 
