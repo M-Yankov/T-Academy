@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:students" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="students">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="student">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string" />
+                    <xs:element name="sex" type="xs:string" />
+                    <xs:element name="birdthdate" type="xs:string" />
+                    <xs:element name="phone" type="xs:string" />
+                    <xs:element name="email" type="xs:string" />
+                    <xs:element name="course" type="xs:string" />
+                    <xs:element name="spceiality" type="xs:string" />
+                    <xs:element name="facultyNumber" type="xs:string" />
+                    <xs:element name="exams">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="exam">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="name" type="xs:string" />
+                                <xs:element name="tutor" type="xs:string" />
+                                <xs:element name="score" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="enrollments" >
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="enrollment">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="date" type="xs:string"/>
+                                <xs:element name="Score" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="endrosmnets" >
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="endrosment">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="tutor" type="xs:string"/>
+                                <xs:element name="message" type="xs:string"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

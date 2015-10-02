@@ -1,0 +1,2 @@
+I really can't understand XML namespaces, it look like those in C# but not exactly. It is for resources. When refering external resourse instead of use default tags from, you can give name to the namespace and use it like:
+<name>:<tag>.

@@ -1,0 +1,1 @@
+XML - Extensible Markup Language where it can be user everywhere to describe object model with properties or three like structors. Very similar to HTML, but XML represents the rules and sytax while HTML implements it. It uses tags (open/close and self-closeing) and attributes(key value)
