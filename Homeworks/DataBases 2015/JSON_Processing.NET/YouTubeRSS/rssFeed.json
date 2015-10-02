@@ -1,0 +1,661 @@
+{
+  "?xml": {
+    "@version": "1.0",
+    "@encoding": "UTF-8"
+  },
+  "feed": {
+    "@xmlns:yt": "http://www.youtube.com/xml/schemas/2015",
+    "@xmlns:media": "http://search.yahoo.com/mrss/",
+    "@xmlns": "http://www.w3.org/2005/Atom",
+    "link": [
+      {
+        "@rel": "self",
+        "@href": "http://www.youtube.com/feeds/videos.xml?channel_id=UCLC-vbm7OWvpbqzXaoAMGGw"
+      },
+      {
+        "@rel": "alternate",
+        "@href": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+      }
+    ],
+    "id": "yt:channel:UCLC-vbm7OWvpbqzXaoAMGGw",
+    "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+    "title": "TelerikAcademy",
+    "author": {
+      "name": "TelerikAcademy",
+      "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+    },
+    "published": "2011-06-24T15:53:13+00:00",
+    "entry": [
+      {
+        "id": "yt:video:q20Ilob2LX0",
+        "yt:videoId": "q20Ilob2LX0",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Осигуряване на качеството на софтуера (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=q20Ilob2LX0"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-02T06:33:14+00:00",
+        "updated": "2015-10-02T06:58:27+00:00",
+        "media:group": {
+          "media:title": "Осигуряване на качеството на софтуера (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/q20Ilob2LX0?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/q20Ilob2LX0/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Осигуряване на качеството на софтуера\nКурс: Качествен програмен код 2015\nЛектор: Николай Костов\nДата: 1 октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "1",
+              "@average": "1.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "10"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:qHFfV-WQgD0",
+        "yt:videoId": "qHFfV-WQgD0",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Mocking with Moq and JustMock (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=qHFfV-WQgD0"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-02T06:18:00+00:00",
+        "updated": "2015-10-02T06:18:00+00:00",
+        "media:group": {
+          "media:title": "Mocking with Moq and JustMock (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/qHFfV-WQgD0?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/qHFfV-WQgD0/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Mocking with Moq and JustMock\nКурс: Качествен програмен код 2015\nЛектор: Николай Костов\nДата: 1 октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "6"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:LWZP5S8U7Z0",
+        "yt:videoId": "LWZP5S8U7Z0",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Software Quality Assurance",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=LWZP5S8U7Z0"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-01T12:08:46+00:00",
+        "updated": "2015-10-01T12:08:46+00:00",
+        "media:group": {
+          "media:title": "Software Quality Assurance",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/LWZP5S8U7Z0?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i1.ytimg.com/vi/LWZP5S8U7Z0/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Software Quality Assurance\nКурс: Качествен програмен код 2015\nЛектор: Ивайло Кенов\nДата: 30 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "68"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:-R6aeupYHMQ",
+        "yt:videoId": "-R6aeupYHMQ",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Mocking с Moq и JustMock",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=-R6aeupYHMQ"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-10-01T12:08:23+00:00",
+        "updated": "2015-10-01T12:08:23+00:00",
+        "media:group": {
+          "media:title": "Mocking с Moq и JustMock",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/-R6aeupYHMQ?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/-R6aeupYHMQ/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Mocking с Moq и JustMock\nКурс: Качествен програмен код 2015\nЛектор: Ивайло Кенов\nДата: 30 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "67"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:Kvy1hesBrLE",
+        "yt:videoId": "Kvy1hesBrLE",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Въведение в базите данни (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=Kvy1hesBrLE"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-30T22:16:30+00:00",
+        "updated": "2015-10-01T07:57:10+00:00",
+        "media:group": {
+          "media:title": "Въведение в базите данни (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/Kvy1hesBrLE?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i4.ytimg.com/vi/Kvy1hesBrLE/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Въведение в базите данни\nКурс: Бази данни 2015\nЛектор: Николай Костов\nДата: 30 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "2",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "140"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:QJMiAtlkLck",
+        "yt:videoId": "QJMiAtlkLck",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Microsoft SQL Server и MySQL (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=QJMiAtlkLck"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-30T22:06:47+00:00",
+        "updated": "2015-10-01T07:56:53+00:00",
+        "media:group": {
+          "media:title": "Microsoft SQL Server и MySQL (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/QJMiAtlkLck?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/QJMiAtlkLck/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Microsoft SQL Server и MySQL\nКурс: Бази данни 2015\nЛектор: Николай Костов\nДата: 30 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "1",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "112"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:ErdJLV6kij8",
+        "yt:videoId": "ErdJLV6kij8",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Работа с JSON  в NET",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=ErdJLV6kij8"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-30T14:55:05+00:00",
+        "updated": "2015-10-01T08:45:34+00:00",
+        "media:group": {
+          "media:title": "Работа с JSON  в NET",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/ErdJLV6kij8?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/ErdJLV6kij8/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Работа с JSON  в NET \nКурс: Бази от данни 2015\nЛектор: Дончо Минков\nДата: 29 октомври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "193"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:yLAbc_Bvdj8",
+        "yt:videoId": "yLAbc_Bvdj8",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Работа с XML в .NET",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=yLAbc_Bvdj8"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-29T21:45:42+00:00",
+        "updated": "2015-09-29T21:45:42+00:00",
+        "media:group": {
+          "media:title": "Работа с XML в .NET",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/yLAbc_Bvdj8?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/yLAbc_Bvdj8/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Работа с XML в .NET\nКурс: Бази данни 2015\nЛектор: Евлоги Христов\nДата: 29 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "294"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:CZUJa61fUQ8",
+        "yt:videoId": "CZUJa61fUQ8",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "C# Tips and Tricks - част 2 (Ники)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=CZUJa61fUQ8"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-29T07:03:01+00:00",
+        "updated": "2015-09-29T21:13:34+00:00",
+        "media:group": {
+          "media:title": "C# Tips and Tricks - част 2 (Ники)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/CZUJa61fUQ8?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i4.ytimg.com/vi/CZUJa61fUQ8/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: C# Tips and Tricks - част 2\nКурс: Telerik Academy Plus\nЛектор: Николай Костов\nДата: 26 септвмври 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "6",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "175"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:40lgchWTyDQ",
+        "yt:videoId": "40lgchWTyDQ",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Основи в XML",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=40lgchWTyDQ"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-28T21:12:16+00:00",
+        "updated": "2015-09-29T09:03:38+00:00",
+        "media:group": {
+          "media:title": "Основи в XML",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/40lgchWTyDQ?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i1.ytimg.com/vi/40lgchWTyDQ/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Основи в XML\nКурс: Бази данни 2015\nЛектор: Евлоги Христов\nДата: 28 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "1",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "620"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:KUSJYQnsuJw",
+        "yt:videoId": "KUSJYQnsuJw",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Представяне на курса по Бази данни",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=KUSJYQnsuJw"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-28T18:44:19+00:00",
+        "updated": "2015-09-30T10:21:51+00:00",
+        "media:group": {
+          "media:title": "Представяне на курса по Бази данни",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/KUSJYQnsuJw?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i4.ytimg.com/vi/KUSJYQnsuJw/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Представяне на курса по Бази данни\nКурс: Бази данни 2015\nЛектор: Николай Костов\nДата: 28 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "3",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "471"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:yoIfXSzgCxo",
+        "yt:videoId": "yoIfXSzgCxo",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Основи на софтуерното инженерство",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=yoIfXSzgCxo"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-25T07:50:10+00:00",
+        "updated": "2015-09-28T20:51:50+00:00",
+        "media:group": {
+          "media:title": "Основи на софтуерното инженерство",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/yoIfXSzgCxo?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/yoIfXSzgCxo/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Основи на софтуерното инженерство\nКурс: Качествен програмен код 2015\nЛектор: Ивайло Кенов\nДата: 24 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "4",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "273"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:P3fhn12PwJM",
+        "yt:videoId": "P3fhn12PwJM",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Поведенчески шаблони за дизайн (Behavioural Patterns)",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=P3fhn12PwJM"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-23T09:30:40+00:00",
+        "updated": "2015-09-28T08:42:39+00:00",
+        "media:group": {
+          "media:title": "Поведенчески шаблони за дизайн (Behavioural Patterns)",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/P3fhn12PwJM?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i1.ytimg.com/vi/P3fhn12PwJM/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция: Поведенчески шаблони за дизайн (Structural Patterns)\nКурс: Качествен програмен код 2015\nЛектор: Ивайло Кенов\nДата: 12 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "0",
+              "@average": "0.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "438"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:NQR-IB3xF1s",
+        "yt:videoId": "NQR-IB3xF1s",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Защо е важно децата да учат информатика",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=NQR-IB3xF1s"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-22T09:02:57+00:00",
+        "updated": "2015-09-29T10:17:18+00:00",
+        "media:group": {
+          "media:title": "Защо е важно децата да учат информатика",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/NQR-IB3xF1s?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i3.ytimg.com/vi/NQR-IB3xF1s/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Гледайте репортажа на ТВ Европа за необходимостта от по-засилено изучаване на информатика в училище с участието на Николай Костов, мениджър \"Софтуерно инженерство\" в Telerik, и Албена Тачева, родител на ученик от \"Алго академията на Телерик\".\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "23",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "1213"
+            }
+          }
+        }
+      },
+      {
+        "id": "yt:video:AtF3KXn4b_Y",
+        "yt:videoId": "AtF3KXn4b_Y",
+        "yt:channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+        "title": "Асинхронно програмиране в C#",
+        "link": {
+          "@rel": "alternate",
+          "@href": "http://www.youtube.com/watch?v=AtF3KXn4b_Y"
+        },
+        "author": {
+          "name": "TelerikAcademy",
+          "uri": "http://www.youtube.com/channel/UCLC-vbm7OWvpbqzXaoAMGGw"
+        },
+        "published": "2015-09-14T12:24:26+00:00",
+        "updated": "2015-09-29T08:28:26+00:00",
+        "media:group": {
+          "media:title": "Асинхронно програмиране в C#",
+          "media:content": {
+            "@url": "https://www.youtube.com/v/AtF3KXn4b_Y?version=3",
+            "@type": "application/x-shockwave-flash",
+            "@width": "640",
+            "@height": "390"
+          },
+          "media:thumbnail": {
+            "@url": "https://i2.ytimg.com/vi/AtF3KXn4b_Y/hqdefault.jpg",
+            "@width": "480",
+            "@height": "360"
+          },
+          "media:description": "Лекция:  Асинхронно програмиране в C#\nКурс: Telerik Academy Plus\nЛектор: Георги Георгиев\nДата: 12 септември 2015\n\nУебсайт на Академията на Телерик: http://academy.telerik.com\n\nСледете за предстоящи безплатни обучения на Академията на Телерик във Facebook: http://www.facebook.com/TelerikAcademy.",
+          "media:community": {
+            "media:starRating": {
+              "@count": "5",
+              "@average": "5.00",
+              "@min": "1",
+              "@max": "5"
+            },
+            "media:statistics": {
+              "@views": "528"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
