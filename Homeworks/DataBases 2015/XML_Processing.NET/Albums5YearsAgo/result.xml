@@ -1,0 +1,22 @@
+<albums>
+  <album>
+    <name>Top 100 Club mix tracks</name>
+    <price>90</price>
+    <year>2006</year>
+  </album>
+  <album>
+    <name>Electronic music</name>
+    <price>10</price>
+    <year>2005</year>
+  </album>
+  <album>
+    <name>Half-life</name>
+    <price>50</price>
+    <year>2005</year>
+  </album>
+  <album>
+    <name>Strike that</name>
+    <price>25</price>
+    <year>2004</year>
+  </album>
+</albums>

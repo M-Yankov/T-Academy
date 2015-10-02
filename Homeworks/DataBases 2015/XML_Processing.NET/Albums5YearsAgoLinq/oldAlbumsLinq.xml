@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+  <album>
+    <name>Top 100 Club mix tracks</name>
+    <price>90</price>
+    <year>Top 100 Club mix tracks</year>
+  </album>
+  <album>
+    <name>Electronic music</name>
+    <price>10</price>
+    <year>Electronic music</year>
+  </album>
+  <album>
+    <name>Half-life</name>
+    <price>50</price>
+    <year>Half-life</year>
+  </album>
+  <album>
+    <name>Strike that</name>
+    <price>25</price>
+    <year>Strike that</year>
+  </album>
+</albums>
