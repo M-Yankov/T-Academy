@@ -18,10 +18,13 @@
     - __- Each table keeps information of objects from one type. Examples: Persons, Cars, Students, 
     Courses. Each table is schema how objects must look like and witch properties must have. Each 
     column is a single property and one row represents one object with this properties aka record.__
-    - __Example__:
-    pesho | pesho
-    ----- | -----
-    sad | asd|
+    - __Example of Persons:__
+    
+    ID | FirstName | LastName | Age
+    ----- | ----- | -------- | ---
+    0003 | Maria | Ivanova | 22
+    0006 | Petar | Kamenov | 29
+    0008 | Cvetelina | Karamnogodulgoimenova | 31
 1.  Explain the difference between a primary and a foreign key.
     - __- It's highly recommended each table to have a primary key(`PK`). It's a property(column) that
     defines each record will be unique. In most cases DB gives automatically PK value when new record is
