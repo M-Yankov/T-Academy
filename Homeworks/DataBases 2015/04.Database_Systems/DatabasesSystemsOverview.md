@@ -19,6 +19,7 @@
     Courses. Each table is schema how objects must look like and witch properites must have. Each 
     column is a single property and one row represents one object with this properties aka record.__
     - __Exmaple__:
+
     pesho | pesho
     ----- | -----
     sad | asd|
