@@ -15,7 +15,8 @@
         private readonly ICarsRepository fakeCarsData;
         private CarsController controller;
 
-        public CarsControllerTesting() : this(new JustMockCarsRepo())
+        public CarsControllerTesting()
+            : this(new JustMockCarsRepo())
         {
         }
 
@@ -139,7 +140,7 @@
                 this.controller.Add(carToBeAdded);
             }
 
-            var sortedCarsByMaker = (ICollection<Car>)GetModel(() => this.controller.Sort("make"));
+            var sortedCarsByMaker = (ICollection<Car>)this.GetModel(() => this.controller.Sort("make"));
             sortedCarsByMaker.GroupBy(car => car.Make).ToList().ForEach(group => carsFromEachGroup.Add(group.FirstOrDefault()));
 
             Assert.AreEqual(carMakers.Count, carsFromEachGroup.Count);
@@ -165,7 +166,7 @@
                 fordFocus = new Car()
                 {
                     Id = (i + 1) * 1023,
-                    Make ="Ford",
+                    Make = "Ford",
                     Model = "Focus F" + i,
                     Year = years[i % years.Length]
                 };
@@ -174,7 +175,7 @@
                 expectedResultYears.Add(fordFocus.Year);
             }
 
-            var collection = (IList<Car>)GetModel(() => this.controller.Sort("year"));
+            var collection = (IList<Car>)this.GetModel(() => this.controller.Sort("year"));
 
             expectedResultYears.Sort();
 
@@ -188,7 +189,52 @@
         [ExpectedException(typeof(ArgumentException), "Invalid sorting parameter")]
         public void ExpectExceptionWhenWrongParameterPassedToSort()
         {
-            var collection = (IList<Car>)GetModel(() => this.controller.Sort("id"));
+            var collection = (IList<Car>)this.GetModel(() => this.controller.Sort("id"));
+        }
+
+        [TestMethod]
+        public void ExpectIDToHasDefaultIntValueWhenCarWithoutIDPased()
+        {
+            var someCar = new Car()
+            {
+                Make = "Some",
+                Model = "Nowen",
+                Year = DateTime.Now.Year
+            };
+
+            this.controller.Add(someCar);
+
+            var collection = (IList<Car>)this.GetModel(() => this.controller.Index());
+            Car resultCar = collection.First(car => car.Make == "Some");
+
+            Assert.AreEqual(0, resultCar.Id);
+        }
+
+        [TestMethod]
+        public void ExpectToHaveNormaBehaviorWhenCarsWithSameIDAdded()
+        {
+            int specialLength = 20;
+            int theId = 100;
+
+            var simpleCar = new Car()
+            {
+                Id = theId,
+                Make = "New One",
+                Model = "Old One",
+                Year = DateTime.Now.Year
+            };
+
+            for (int i = 0; i < specialLength; i++)
+            {
+                simpleCar.Make += i;
+                this.controller.Add(simpleCar);
+            }
+
+            var collection = (List<Car>)this.GetModel(() => this.controller.Index());
+            int count = collection.Count(car => car.Id == theId);
+
+            //// It's hard to define witch one is return while many cars have same Id.
+            Assert.AreEqual(specialLength, count);
         }
 
         private object GetModel(Func<IView> funcView)

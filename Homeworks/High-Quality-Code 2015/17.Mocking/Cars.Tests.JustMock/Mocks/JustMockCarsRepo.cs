@@ -12,6 +12,7 @@
         {
             this.CarsData = Mock.Create<ICarsRepository>();
 
+            Mock.Arrange(() => this.CarsData.All()).Returns(this.FakeCarCollection);
             Mock.Arrange(() => this.CarsData.Add(Arg.IsAny<Car>())).DoInstead<Car>(car => this.FakeCarCollection.Add(car));
             Mock.Arrange(() => this.CarsData.Search(Arg.Matches<string>(str => str != null)))
                 .Returns<string>(str => this.FakeCarCollection.Where(c =>
@@ -26,6 +27,7 @@
             Mock.Arrange(() => this.CarsData.SortedByYear()).Returns(() => this.FakeCarCollection.OrderBy(c => c.Year).ToList());
 
             Mock.Arrange(() => this.CarsData.Remove(Arg.IsAny<Car>())).DoInstead(() => this.FakeCarCollection.Clear());
+            Mock.Arrange(() => this.CarsData.GetById(Arg.Is<int>(100))).Returns<int>(id => this.FakeCarCollection.FirstOrDefault(car => car.Id == id));
         }
     }
 }
