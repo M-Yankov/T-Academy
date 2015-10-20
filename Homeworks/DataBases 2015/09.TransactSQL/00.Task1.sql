@@ -1,0 +1,30 @@
+USE TransactSQL
+GO
+
+INSERT INTO Persons([First Name], [Last Name], SSN) VALUES
+			('Ivan', 'Kostov', 22212),
+			('Preslav', 'Prtrov', 22213),
+			('Ignat', 'Pavlov', 22214),
+			('Ivo', 'Kirilov', 22215),
+			('Hristo', 'Jekov', 22216),
+			('Georgi', 'Hristov', 22217),
+			('Joro', 'Goergiev', 22218),
+			('Ivan', 'Jainov', 22219),
+			('Kamen', 'Ivanov', 22220),
+			('Kiril', 'Kemenov', 22221),
+			('Iordan', 'kirilov', 22222),
+			('Mihail', 'Iordanov', 22223),
+			('Meto', 'Mihailov', 22224),
+			('Lubo', 'Metodiev', 22225),
+			('Bobi', 'Lubomirov', 22226),
+			('Maria', 'Borislavova', 22227),
+			('Cvetka', 'Angelova', 22228),
+			('Svetla', 'Cvetelinova', 22229),
+			('Geri', 'Svetelinova', 22230),
+			('Kamelia', 'Georgirva', 22231),
+			('Ivana', 'Kirilova', 22232),
+			('Radost', 'Kamenova', 22233),
+			('Sashka', 'Petrova', 22234),
+			('Aleksandar', 'Fikova', 22235),
+			('Dobrei', 'Slavova', 22236),
+			('Atanas', 'Aleksandrova', 22237)
