@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norttwind", "Norttwind\Norttwind.csproj", "{03EC76AB-03B6-417D-91D1-8AA2D160C405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.AllCustomersOrders", "04.AllCustomersOrders\04.AllCustomersOrders.csproj", "{D6DA1D63-AB22-4319-A55E-0EA818BCAAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.NativeQuery", "05.NativeQuery\05.NativeQuery.csproj", "{FC9D9610-4D7C-46BD-ABB0-3F3CE7285F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.SalesByRegionAndPeriod", "05.SalesByRegionAndPeriod\05.SalesByRegionAndPeriod.csproj", "{F956F9DB-EEE4-43D2-86B8-F6B0E0D26047}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.ConcurentProblem", "07.ConcurentProblem\07.ConcurentProblem.csproj", "{F6694266-5FF0-4734-A596-1B23D8F0834B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.EmploeeTeritories", "08.EmploeeTeritories\08.EmploeeTeritories.csproj", "{D4C3685E-6C0C-4A72-99D3-2D41BAE11CCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03EC76AB-03B6-417D-91D1-8AA2D160C405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EC76AB-03B6-417D-91D1-8AA2D160C405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EC76AB-03B6-417D-91D1-8AA2D160C405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EC76AB-03B6-417D-91D1-8AA2D160C405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DA1D63-AB22-4319-A55E-0EA818BCAAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DA1D63-AB22-4319-A55E-0EA818BCAAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DA1D63-AB22-4319-A55E-0EA818BCAAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DA1D63-AB22-4319-A55E-0EA818BCAAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC9D9610-4D7C-46BD-ABB0-3F3CE7285F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9D9610-4D7C-46BD-ABB0-3F3CE7285F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9D9610-4D7C-46BD-ABB0-3F3CE7285F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9D9610-4D7C-46BD-ABB0-3F3CE7285F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F956F9DB-EEE4-43D2-86B8-F6B0E0D26047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F956F9DB-EEE4-43D2-86B8-F6B0E0D26047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F956F9DB-EEE4-43D2-86B8-F6B0E0D26047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F956F9DB-EEE4-43D2-86B8-F6B0E0D26047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6694266-5FF0-4734-A596-1B23D8F0834B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6694266-5FF0-4734-A596-1B23D8F0834B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6694266-5FF0-4734-A596-1B23D8F0834B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6694266-5FF0-4734-A596-1B23D8F0834B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4C3685E-6C0C-4A72-99D3-2D41BAE11CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C3685E-6C0C-4A72-99D3-2D41BAE11CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C3685E-6C0C-4A72-99D3-2D41BAE11CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C3685E-6C0C-4A72-99D3-2D41BAE11CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
