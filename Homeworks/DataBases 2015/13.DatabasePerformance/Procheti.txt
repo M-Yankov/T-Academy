@@ -1,0 +1,5 @@
+The homework is almost done. Without MySql part.
+For the 3-rd task over my data cannot create full-text, index because data is radndom symbols not words...
+I only provide you the schema. The data file .sql was ~3GB see the picture. TelerikAcademy System doesn't allow such size.
+I used DataBase First.
+I provide you the program that fills the testTable. It's not High Quality Code - just code. If you run in, it will take more than 30 min to finish, so just reduce the counter in the begining of the code to 50 000 and for few seconds will be ready.
