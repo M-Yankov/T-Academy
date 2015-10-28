@@ -1,0 +1,43 @@
+Design pattern: Simple Factory
+	* ManufacturerFactory creates a concrete Manufacteur
+
+Design pattern: Strategy
+	* The Base videoCard define a draw method, MonoChrome and ColorVideoCards impements a way to draw.
+
+Design pattern: Template Method
+	* BaseComputer is implementhed by Laptop, PersonalComputer and Server
+
+Design pattern: Abstract factory
+	* Computer Factory impemented by HP, Dell ,Lenovo
+
+Design pattern: Composite
+	* Between BaseHardDrive.cs SingleHardDrive.cs and Raiddrives.cs.
+	BaseHardDrive is implementhed by other and RaidDrives contains a collection of SingleHardDrive
+
+Design pattern: Mediator
+	* Processor uses the MotherBoard to draw on the console instead to know about the videoCard and use it to draw.
+
+Found bottlenecks:
+	* Random
+	* Squarenumber
+
+Found bugs:
+	* Invalid Command! was processd. everyTime when some commaing was passed.
+	* After you enter a correct manufacturer then just hit enter, exception was thrown.
+	* When type Process 2 or any number exception will be thrown.
+	* When the command is wrong but it's still from 2 arguments (command & number) Noting happend... It must show Invalid Command!
+
+Single responsibility principle
+	* 
+
+Open/closed principle
+	* easy to add new BaseComputer like SmartPhone, easy to add new strategy for drawing in Videocards, new manufacturer, new processor
+
+Liskov substitution principle
+	* Videocards. Computer factories, CPUs
+
+Interface segregation principle
+	* 
+
+Dependency inversion principle
+	* 
