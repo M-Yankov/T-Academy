@@ -1,14 +1,13 @@
 ﻿namespace ArtistSystem.WebApi.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Web.Http;
+    using System.Web.Http.Cors;
     using ArtistSystem.Data;
     using ArtistSystem.WebApi.Models;
-    using System.Web.Http;
-    using System.Linq;
     using ArtistsSystem.Models;
-    using System;
-    using Newtonsoft.Json;
-    using System.Collections.Generic;
-    using System.Text;
 
     public class SongsController : ApiController
     {
@@ -18,8 +17,8 @@
         {
             this.data = data;
         }
-        
 
+        [EnableCors("*", "*", "*")]
         public IHttpActionResult Get()
         {
             List<ResponseSongModel> songs = this.data.Songs.All()

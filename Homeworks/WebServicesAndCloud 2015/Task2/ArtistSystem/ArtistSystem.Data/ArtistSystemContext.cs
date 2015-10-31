@@ -1,7 +1,6 @@
 ﻿namespace ArtistSystem.Data
 {
     using System.Data.Entity;
-    using ArtistSystem.Data.Migrations;
     using ArtistsSystem.Models;
     using Microsoft.AspNet.Identity.EntityFramework;
 

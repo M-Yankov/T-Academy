@@ -9,6 +9,7 @@ namespace ArtistSystem.WebApi
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
+    using Ninject.Extensions.Conventions;
     using Ninject.Web.Common;
     using Data;
     using System.Data.Entity;
@@ -63,7 +64,9 @@ namespace ArtistSystem.WebApi
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IArtistSystemData>().To<ArtistSystemData>();
+            //// kernel.Bind<IArtistSystemData>().To<ArtistSystemData>();
+            kernel.Bind(b => b.From("ArtistSystem.Data").SelectAllClasses().BindDefaultInterfaces());
+                
             kernel.Bind<DbContext>().To<ArtistSystemContext>();
         }        
     }
