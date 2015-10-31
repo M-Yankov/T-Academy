@@ -15,11 +15,6 @@
             this.data = dataContext;
         }
 
-        public ArtistsController()
-            : this(new ArtistSystemData(new ArtistSystemContext()))
-        {
-        }
-
         public IHttpActionResult Get()
         {
             var artists = this.data.Artists.All().Select(a => new ResponseArtistModel

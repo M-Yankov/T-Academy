@@ -15,11 +15,6 @@
             data = dataContex;
         }
 
-        public AlbumsController()
-            : this(new ArtistSystemData(new ArtistSystemContext()))
-        {
-        }
-
         public IHttpActionResult Get()
         {
             var result = this.data.Albums.All().Select(al => new ResponseAlbumModel

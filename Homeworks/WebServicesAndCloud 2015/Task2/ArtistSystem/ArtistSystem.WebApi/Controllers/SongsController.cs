@@ -18,11 +18,7 @@
         {
             this.data = data;
         }
-
-        public SongsController()
-            :this(new ArtistSystemData(new ArtistSystemContext()))
-        {
-        }
+        
 
         public IHttpActionResult Get()
         {
