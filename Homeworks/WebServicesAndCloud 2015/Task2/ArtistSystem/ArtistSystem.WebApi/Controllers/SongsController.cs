@@ -5,9 +5,11 @@
     using System.Linq;
     using System.Web.Http;
     using System.Web.Http.Cors;
+    using AutoMapper.QueryableExtensions;
     using ArtistSystem.Data;
     using ArtistSystem.WebApi.Models;
     using ArtistsSystem.Models;
+    using AutoMapper;
 
     public class SongsController : ApiController
     {
@@ -21,16 +23,12 @@
         [EnableCors("*", "*", "*")]
         public IHttpActionResult Get()
         {
-            List<ResponseSongModel> songs = this.data.Songs.All()
-                .Select(song => new ResponseSongModel
-                {
-                    Id = song.Id,
-                    Genre = song.Genre,
-                    Title = song.Title,
-                    Year = song.Year,
-                    AlbumId = song.AlbumId,
-                    ArtistId = song.ArtistId
-                })
+            Mapper.CreateMap<Song, ResponseSongModel>();
+
+            List<ResponseSongModel> songs = this.data
+                .Songs
+                .All()
+                .ProjectTo<ResponseSongModel>()
                 .ToList();
 
             return this.Ok(songs);
@@ -100,7 +98,7 @@
                 return this.Ok($"Rows affected ({rowsChanged})");
             }
 
-            return this.BadRequest("Id does'not exits!");
+            return this.BadRequest("Id does not exits!");
         }
     }
 }
