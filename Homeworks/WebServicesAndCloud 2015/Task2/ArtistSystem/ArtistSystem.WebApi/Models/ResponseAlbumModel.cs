@@ -15,7 +15,7 @@
 
         public string ProducerName { get; set; }
 
-        //// automapper.
+        //// auto mapper.
 
         public override string ToString()
         {

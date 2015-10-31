@@ -1,5 +1,4 @@
-﻿
-namespace ArtistSystem.WebApi.Controllers
+﻿namespace ArtistSystem.WebApi.Controllers
 {
     using ArtistSystem.Data;
     using ArtistSystem.WebApi.Models;
