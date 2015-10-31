@@ -7,6 +7,7 @@
     {
         protected void Application_Start()
         {
+            DataBaseConfig.Initialize();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }

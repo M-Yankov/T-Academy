@@ -47,6 +47,12 @@
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [StringLength(50, ErrorMessage = "The first name is too long.")]
+        public string FirstName { get; set; }
+
+        [StringLength(50, ErrorMessage = "The last name is too long.")]
+        public string LastName { get; set; }
     }
 
     public class RegisterExternalBindingModel

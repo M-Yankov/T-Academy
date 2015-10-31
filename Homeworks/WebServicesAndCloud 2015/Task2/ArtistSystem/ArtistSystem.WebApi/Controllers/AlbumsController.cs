@@ -8,7 +8,7 @@
 
     public class AlbumsController : ApiController
     {
-        private IArtistSystemData data;
+        private readonly IArtistSystemData data;
 
         public AlbumsController(IArtistSystemData dataContex)
         {

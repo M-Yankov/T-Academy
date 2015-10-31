@@ -12,7 +12,7 @@
 
     public class SongsController : ApiController
     {
-        private IArtistSystemData data;
+        private readonly IArtistSystemData data;
 
         public SongsController(IArtistSystemData data)
         {
@@ -26,7 +26,7 @@
 
         public IHttpActionResult Get()
         {
-            var songs = this.data.Songs.All()
+            List<ResponseSongModel> songs = this.data.Songs.All()
                 .Select(song => new ResponseSongModel
                 {
                     Id = song.Id,
