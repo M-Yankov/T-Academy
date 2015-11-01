@@ -1,0 +1,2 @@
+My homework is in StudentSystem.WebApi then just add Controllers.
+First my wrong must create model classes in models because it's not good to use these models that is suposed for database!
