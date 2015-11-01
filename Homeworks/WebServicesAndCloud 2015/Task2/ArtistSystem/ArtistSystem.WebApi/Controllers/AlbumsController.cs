@@ -4,10 +4,10 @@
     using System.Linq;
     using System.Web.Http;
     using ArtistsSystem.Models;
+    using AutoMapper;
     using AutoMapper.QueryableExtensions;
     using Data;
     using Models;
-    using AutoMapper;
 
     public class AlbumsController : ApiController
     {
@@ -15,7 +15,7 @@
 
         public AlbumsController(IArtistSystemData dataContex)
         {
-            data = dataContex;
+            this.data = dataContex;
         }
 
         public IHttpActionResult Get()

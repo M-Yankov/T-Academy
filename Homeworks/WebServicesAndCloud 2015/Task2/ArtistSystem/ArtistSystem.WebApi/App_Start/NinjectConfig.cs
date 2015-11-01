@@ -4,15 +4,15 @@
 namespace ArtistSystem.WebApi
 {
     using System;
+    using System.Data.Entity;
     using System.Web;
+    using Data;
 
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
     using Ninject.Extensions.Conventions;
     using Ninject.Web.Common;
-    using Data;
-    using System.Data.Entity;
 
     public static class NinjectConfig
     {

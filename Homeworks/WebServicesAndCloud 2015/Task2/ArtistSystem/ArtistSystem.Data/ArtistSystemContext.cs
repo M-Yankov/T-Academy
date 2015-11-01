@@ -7,7 +7,7 @@
     public class ArtistSystemContext : IdentityDbContext<User>
     {
         public ArtistSystemContext()
-            :base("ArtistSystem", throwIfV1Schema: false)
+            : base("ArtistSystem", throwIfV1Schema: false)
         {
         }
 

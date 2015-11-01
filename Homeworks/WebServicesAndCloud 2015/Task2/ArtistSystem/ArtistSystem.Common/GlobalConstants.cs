@@ -2,8 +2,6 @@
 {
     public class GlobalConstants
     {
-        private const int GlobalTextMinLength = 5;
-        private const int GlobalTextMaxLength = 50;
         public const int TitleMinLength = GlobalTextMinLength;
         public const int TitleMaxLength = GlobalTextMaxLength;
         public const int MinYear = 1950;
@@ -15,5 +13,7 @@
         public const int CountryMinLength = GlobalTextMinLength;
         public const int CountryMaxLength = GlobalTextMaxLength;
 
+        private const int GlobalTextMinLength = 5;
+        private const int GlobalTextMaxLength = 50;
     }
 }

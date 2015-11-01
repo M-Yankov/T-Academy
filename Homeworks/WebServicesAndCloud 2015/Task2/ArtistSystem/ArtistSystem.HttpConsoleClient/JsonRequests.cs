@@ -1,17 +1,16 @@
 ﻿namespace ArtistSystem.HttpConsoleClient
 {
-    using WebApi.Models;
     using System;
-    using System.Net.Http;
-    using Newtonsoft.Json;
-    using System.Text;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Net.Http;
+    using System.Text;
+    using Newtonsoft.Json;
+    using WebApi.Models;
 
     public class JsonRequests
     {
-
-        internal async static void ExecuteDeleteRequests(HttpClient client)
+        internal static async void ExecuteDeleteRequests(HttpClient client)
         {
             ResponseSongModel deleteSong = new ResponseSongModel
             {
@@ -70,7 +69,7 @@
             }
         }
 
-        internal async static void ExecutePostRequests(HttpClient client)
+        internal static async void ExecutePostRequests(HttpClient client)
         {
             ResponseAlbumModel testAlbum = new ResponseAlbumModel
             {

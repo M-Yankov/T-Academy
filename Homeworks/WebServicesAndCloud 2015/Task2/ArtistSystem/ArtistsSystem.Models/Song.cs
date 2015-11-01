@@ -1,7 +1,7 @@
 ﻿namespace ArtistsSystem.Models
 {
-    using ArtistSystem.Common;
     using System.ComponentModel.DataAnnotations;
+    using ArtistSystem.Common;
 
     public class Song
     {

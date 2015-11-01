@@ -11,17 +11,17 @@
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Title is required!")]
-        [MinLength(GlobalConstants.TitleMinLength, ErrorMessage = "Not enoght title length!" )]
+        [MinLength(GlobalConstants.TitleMinLength, ErrorMessage = "Not enoght title length!")]
         [MaxLength(GlobalConstants.TitleMaxLength, ErrorMessage = "Max length of Title!")]
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Year is required!")]
-        [Range(GlobalConstants.MinYear, GlobalConstants.MaxYear, ErrorMessage ="Year does not in range!")]
+        [Range(GlobalConstants.MinYear, GlobalConstants.MaxYear, ErrorMessage = "Year does not in range!")]
         public int Year { get;  set; }
 
         [Required(ErrorMessage = "Genre is required!")]
-        [MinLength(GlobalConstants.GenreMinLength , ErrorMessage = "Not enough length for genre!")]
-        [MaxLength(GlobalConstants.GenreMaxLength, ErrorMessage = "Too much symbols!" )]
+        [MinLength(GlobalConstants.GenreMinLength, ErrorMessage = "Not enough length for genre!")]
+        [MaxLength(GlobalConstants.GenreMaxLength, ErrorMessage = "Too much symbols!")]
         public string Genre { get; set; }
 
         [Required(ErrorMessage = "Artist is required!")]

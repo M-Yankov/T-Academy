@@ -1,14 +1,14 @@
 ﻿namespace ArtistSystem.HttpConsoleClient
 {
-    using WebApi.Models;
-    using System.Net.Http;
     using System;
+    using System.Net.Http;
     using System.Net.Http.Headers;
     using System.Xml.Linq;
+    using WebApi.Models;
 
     public class XmlRequests
     {
-        internal async static void ProcessPostRequests(HttpClient client)
+        internal static async void ProcessPostRequests(HttpClient client)
         {
             ResponseAlbumModel album = new ResponseAlbumModel
             {
@@ -21,7 +21,7 @@
             Console.WriteLine(httpResponse.ReasonPhrase.ToString() + " from albums");
         }
 
-        internal async static void ProcessGetCommand(HttpClient client)
+        internal static async void ProcessGetCommand(HttpClient client)
         {
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("text/xml"));

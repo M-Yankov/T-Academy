@@ -5,11 +5,11 @@
     using System.Linq;
     using System.Web.Http;
     using System.Web.Http.Cors;
-    using AutoMapper.QueryableExtensions;
-    using ArtistSystem.Data;
-    using ArtistSystem.WebApi.Models;
     using ArtistsSystem.Models;
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Data;
+    using Models;
 
     public class SongsController : ApiController
     {
@@ -36,8 +36,8 @@
         {
             if (this.ModelState.IsValid)
             {
-                Artist artitst = data.Artists.GetById(song.ArtistId);
-                Album album = data.Albums.GetById(song.AlbumId);
+                Artist artitst = this.data.Artists.GetById(song.ArtistId);
+                Album album = this.data.Albums.GetById(song.AlbumId);
 
                 if (album != null && artitst != null)
                 {
@@ -55,7 +55,7 @@
         {
             if (this.ModelState.IsValid)
             {
-                Song theSongToUpdate = data.Songs.GetById(song.Id);
+                Song theSongToUpdate = this.data.Songs.GetById(song.Id);
                 if (this.data.Songs.GetById(song.Id) == null)
                 {
                     return this.BadRequest($"Song with this id not found! Actual: {song.Id}");

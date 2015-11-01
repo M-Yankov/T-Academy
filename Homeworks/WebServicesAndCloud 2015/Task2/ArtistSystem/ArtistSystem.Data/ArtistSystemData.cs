@@ -1,14 +1,14 @@
 ﻿namespace ArtistSystem.Data
 {
     using System;
-    using ArtistsSystem.Models;
-    using System.Data.Entity;
     using System.Collections.Generic;
+    using System.Data.Entity;
+    using ArtistsSystem.Models;
 
     public class ArtistSystemData : IArtistSystemData
     {
-        private DbContext context;
-        private IDictionary<Type, object> respositories;
+        private readonly DbContext context;
+        private readonly IDictionary<Type, object> respositories;
 
         public ArtistSystemData(DbContext artistContext)
         {
@@ -49,7 +49,7 @@
         {
             if (!this.respositories.ContainsKey(typeof(T)))
             {
-                var type = typeof(EfRepository<T>);
+                Type type = typeof(EfRepository<T>);
 
                 this.respositories.Add(typeof(T), Activator.CreateInstance(type, this.context));
             }

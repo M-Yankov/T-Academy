@@ -1,18 +1,12 @@
-﻿
-namespace ArtistSystem.HttpConsoleClient
+﻿namespace ArtistSystem.HttpConsoleClient
 {
     using System;
     using System.Linq;
-    using System.Collections.Generic;
     using System.Net.Http;
     using System.Net.Http.Headers;
-    using WebApi.Models;
-    using Newtonsoft.Json;
-    using System.Text;
 
     public class StartUp
     {
-
         public static void Main()
         {
             HttpClient client = new HttpClient
@@ -25,7 +19,7 @@ namespace ArtistSystem.HttpConsoleClient
             JsonRequests.ExecuteGetRequests(client);
             JsonRequests.ExecutePostRequests(client);
             Console.WriteLine("Press enter to proceess with updates.");
-            // I put this ReadLine because it's async operation
+            //// I put this ReadLine because it's async operation
             Console.ReadLine();
 
             JsonRequests.ExecutePutRequests(client);
@@ -44,6 +38,5 @@ namespace ArtistSystem.HttpConsoleClient
             Console.WriteLine("Press enter to finish.");
             Console.ReadLine();
         }
-
     }
 }

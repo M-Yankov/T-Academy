@@ -1,8 +1,8 @@
 ﻿namespace ArtistSystem.WebApi
 {
-    using Data.Migrations;
-    using Data;
     using System.Data.Entity;
+    using Data;
+    using Data.Migrations;
 
     public static class DataBaseConfig
     {

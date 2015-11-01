@@ -1,9 +1,9 @@
-﻿using ArtistSystem.Common;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-
-namespace ArtistsSystem.Models
+﻿namespace ArtistsSystem.Models
 {
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using ArtistSystem.Common;
+
     public class Album
     {
         private ICollection<Artist> artists;

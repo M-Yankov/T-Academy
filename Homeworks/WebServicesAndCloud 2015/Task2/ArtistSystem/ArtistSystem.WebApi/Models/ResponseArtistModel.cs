@@ -3,11 +3,11 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
     using ArtistsSystem.Models;
     using AutoMapper;
     using Common;
     using Infrastructure;
-    using System.Linq;
 
     public class ResponseArtistModel : BaseResponseModel, IMapFrom<Artist>, IHaveCustomMapping
     {

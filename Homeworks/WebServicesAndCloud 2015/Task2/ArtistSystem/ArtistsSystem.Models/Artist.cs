@@ -1,9 +1,9 @@
 ﻿namespace ArtistsSystem.Models
 {
-    using ArtistSystem.Common;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using ArtistSystem.Common;
 
     public class Artist
     {

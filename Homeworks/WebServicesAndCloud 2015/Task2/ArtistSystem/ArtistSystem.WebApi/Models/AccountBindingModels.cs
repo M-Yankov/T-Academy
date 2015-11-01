@@ -3,7 +3,7 @@
     using System.ComponentModel.DataAnnotations;
     using Newtonsoft.Json;
 
-    // Models used as parameters to AccountController actions.
+    //// Models used as parameters to AccountController actions.
 
     public class AddExternalLoginBindingModel
     {

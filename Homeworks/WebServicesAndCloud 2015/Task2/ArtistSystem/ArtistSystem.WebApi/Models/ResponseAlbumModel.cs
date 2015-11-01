@@ -2,10 +2,10 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
     using ArtistsSystem.Models;
     using AutoMapper;
     using Infrastructure;
-    using System.Linq;
 
     public class ResponseAlbumModel : BaseResponseModel, IMapFrom<Album>, IHaveCustomMapping
     {
