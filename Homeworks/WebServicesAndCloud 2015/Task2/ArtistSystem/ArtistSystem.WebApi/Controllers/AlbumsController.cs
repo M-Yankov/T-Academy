@@ -1,10 +1,13 @@
 ﻿namespace ArtistSystem.WebApi.Controllers
 {
-    using Models;
-    using Data;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Web.Http;
     using ArtistsSystem.Models;
+    using AutoMapper.QueryableExtensions;
+    using Data;
+    using Models;
+    using AutoMapper;
 
     public class AlbumsController : ApiController
     {
@@ -17,13 +20,11 @@
 
         public IHttpActionResult Get()
         {
-            var result = this.data.Albums.All().Select(al => new ResponseAlbumModel
-            {
-                Id = al.Id,
-                Title = al.Title,
-                Year = al.Year,
-                ProducerName = al.Producer
-            }).ToList();
+            List<ResponseAlbumModel> result = this.data
+                .Albums
+                .All()
+                .ProjectTo<ResponseAlbumModel>()
+                .ToList();
 
             return this.Ok(result);
         }
@@ -32,17 +33,15 @@
         {
             if (this.ModelState.IsValid)
             {
-                this.data.Albums.Add(
-                    new Album
-                    {
-                        Title = album.Title,
-                        Producer = album.ProducerName,
-                        Year = album.Year
-                        //// AutoMapper!
-                    });
+                //// TODO: Add class model for saving objects. 
+                Album albumToAdd = Mapper.Map<Album>(album);
+                //// this is ridiculous ↓
+                albumToAdd.Producer = album.ProducerName; 
 
+                this.data.Albums.Add(albumToAdd);
                 int rowsChanged = this.data.SaveChanges();
-                return this.Ok<string>($"Rows affected ({rowsChanged})");
+
+                return this.Ok($"Rows affected ({rowsChanged})");
             }
 
             return this.BadRequest(this.ModelState);
@@ -52,16 +51,13 @@
         {
             if (this.ModelState.IsValid)
             {
-                var albumToUpdate = this.data.Albums.GetById(album.Id);
+                Album albumToUpdate = this.data.Albums.GetById(album.Id);
                 if (albumToUpdate == null)
                 {
                     return this.BadRequest($"No such album with this id: {album.Id}");
                 }
 
-                albumToUpdate.Producer = album.ProducerName;
-                albumToUpdate.Title = album.Title;
-                albumToUpdate.Year = album.Year;
-
+                Mapper.DynamicMap(album, albumToUpdate);
                 this.data.Albums.Update(albumToUpdate);
 
                 int rowsChanged = this.data.SaveChanges();
@@ -76,6 +72,7 @@
             if (this.data.Albums.All().Any(al => al.Id == album.Id))
             {
                 this.data.Albums.Delete(album.Id);
+
                 int rowsChanged = this.data.SaveChanges();
                 return this.Ok($"Rows affected ({rowsChanged})");
             }

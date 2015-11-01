@@ -1,10 +1,15 @@
 ﻿namespace ArtistSystem.WebApi.Models
 {
-    using Common;
     using System;
+    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using ArtistsSystem.Models;
+    using AutoMapper;
+    using Common;
+    using Infrastructure;
+    using System.Linq;
 
-    public class ResponseArtistModel : BaseResponseModel
+    public class ResponseArtistModel : BaseResponseModel, IMapFrom<Artist>, IHaveCustomMapping
     {
         public int Id { get; set; }
 
@@ -18,11 +23,22 @@
         [MaxLength(GlobalConstants.CountryMaxLength)]
         public string Country { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime DataOfBirth { get; set; }
+
+        public ICollection<string> SongNames { get; set; }
+
+        public ICollection<string> AlbumNames { get; set; }
 
         public override string ToString()
         {
-            return $"Name: {this.Name};\nCountry: {this.Country};\nDateOfBirth: {this.DateOfBirth: yyyy.MM.dd}";
+            return $"Name: {this.Name};\nCountry: {this.Country};\nDateOfBirth: {this.DataOfBirth: yyyy.MM.dd}";
+        }
+
+        public void CreateMapping(IConfiguration config)
+        {
+            config.CreateMap<Artist, ResponseArtistModel>()
+                .ForMember(x => x.SongNames, opts => opts.MapFrom(a => a.Songs.Select(xz => xz.Title)))
+                .ForMember(x => x.AlbumNames, opts => opts.MapFrom(a => a.Albums.Select(sz => sz.Title).ToList()));
         }
     }
 }

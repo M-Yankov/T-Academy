@@ -23,8 +23,6 @@
         [EnableCors("*", "*", "*")]
         public IHttpActionResult Get()
         {
-            Mapper.CreateMap<Song, ResponseSongModel>();
-
             List<ResponseSongModel> songs = this.data
                 .Songs
                 .All()
@@ -38,21 +36,12 @@
         {
             if (this.ModelState.IsValid)
             {
-                var artitst = data.Artists.GetById(song.ArtistId);
-                var album = data.Albums.GetById(song.AlbumId);
+                Artist artitst = data.Artists.GetById(song.ArtistId);
+                Album album = data.Albums.GetById(song.AlbumId);
 
                 if (album != null && artitst != null)
                 {
-                    this.data.Songs.Add(
-                        new Song
-                        {
-                            Title = song.Title,
-                            Year = song.Year,
-                            Genre = song.Genre,
-                            AlbumId = album.Id,
-                            ArtistId = artitst.Id
-                        });
-
+                    this.data.Songs.Add(Mapper.Map<Song>(song));
                     int rowsChanged = this.data.SaveChanges();
 
                     return this.Ok($"Rows affected ({rowsChanged})");
@@ -66,19 +55,14 @@
         {
             if (this.ModelState.IsValid)
             {
-                var theSong = data.Songs.GetById(song.Id);
-                if (theSong == null)
+                Song theSongToUpdate = data.Songs.GetById(song.Id);
+                if (this.data.Songs.GetById(song.Id) == null)
                 {
-                    return this.BadRequest("Id not found!");
+                    return this.BadRequest($"Song with this id not found! Actual: {song.Id}");
                 }
 
-                theSong.Title = song.Title;
-                theSong.Year = song.Year;
-                theSong.Genre = song.Genre;
-                theSong.ArtistId = song.ArtistId;
-                theSong.AlbumId = song.AlbumId;
-
-                data.Songs.Update(theSong);
+                Mapper.DynamicMap(song, theSongToUpdate);
+                this.data.Songs.Update(theSongToUpdate);
 
                 int rowsChanged = this.data.SaveChanges();
                 return this.Ok($"Rows affected ({rowsChanged})");

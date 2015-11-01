@@ -54,7 +54,7 @@
                 Id = 27,
                 Name = "Updated artist name",
                 Country = "Country Updated",
-                DateOfBirth = new DateTime(1999, 2, 4)
+                DataOfBirth = new DateTime(1999, 2, 4)
             };
 
             var messages = new List<HttpResponseMessage>
@@ -92,7 +92,7 @@
             {
                 Name = "Kaenko Ukolovich",
                 Country = "Ukraine",
-                DateOfBirth = new DateTime(1999, 2, 4)
+                DataOfBirth = new DateTime(1999, 2, 4)
             };
 
             var httpResponseAlbum = await client.PostAsJsonAsync("api/albums", testAlbum);

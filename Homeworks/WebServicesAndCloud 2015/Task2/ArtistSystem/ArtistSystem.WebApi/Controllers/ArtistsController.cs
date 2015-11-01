@@ -1,14 +1,17 @@
 ﻿namespace ArtistSystem.WebApi.Controllers
 {
-    using Models;
-    using Data;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Web.Http;
     using ArtistsSystem.Models;
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
+    using Data;
+    using Models;
 
     public class ArtistsController : ApiController
     {
-        private IArtistSystemData data;
+        private readonly IArtistSystemData data;
 
         public ArtistsController(IArtistSystemData dataContext)
         {
@@ -17,13 +20,11 @@
 
         public IHttpActionResult Get()
         {
-            var artists = this.data.Artists.All().Select(a => new ResponseArtistModel
-            {
-                Id = a.Id,
-                Name = a.Name,
-                Country = a.Country,
-                DateOfBirth = a.DataOfBirth
-            }).ToList();
+            List<ResponseArtistModel> artists = this.data
+                .Artists
+                .All()
+                .ProjectTo<ResponseArtistModel>()
+                .ToList();
 
             return this.Ok(artists);
         }
@@ -32,12 +33,8 @@
         {
             if (this.ModelState.IsValid)
             {
-                this.data.Artists.Add(new Artist
-                {
-                    Country = artist.Country,
-                    Name = artist.Name,
-                    DataOfBirth = artist.DateOfBirth
-                });
+                Artist artistToAdd = Mapper.Map<Artist>(artist);
+                this.data.Artists.Add(artistToAdd);
 
                 int rowsChnaged = this.data.SaveChanges();
                 return this.Ok($"Rows changed ({rowsChnaged})");
@@ -50,17 +47,15 @@
         {
             if (this.ModelState.IsValid)
             {
-                var artistToUpdate = this.data.Artists.GetById(artist.Id);
-
+                Artist artistToUpdate = this.data.Artists.GetById(artist.Id);
                 if (artistToUpdate == null)
                 {
                     return this.BadRequest("Artist Not found!");
                 }
 
-                artistToUpdate.Country = artist.Country;
-                artistToUpdate.Name = artist.Name;
-                artistToUpdate.DataOfBirth = artist.DateOfBirth;
-
+                //// Why need this? Because Mapper.Map<T>(obj) returns a new object with the new properties. I can Update 
+                //// this object - it's not from the database. So I use this Method just to transfer values from properties
+                Mapper.DynamicMap(artist, artistToUpdate);
                 this.data.Artists.Update(artistToUpdate);
 
                 int rowsChnaged = this.data.SaveChanges();

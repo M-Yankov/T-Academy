@@ -1,17 +1,13 @@
-﻿
-namespace ArtistSystem.WebApi.Models
+﻿namespace ArtistSystem.WebApi.Models
 {
     using System.ComponentModel.DataAnnotations;
+    using ArtistsSystem.Models;
+    using AutoMapper;
     using Common;
-    using System.Collections.Generic;
+    using Infrastructure;
 
-    public class ResponseSongModel : BaseResponseModel
+    public class ResponseSongModel : BaseResponseModel, IMapFrom<Song>, IHaveCustomMapping
     {
-        private static readonly IList<string> errorMessages = new List<string>
-        {
-            $"Min length is {GlobalConstants.TitleMinLength}!",
-        };
-
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Title is required!")]
@@ -34,9 +30,20 @@ namespace ArtistSystem.WebApi.Models
         [Required(ErrorMessage = "AlbumId is required!")]
         public int AlbumId { get; set; }
 
+        public string ArtistName { get; set; }
+
+        public string AlbumName { get; set; }
+
         public override string ToString()
         {
             return $"title: {this.Title};\nYear: {this.Year};\nGenre: {this.Genre}";
+        }
+
+        public void CreateMapping(IConfiguration config)
+        {
+            config.CreateMap<Song, ResponseSongModel>()
+                .ForMember(s => s.ArtistName, opts => opts.MapFrom(rs => rs.Artist.Name))
+                .ForMember(s => s.AlbumName, opts => opts.MapFrom(rs => rs.Album.Title));
         }
     }
 }
