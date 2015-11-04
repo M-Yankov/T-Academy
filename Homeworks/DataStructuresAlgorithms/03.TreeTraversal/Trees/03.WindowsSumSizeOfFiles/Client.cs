@@ -21,54 +21,43 @@
         private const string Writing = "Writing...";
         private const string Reading = "Reading...";
         private const string ErrorMessage = "Error in the algorithm.";
-        private const string DirectoryToSearch = "C:\\Windows\\SysWOW64";
+        private const string DirectoryToSearch = "SysWOW64";
         private static readonly Random Generator = new Random();
 
         public static void Main()
         {
             CreateHomeworkFolder(HomeworkPath);
             Folder root = new Folder();
-            FillFolderWithDirectoriesAndFiles("C:\\Windows", root);
 
+            FillFolderWithDirectoriesAndFiles("C:\\Windows", root);
             WriteRootFolder(HomeworkPath, root);
-            long result = FindSizeOfSubFolder(DirectoryToSearch);
+            
+            long result = FindSizeOfSubFolder(DirectoryToSearch, root);
             Console.WriteLine("Directory {0} has ~{1:N0} bytes", DirectoryToSearch, result);
         }
 
-        private static long FindSizeOfSubFolder(string directoy)
+        private static long FindSizeOfSubFolder(string directoy, Folder folerDirectory)
         {
             Console.WriteLine("Calculate files size in directory... {0}", directoy);
-            return FindSizeOfSubFolder(directoy, 0);
+            Folder folder = FindDirectoryByName(directoy, folerDirectory);
+            return FindSizeOfSubFolder(directoy, folder, 0);
         }
 
-        private static long FindSizeOfSubFolder(string directoy, long size = 0)
+        private static long FindSizeOfSubFolder(string directoy, Folder folder, long size = 0)
         {
             if (size < 0)
             {
                 throw new ArgumentNullException(ErrorMessage);
             }
 
-            string[] dirs;
-            try
+            for (int i = 0; i < folder.SubFolders.Count; i++)
             {
-                //// Unauthorized exception.
-                dirs = Directory.GetDirectories(directoy).Union(Directory.GetFiles(directoy)).ToArray();
-            }
-            catch (Exception)
-            {
-                return 0;
+                FindSizeOfSubFolder(directoy, folder.SubFolders[i], size);
             }
 
-            for (int i = 0; i < dirs.Length; i++)
+            for (int i = 0; i < folder.Files.Count; i++)
             {
-                if (Directory.Exists(dirs[i]))
-                {
-                    size = FindSizeOfSubFolder(dirs[i], size);
-                }
-                else if (System.IO.File.Exists(dirs[i]))
-                {
-                    size += new FileInfo(dirs[i]).Length;
-                }
+                size += folder.Files[i].Size;
             }
 
             return size;
@@ -86,6 +75,31 @@
         {
             Directory.CreateDirectory(path);
             Console.WriteLine("HomeWork is on: {0}", path);
+        }
+
+        private static Folder FindDirectoryByName(string name, Folder folderToTraverse)
+        {
+            if (folderToTraverse.Name == name)
+            {
+                return folderToTraverse;
+            }
+
+            Folder result = folderToTraverse.SubFolders.Where(x => x.Name == name).FirstOrDefault();
+            if (result != null)
+            {
+                return result;
+            }
+
+            for (int i = 0; i < folderToTraverse.SubFolders.Count; i++)
+            {
+                result = FindDirectoryByName(name, folderToTraverse.SubFolders[i]);
+                if (result != null)
+                {
+                    return result;
+                }
+            }
+
+            return result;
         }
 
         private static void WriteFolderContentsToDisk(string pathToWrite, Folder folder)
@@ -150,7 +164,10 @@
                 }
                 else if (System.IO.File.Exists(dirs[i]))
                 {
-                    rootToFill.Files.Add(new File(fileNameOnly));
+                    rootToFill.Files.Add(new File(fileNameOnly) 
+                    {
+                        Size = new FileInfo(dirs[i]).Length 
+                    });
                     //// System.IO.File.Create(homeworkPath + correctName + fileNameOnly);
                 }
             }
@@ -164,6 +181,7 @@
             Console.WriteLine(new string(' ', 500));
             Console.SetCursorPosition(0, 1);
             Console.WriteLine("{0}... {1}", operation, path);
+            Console.ResetColor();
         }
     }
 }
