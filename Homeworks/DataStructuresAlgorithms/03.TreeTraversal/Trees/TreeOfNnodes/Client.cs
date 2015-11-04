@@ -5,6 +5,15 @@
     using System.IO;
     using System.Linq;
 
+    /// <summary>
+    /// Write a program to read the tree and find:
+    ///     ○ the root node
+    ///     ○ all leaf nodes
+    ///     ○ all middle nodes
+    ///     ○ the longest path in the tree
+    ///     ¤ all paths in the tree with given sum `S` of their nodes
+    ///     ¤ all subtrees with given sum `S` of their nodes
+    /// </summary>
     public class Client
     {
         public static void Main()
