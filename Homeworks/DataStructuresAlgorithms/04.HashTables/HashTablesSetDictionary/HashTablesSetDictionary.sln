@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.KeyValuePairStructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsOfStructures(Task04)", "TestsOfStructures\TestsOfStructures(Task04).csproj", "{B281FBF0-C815-4761-A4F1-292CC58BA4FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.HashedSetStructure", "05.HashedSetStructure\05.HashedSetStructure.csproj", "{6EF8FBC7-2F4F-410D-9A41-BCD3FAD1D396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestForStructuresTask5", "TestForStructuresTask5\TestForStructuresTask5.csproj", "{38D1604F-1605-4BA6-A6BC-7739C818DC57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF8FBC7-2F4F-410D-9A41-BCD3FAD1D396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF8FBC7-2F4F-410D-9A41-BCD3FAD1D396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF8FBC7-2F4F-410D-9A41-BCD3FAD1D396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF8FBC7-2F4F-410D-9A41-BCD3FAD1D396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38D1604F-1605-4BA6-A6BC-7739C818DC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D1604F-1605-4BA6-A6BC-7739C818DC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D1604F-1605-4BA6-A6BC-7739C818DC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D1604F-1605-4BA6-A6BC-7739C818DC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

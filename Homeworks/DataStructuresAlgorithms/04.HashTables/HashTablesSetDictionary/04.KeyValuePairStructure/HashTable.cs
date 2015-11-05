@@ -183,7 +183,12 @@
         {
             long hash = (7 * key.GetHashCode()) << 13;
             hash >>= 17;
-            hash ^= 13 / hash;
+            if (hash <= 0)
+            {
+                hash = (19 * key.GetHashCode()) << 7;
+            }
+
+            hash ^= 13 / (hash == 0 ? 23 : hash);
             int len = Math.Min(10, hash.ToString().Length);
             return int.Parse(hash.ToString().Substring(0, len));
         }
