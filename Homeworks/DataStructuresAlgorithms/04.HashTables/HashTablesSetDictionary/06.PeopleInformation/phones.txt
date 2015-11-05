@@ -1,0 +1,28 @@
+Mimi Shmatkata          | Ruse     | 0888 12 11 56
+Kireto                  | Varna    | 052 23 45 23
+Kamelia Petrova         | Varna    | 0899 999 888
+Jsut Gancho             | Burgas   | 02 946 422 946
+Mimi Shmatkata          | Plovdiv  | 0888 12 34 56
+Kireto Box              | Varna    | 052 23 45 44
+Daniela Ivanova Petrova | Karnobat | 0899 999 888
+Code Gancho             | Sofia    | 02 946 658 209
+Mimi Shmatkata          | Sofia    | 0888 20 34 56
+Kireto TopCoder         | Varna    | 052 59 45 23
+Galena Ivanova Petrova  | Ruse     | 0899 999 650
+Sir Gancho              | Vidin    | 02 946 930 09
+Mimi Shmatkata          | Burgas   | 0888 12 13 12
+Sir Kireto              | Vidin    | 052 23 45 95
+Maria Blagoeva			| Karnobat | 0899 999 652
+Kmet Gancho             | Sofia    | 02 946 362 946
+Mimi Shmatkata          | Plovdiv  | 0888 12 02 56
+Chief Kireto            | Burgas   | 052 23 95 67
+Kamelia Sexy Petrova    | Karnobat | 0899 652 888
+cHief Gancho            | Sofia    | 02 946 003 946
+Mimi Shmatkata          | Vidin    | 0888 12 12 56
+Kireto Picha            | Varna    | 052 23 48 67
+Kalina Ivanova Petrova  | Karnobat | 0899 965 888
+Bat Gancho              | Ruse     | 02 946 256 946
+Mimi Shmatkata s.       | Plovdiv  | 0888 12 18 56
+Kireto Mireto           | Plvdiv   | 052 23 13 67
+Daniela Ivanova Petrova | Karnobat | 0899 999 888
+Uncle Gancho            | Ruse     | 02 946 553 946
