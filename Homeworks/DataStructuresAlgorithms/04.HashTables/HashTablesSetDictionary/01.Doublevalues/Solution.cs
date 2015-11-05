@@ -11,7 +11,6 @@
 
         public static void Main()
         {
-
             double[] arrayOfValues = new double[] { 0.09444, 3, 4, 4, -2.5, -3.14, 3, 4, 3, -2.5, 3, -3.14, 4, -2.5, 3, 3, 9, 3, -2.5, 3, 9, 9, -2.5, 3.123, 3.123, 9, 3, -3.14, 000.09444 };
             IDictionary<double, int> pairs = new Dictionary<double, int>();
             

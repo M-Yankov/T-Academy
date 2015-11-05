@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Words.txt", "03.Words.tx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.KeyValuePairStructure", "04.KeyValuePairStructure\04.KeyValuePairStructure.csproj", "{53934444-6482-44FA-AC37-8054C1544B9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsOfStructures(Task04)", "TestsOfStructures\TestsOfStructures(Task04).csproj", "{B281FBF0-C815-4761-A4F1-292CC58BA4FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{53934444-6482-44FA-AC37-8054C1544B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53934444-6482-44FA-AC37-8054C1544B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53934444-6482-44FA-AC37-8054C1544B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B281FBF0-C815-4761-A4F1-292CC58BA4FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

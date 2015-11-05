@@ -1,14 +1,13 @@
 ﻿namespace Helper
 {
-    using System.Collections;
-    using System.Text;
-    using System.Linq;
-    using System.Collections.Generic;
     using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
     public class Formater
     {
-
         public static string FormatPairsForTemplate<TKey, Value>(string template, IDictionary<TKey, Value> pairsCollection)
              where Value : IComparable
         {

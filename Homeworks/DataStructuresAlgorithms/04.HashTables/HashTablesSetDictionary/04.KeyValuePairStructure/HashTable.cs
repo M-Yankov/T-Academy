@@ -1,14 +1,14 @@
 ﻿namespace KeyValuePairStructure
 {
     using System;
-    using System.Linq;
-    using System.Collections.Generic;
     using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
 
     public class HashTable<K, T> : IEnumerable<KeyValuePair<K, T>>
     {
-        private LinkedList<KeyValuePair<K, T>>[] data;
         private const uint InitialCapacity = 16;
+        private LinkedList<KeyValuePair<K, T>>[] data;
 
         public HashTable()
             : this(InitialCapacity)
@@ -21,42 +21,6 @@
         }
 
         public int Count { get; private set; }
-
-        /// <summary>
-        /// From task description ○ Find(key)->value;
-        /// </summary>
-        /// <param name="key">Key value.</param>
-        /// <returns>Returns the value from pair that contains Key value instead of whole pair.</returns>
-        public T Find(K key)
-        {
-            int indexInData = GetHashCodeOfKey(key) % this.data.Length;
-            indexInData *= indexInData < 0 ? -1 : 1;
-            return this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault().Value;
-        }
-
-        public void Clear()
-        {
-            for (int i = 0; i < this.data.Length; i++)
-            {
-                if (this.data[i] != null)
-                {
-                    this.data[i] = null;
-                }
-
-                this.Count = 0;
-            }
-        }
-
-        public KeyValuePair<K, T> this[K keyIndex]
-        {
-            get
-            {
-                int index = GetHashCodeOfKey(keyIndex) % this.data.Length;
-                index *= index < 0 ? -1 : 1;
-
-                return this.data[index].Where(pair => pair.Key == (dynamic)keyIndex).FirstOrDefault();
-            }
-        }
 
         public ICollection<K> Keys
         {
@@ -75,26 +39,33 @@
             }
         }
 
-        public void Remove(K key)
+        public KeyValuePair<K, T> this[K keyIndex]
         {
-            if (this.Count == 0)
+            get
             {
-                return;
-            }
+                int index = this.GetHashCodeOfKey(keyIndex) % this.data.Length;
+                index *= index < 0 ? -1 : 1;
 
-            int indexInData = GetHashCodeOfKey(key) % this.data.Length;
-            indexInData *= indexInData < 0 ? -1 : 1;
-            var a = this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault();
-            this.data[indexInData].Remove(a);
-            this.Count--;
+                if (this.data[index] == null)
+                {
+                    throw new NullReferenceException("This key does not exist in the hashTable");
+                }
+
+                return this.data[index].Where(pair => pair.Key == (dynamic)keyIndex).FirstOrDefault();
+            }
         }
 
         public void Add(K key, T value)
         {
             KeyValuePair<K, T> thePair = new KeyValuePair<K, T>(key, value);
 
-            int indexInData = GetHashCodeOfKey(thePair.Key) % this.data.Length;
+            int indexInData = this.GetHashCodeOfKey(thePair.Key) % this.data.Length;
             indexInData *= indexInData < 0 ? -1 : 1;
+
+            if (this.Keys.Contains(key))
+            {
+                throw new ArgumentException("This key already exist!");
+            }
 
             if (this.data[indexInData] == null)
             {
@@ -110,92 +81,54 @@
             }
         }
 
-        private LinkedList<KeyValuePair<K, T>>[] Resize()
+        /// <summary>
+        /// From task description ○ Find(key)->value;
+        /// </summary>
+        /// <param name="key">Key value.</param>
+        /// <returns>Returns the value from pair that contains Key value instead of whole pair.</returns>
+        public T Find(K key)
         {
-            LinkedList<KeyValuePair<K, T>>[] newGenericArray = new LinkedList<KeyValuePair<K, T>>[this.data.Length * 2];
-            for (int i = 0; i < this.data.Length; i++)
+            int indexInData = this.GetHashCodeOfKey(key) % this.data.Length;
+            indexInData *= indexInData < 0 ? -1 : 1;
+            if (this.data[indexInData] == null)
             {
-                //// TODO: Foreach not null values;
-                if (this.data[i] != null)
-                {
-                    var listOfPairs = this.data[i].ToList();
-
-                    for (int k = 0; k < listOfPairs.Count; k++)
-                    {
-                        int index2 = GetHashCodeOfKey(listOfPairs[k].Key) % newGenericArray.Length;
-                        index2 *= index2 < 0 ? -1 : 1;
-
-                        if (newGenericArray[index2] == null)
-                        {
-                            newGenericArray[index2] = new LinkedList<KeyValuePair<K, T>>();
-                        }
-
-                        newGenericArray[index2].AddLast(listOfPairs[k]);
-                    }
-                }
+                //// better throw instead return (default)T
+                throw new ArgumentException("This key cannot be found");
             }
-            return newGenericArray;
+
+            if (!this.data[indexInData].Any(pair => pair.Key == (dynamic)key))
+            {
+                throw new ArgumentException("This key cannot be found");
+            }
+
+            return this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault().Value;
         }
 
-        public int GetHashCodeOfKey(K key)
+        public void Clear()
         {
-            long hash = 7 * key.GetHashCode() << 13;
-            hash >>= 17;
-            hash ^= 13 / hash;
-            int len = Math.Min(10, hash.ToString().Length);
-            return int.Parse(hash.ToString().Substring(0, len));
-
-            /*//// After All Bullshits below finally good hash
-            switch (hash % 3)
+            for (int i = 0; i < this.data.Length; i++)
             {
-                case 0:
-                    hash ^= 31;
-                    break;
-                case 1:
-                    hash ^= 29;
-                    break;
-                case 2:
-                    hash ^= 13;
-                    break;
-                case -1:
-                    hash ^= 23;
-                    break;
-                case -2:
-                    hash ^= 7;
-                    break;
-            }
-
-            string resultToString = hash.ToString();
-            int lengthOfMaxINt = int.MaxValue.ToString().Length; //// 10
-            int counter = 0;
-            while (resultToString.Length >= lengthOfMaxINt)
-            {
-                if (counter % 2 == 0)
+                if (this.data[i] != null)
                 {
-                    resultToString = resultToString.Substring(1);
-                }
-                else
-                {
-                    int length = 5;
-                    string number = resultToString.Substring(resultToString.Length / 2 - length / 2, length);
-                    resultToString = ((double.Parse(number) * Math.PI) + string.Empty);
-                    resultToString = resultToString.Substring(resultToString.IndexOf(".") + 1);
+                    this.data[i] = null;
                 }
 
-                counter++;
+                this.Count = 0;
+            }
+        }
+
+        public void Remove(K key)
+        {
+            if (this.Count == 0)
+            {
+                return;
             }
 
-            int result = int.Parse(resultToString);
-            //if (resultToString.Length >= lengthOfMaxINt)
-            //{
-            //    result = int.Parse(resultToString.Substring(resultToString.Length / 2));
-            //}
-            //else
-            //{
-            //    result = (int)hash;
-            //}
-
-            return result;*/
+            int indexInData = this.GetHashCodeOfKey(key) % this.data.Length;
+            indexInData *= indexInData < 0 ? -1 : 1;
+            var a = this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault();
+            this.data[indexInData].Remove(a);
+            this.Count--;
         }
 
         public IEnumerator<KeyValuePair<K, T>> GetEnumerator()
@@ -216,6 +149,43 @@
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
+        }
+
+        private LinkedList<KeyValuePair<K, T>>[] Resize()
+        {
+            LinkedList<KeyValuePair<K, T>>[] newGenericArray = new LinkedList<KeyValuePair<K, T>>[this.data.Length * 2];
+            for (int i = 0; i < this.data.Length; i++)
+            {
+                //// TODO: Foreach not null values;
+                if (this.data[i] != null)
+                {
+                    var listOfPairs = this.data[i].ToList();
+
+                    for (int k = 0; k < listOfPairs.Count; k++)
+                    {
+                        int index2 = this.GetHashCodeOfKey(listOfPairs[k].Key) % newGenericArray.Length;
+                        index2 *= index2 < 0 ? -1 : 1;
+
+                        if (newGenericArray[index2] == null)
+                        {
+                            newGenericArray[index2] = new LinkedList<KeyValuePair<K, T>>();
+                        }
+
+                        newGenericArray[index2].AddLast(listOfPairs[k]);
+                    }
+                }
+            }
+
+            return newGenericArray;
+        }
+
+        private int GetHashCodeOfKey(K key)
+        {
+            long hash = (7 * key.GetHashCode()) << 13;
+            hash >>= 17;
+            hash ^= 13 / hash;
+            int len = Math.Min(10, hash.ToString().Length);
+            return int.Parse(hash.ToString().Substring(0, len));
         }
     }
 }
