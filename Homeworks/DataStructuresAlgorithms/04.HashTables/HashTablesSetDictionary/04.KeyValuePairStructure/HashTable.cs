@@ -3,8 +3,9 @@
     using System;
     using System.Linq;
     using System.Collections.Generic;
+    using System.Collections;
 
-    public class HashTable<K, T> // TODO: :IEnumerable<T>
+    public class HashTable<K, T> : IEnumerable<KeyValuePair<K, T>>
     {
         private LinkedList<KeyValuePair<K, T>>[] data;
         private const uint InitialCapacity = 16;
@@ -21,12 +22,71 @@
 
         public int Count { get; private set; }
 
+        /// <summary>
+        /// From task description ○ Find(key)->value;
+        /// </summary>
+        /// <param name="key">Key value.</param>
+        /// <returns>Returns the value from pair that contains Key value instead of whole pair.</returns>
         public T Find(K key)
         {
             int indexInData = GetHashCodeOfKey(key) % this.data.Length;
-            Console.WriteLine("key {0} has code {1}", key.ToString(), GetHashCodeOfKey(key));
             indexInData *= indexInData < 0 ? -1 : 1;
             return this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault().Value;
+        }
+
+        public void Clear()
+        {
+            for (int i = 0; i < this.data.Length; i++)
+            {
+                if (this.data[i] != null)
+                {
+                    this.data[i] = null;
+                }
+
+                this.Count = 0;
+            }
+        }
+
+        public KeyValuePair<K, T> this[K keyIndex]
+        {
+            get
+            {
+                int index = GetHashCodeOfKey(keyIndex) % this.data.Length;
+                index *= index < 0 ? -1 : 1;
+
+                return this.data[index].Where(pair => pair.Key == (dynamic)keyIndex).FirstOrDefault();
+            }
+        }
+
+        public ICollection<K> Keys
+        {
+            get
+            {
+                ICollection<K> result = new List<K>();
+                for (int i = 0; i < this.data.Length; i++)
+                {
+                    if (this.data[i] != null)
+                    {
+                        this.data[i].ToList().ForEach(pair => result.Add(pair.Key));
+                    }
+                }
+
+                return result;
+            }
+        }
+
+        public void Remove(K key)
+        {
+            if (this.Count == 0)
+            {
+                return;
+            }
+
+            int indexInData = GetHashCodeOfKey(key) % this.data.Length;
+            indexInData *= indexInData < 0 ? -1 : 1;
+            var a = this.data[indexInData].Where(pair => pair.Key == (dynamic)key).FirstOrDefault();
+            this.data[indexInData].Remove(a);
+            this.Count--;
         }
 
         public void Add(K key, T value)
@@ -53,7 +113,6 @@
         private LinkedList<KeyValuePair<K, T>>[] Resize()
         {
             LinkedList<KeyValuePair<K, T>>[] newGenericArray = new LinkedList<KeyValuePair<K, T>>[this.data.Length * 2];
-            Console.WriteLine("new size {0}", newGenericArray.Length);
             for (int i = 0; i < this.data.Length; i++)
             {
                 //// TODO: Foreach not null values;
@@ -75,11 +134,10 @@
                     }
                 }
             }
-            Console.WriteLine("end transfer");
             return newGenericArray;
         }
 
-        private int GetHashCodeOfKey(K key)
+        public int GetHashCodeOfKey(K key)
         {
             long hash = 7 * key.GetHashCode() << 13;
             hash >>= 17;
@@ -87,8 +145,7 @@
             int len = Math.Min(10, hash.ToString().Length);
             return int.Parse(hash.ToString().Substring(0, len));
 
-
-            //// After All Bullshits below finally good hash
+            /*//// After All Bullshits below finally good hash
             switch (hash % 3)
             {
                 case 0:
@@ -138,7 +195,27 @@
             //    result = (int)hash;
             //}
 
-            return result;
+            return result;*/
+        }
+
+        public IEnumerator<KeyValuePair<K, T>> GetEnumerator()
+        {
+            for (int i = 0; i < this.data.Length; i++)
+            {
+                if (this.data[i] != null)
+                {
+                    var list = this.data[i].ToList();
+                    foreach (var item in list)
+                    {
+                        yield return item;
+                    }
+                }
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
         }
     }
 }

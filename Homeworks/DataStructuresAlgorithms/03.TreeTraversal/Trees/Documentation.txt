@@ -1,0 +1,3 @@
+Some directories that not have acces are not proccessed
+Averadge time of task execution 1 min. patiance
+  This program works on Windows directory, execute with caution! 
