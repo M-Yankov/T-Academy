@@ -1,0 +1,6 @@
+The PriorityQueue is not fully implemented. And will not work correct if Dequeue then Enqueue the again Dequeue.
+Instead just use already defined collections in C5 library or Wintellect Power Collections.
+
+for Task3 - if you want 100MB File just copy-paste text there while(size < 100MB) or while(youDie ||laptopDie)
+
+If something gets wrong on build program, add reference to the external libraries > PowerCollections.dll, Triepocaypse.dll
