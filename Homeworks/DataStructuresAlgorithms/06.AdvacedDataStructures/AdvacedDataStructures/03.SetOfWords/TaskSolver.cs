@@ -9,11 +9,10 @@
     /// Source: http://geekyisawesome.blogspot.bg/2010/07/c-trie.html
     /// Task 03.
     /// </summary>
-    class TaskSolver
+    public class TaskSolver
     {
-        static void Main()
+        public static void Main()
         {
-
             Trie<int> trie = new Trie<int>();
 
             using (StreamReader reader = new StreamReader("..\\..\\PasswordsFromFaceBook.txt"))
