@@ -14,37 +14,6 @@
             this.secondData = new Dictionary<Key2, TValue>();
         }
 
-        public void Add(Key key, TValue data)
-        {
-            if (this.dickData.ContainsKey(key))
-            {
-                throw new InvalidOperationException("Key Already exist");
-            }
-
-            this.dickData.Add(key, data);
-        }
-
-        public void Add(Key2 key, TValue data)
-        {
-            if (this.secondData.ContainsKey(key))
-            {
-                throw new InvalidOperationException("Key Already exist");
-            }
-
-            this.secondData.Add(key, data);
-        }
-
-        public void Add(Key firstKey, Key2 secondKey, TValue data)
-        {
-            if (this.secondData.ContainsKey(secondKey) || this.dickData.ContainsKey(firstKey))
-            {
-                throw new InvalidOperationException("Key Already exist");
-            }
-
-            this.dickData.Add(firstKey, data);
-            this.secondData.Add(secondKey, data);
-        }
-
         public TValue this[Key firstKey]
         {
             get
@@ -93,12 +62,43 @@
                         TValue value = this[secondKey];
                         return value;
                     }
-                    catch(Exception)
+                    catch (Exception)
                     {
                         throw new KeyNotFoundException("Second key not found.", ex);
                     }
                 }
             }
+        }
+
+        public void Add(Key key, TValue data)
+        {
+            if (this.dickData.ContainsKey(key))
+            {
+                throw new InvalidOperationException("Key Already exist");
+            }
+
+            this.dickData.Add(key, data);
+        }
+
+        public void Add(Key2 key, TValue data)
+        {
+            if (this.secondData.ContainsKey(key))
+            {
+                throw new InvalidOperationException("Key Already exist");
+            }
+
+            this.secondData.Add(key, data);
+        }
+
+        public void Add(Key firstKey, Key2 secondKey, TValue data)
+        {
+            if (this.secondData.ContainsKey(secondKey) || this.dickData.ContainsKey(firstKey))
+            {
+                throw new InvalidOperationException("Key Already exist");
+            }
+
+            this.dickData.Add(firstKey, data);
+            this.secondData.Add(secondKey, data);
         }
     }
 }

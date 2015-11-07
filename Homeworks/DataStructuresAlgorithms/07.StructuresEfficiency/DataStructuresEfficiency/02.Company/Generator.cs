@@ -11,16 +11,8 @@
         private static Random generator = new Random();
         private static IEnumerable<string> loremParagraphs = Lorem.Paragraphs(100, 100, 100);
         private static IList<string> loremWords = new List<string>();
-        private static int MinPrice = 150000;
-        private static int MaxPrice = 9999000;
-
-        private static void Initialize()
-        {
-            foreach (var item in loremParagraphs)
-            {
-                item.Split(new[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries).Where(x => x.Length > 5).ToList().ForEach(word => loremWords.Add(word));
-            }
-        }
+        private static int minPrice = 150000;
+        private static int maxPrice = 9999000;
 
         private static bool IsInitialized { get; set; }
 
@@ -41,7 +33,7 @@
                     Barcode = loremWords[(int)Lorem.Number(0, loremWords.Count - 1)],
                     Title = loremWords[(int)Lorem.Number(0, loremWords.Count - 1)],
                     Vendor = loremWords[(int)Lorem.Number(0, loremWords.Count - 1)],
-                    Price = GetPrice(MinPrice, MaxPrice)
+                    Price = GetPrice(minPrice, maxPrice)
                 };
 
                 decimal key = articleToAdd.Price;
@@ -62,6 +54,14 @@
         {
             long number = Lorem.Number(min, max);
             return (decimal)(number + Math.PI); 
+        }
+
+        private static void Initialize()
+        {
+            foreach (var item in loremParagraphs)
+            {
+                item.Split(new[] { ' ', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries).Where(x => x.Length > 5).ToList().ForEach(word => loremWords.Add(word));
+            }
         }
     }
 }
