@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CombinationsNotDuplicate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Permutations", "04.Permutations\04.Permutations.csproj", "{92BC8602-5ABF-4F4F-9671-EFDA73EF3659}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.WordsVariations", "05.WordsVariations\05.WordsVariations.csproj", "{61FE4FB5-15D7-4035-84F9-AA03325C66E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.WordCombinations", "06.WordCombinations\06.WordCombinations.csproj", "{4C6E2A8F-3188-48AF-8CAE-EAA91EDFF29A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{92BC8602-5ABF-4F4F-9671-EFDA73EF3659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92BC8602-5ABF-4F4F-9671-EFDA73EF3659}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92BC8602-5ABF-4F4F-9671-EFDA73EF3659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FE4FB5-15D7-4035-84F9-AA03325C66E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FE4FB5-15D7-4035-84F9-AA03325C66E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FE4FB5-15D7-4035-84F9-AA03325C66E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FE4FB5-15D7-4035-84F9-AA03325C66E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6E2A8F-3188-48AF-8CAE-EAA91EDFF29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6E2A8F-3188-48AF-8CAE-EAA91EDFF29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6E2A8F-3188-48AF-8CAE-EAA91EDFF29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6E2A8F-3188-48AF-8CAE-EAA91EDFF29A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
