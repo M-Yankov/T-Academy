@@ -1,0 +1,2 @@
+The initial test are not correct. If I make validation for post method, how Object(Bug) without Id, date, text, or status will get to the dB? Impossible. So test with temp db { new Bug(), new Bug() }; it's not correct.
+To See My HomeWork see BugLogger.RestApi.Tests MyWebApi
