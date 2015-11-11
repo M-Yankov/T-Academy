@@ -1,27 +1,54 @@
 ﻿namespace BugLogger.RestApi.Models
 {
     using System;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
     using BugLogger.DataLayer;
     using BugLogger.RestApi.Infrastructure;
 
     public class SaveBugModel : IMapFrom<Bug>
     {
+        private DateTime? date;
+
         public SaveBugModel()
         {
-            this.LogDate = DateTime.Now;
-            this.Status = SaveStatus.Pending;
+            //// Default values are not set here because object from the request body doesn't match properties.
+            //// this.LogDate = DateTime.Now;
+            //// this.Status = SaveStatus.Pending;
         }
 
-        [Required]
+        [DefaultValue(SaveStatus.Pending)]
         public SaveStatus Status { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Text of the bug cannot be null or empty.")]
         [MinLength(5)]
         [MaxLength(1000)]
         public string Text { get; set; }
 
-        public DateTime? LogDate { get; set; }
+        public DateTime? LogDate 
+        {
+            get 
+            {
+                if (this.date == null)
+                {
+                    this.date = DateTime.Now;
+                }
+
+                return this.date;
+            }
+
+            set
+            {
+                if (value == null)
+                {
+                    this.date = DateTime.Now;
+                }
+                else
+                {
+                    this.date = value;
+                }
+            }
+        }
 
         public override bool Equals(object obj)
         {

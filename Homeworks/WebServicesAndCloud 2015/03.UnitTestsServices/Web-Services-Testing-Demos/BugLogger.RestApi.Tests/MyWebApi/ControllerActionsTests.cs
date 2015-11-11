@@ -215,14 +215,14 @@
         public void TestPostingANewBugWithOutTextParameterProvidedToReturnBadRequest()
         {
             var bugToPost = new SaveBugModel();
-            bugToPost.LogDate = DateTime.Now;
 
             MyWebApi
                 .Controller<BugsController>()
                 .Calling(c => c.PostBug(bugToPost))
                 .ShouldReturn()
                 .BadRequest()
-                .WithErrorMessage("Text of the bug cannot be null or empty.");
+                .WithModelStateFor<SaveBugModel>()
+                .ContainingModelStateErrorFor(err => err.Text).ThatEquals("Text of the bug cannot be null or empty.");
         }
 
         [TestMethod]

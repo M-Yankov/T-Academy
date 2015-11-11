@@ -84,63 +84,74 @@
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RouteAssertionException))]
         public void TestRouteWithInvalidDatesQueryParametersToThrowAnException()
         {
             MyWebApi
                 .Routes()
                 .ShouldMap("/api/bugs?date=Pesho")
-                .To<BugsController>(c => c.GetBugsByStartDate(new DateTime()));
+                .ToInvalidModelState();
         }
 
         [TestMethod]
-        [ExpectedException(typeof(RouteAssertionException))]
         public void TestRouteWithInvalidDateRangeQueryParametersToThrowAnException()
         {
             MyWebApi
                 .Routes()
                 .ShouldMap("/api/bugs?date=2015-941-32")
-                .To<BugsController>(c => c.GetBugsByStartDate(new DateTime()));
+                .ToInvalidModelState();
         }
 
         [TestMethod]
         public void TestRouteToMapGetRequestToBugs()
         {
             MyWebApi
-                    .Routes()
-                    .ShouldMap(request => request
-                        .WithMethod(HttpMethod.Get)
-                        .AndAlso()
-                        .WithRequestUri("api/bugs"));
+                .Routes()
+                .ShouldMap(request => request
+                    .WithMethod(HttpMethod.Get)
+                    .AndAlso()
+                    .WithRequestUri("api/bugs"))
+                .To<BugsController>(c => c.GetAll());
         }
 
         [TestMethod]
         public void TestRouteToMapPostMethodToBugs()
         {
             MyWebApi
-                    .Routes()
-                    .ShouldMap(request => request
-                        .WithMethod(HttpMethod.Post)
-                        .AndAlso()
-                        .WithRequestUri("api/bugs"));
+                .Routes()
+                .ShouldMap(request => request
+                    .WithMethod(HttpMethod.Post)
+                    .AndAlso()
+                    .WithRequestUri("api/bugs"))
+                .WithJsonContent(@" { ""Text"":""Bug for testing added"" }")
+                .ToValidModelState();
         }
 
         [TestMethod]
         public void TestRouteToMapPutMethodToBugsWithId()
         {
             MyWebApi
-                    .Routes()
-                    .ShouldMap("api/bugs/3")
-                    .WithHttpMethod(HttpMethod.Put);
+                .Routes()
+                .ShouldMap("api/bugs/3")
+                .WithHttpMethod(HttpMethod.Put)
+                .WithJsonContent(@"{ ""Text"":""Bug Fixed"", ""LogDate"":""1-1-2013"", ""Status"":""Fixed"" } ")
+                .To<BugsController>(c => c.PutBug(
+                    3,
+                    new SaveBugModel
+                    {
+                        LogDate = new DateTime(2013, 1, 1),
+                        Text = "Bug Fixed",
+                        Status = SaveStatus.Fixed
+                    }));
         }
 
         [TestMethod]
         public void TestRouteToNotMapPutMethodToBugsWithoutId()
         {
             MyWebApi
-                    .Routes()
-                    .ShouldMap("api/bugs")
-                    .WithHttpMethod(HttpMethod.Put);
+                .Routes()
+                .ShouldMap("api/bugs")
+                .WithHttpMethod(HttpMethod.Put)
+                .ToNotAllowedMethod();
         }
 
         [TestMethod]
@@ -156,10 +167,8 @@
                 {
                     Text = "Adding Test Bug",
                     Status = SaveStatus.Pending,
-                    LogDate = new DateTime(2011, 5, 5, 0, 0, 0)
+                    LogDate = new DateTime(2011, 5, 5)
                 }));
-
-            //// Why zeros are necessary? In tests above can map date from stringQuery from without pass hours, minutes and seconds
         }
     }
 }

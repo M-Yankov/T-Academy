@@ -94,6 +94,11 @@
                 return this.BadRequest(ex.Message);
             }
 
+            if (!this.ModelState.IsValid)
+            {
+                return this.BadRequest(this.ModelState);
+            }
+
             if (string.IsNullOrEmpty(bug.Text))
             {
                 var ex = new ArgumentException("Text of the bug cannot be null or empty.");
