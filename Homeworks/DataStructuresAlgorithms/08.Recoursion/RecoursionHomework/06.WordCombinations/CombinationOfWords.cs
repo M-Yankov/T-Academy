@@ -1,5 +1,9 @@
 ﻿namespace WordCombinations
 {
+    /// <summary>
+    /// Task 6. Write a program for generating and printing all subsets of k strings from given set of strings. 
+    ///     ○  Example: s = {test, rock, fun}, k=2 → (test rock), (test fun), (rock fun)
+    /// </summary>
     public class CombinationOfWords
     {
         private static int k = 2;

@@ -2,6 +2,10 @@
 {
     using System.Text;
 
+    /// <summary>
+    /// Task 5. Write a recursive program for generating and printing all ordered k-element subsets from n-element set (variations V k n). 
+    ///     ○ Example: n=3, k=2, set = {hi, a, b} → (hi hi), (hi a), (hi b), (a hi), (a a), (a b), (b hi), (b a), (b b)
+    /// </summary>
     public class Words
     {
         private static int k = 2;
