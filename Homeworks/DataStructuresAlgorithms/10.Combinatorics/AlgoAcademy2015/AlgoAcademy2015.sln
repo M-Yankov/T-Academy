@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Divisors", "03.Divisors\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.Math.Pow(A+B, N)", "09.Math.Pow(A+B, N)\09.Math.Pow(A+B, N).csproj", "{FDC79179-1399-4B63-97C8-B3AD70074468}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.ColorfulBalls", "04.ColorfulBalls\04.ColorfulBalls.csproj", "{28B5D69B-D103-4085-B530-92DE49EB9D2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FDC79179-1399-4B63-97C8-B3AD70074468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDC79179-1399-4B63-97C8-B3AD70074468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDC79179-1399-4B63-97C8-B3AD70074468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B5D69B-D103-4085-B530-92DE49EB9D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B5D69B-D103-4085-B530-92DE49EB9D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B5D69B-D103-4085-B530-92DE49EB9D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B5D69B-D103-4085-B530-92DE49EB9D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
