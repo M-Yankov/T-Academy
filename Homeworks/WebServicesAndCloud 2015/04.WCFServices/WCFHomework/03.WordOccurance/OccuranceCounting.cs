@@ -1,11 +1,21 @@
 ﻿namespace WordOccurance
 {
+    using System;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// Task 3. Create a Web service library which accepts two string as parameters. It should return the number of times the second string contains the first string.
+    ///     ○ Test it with the integrated WCF client.
+    /// </summary>
     public class OccuranceCounting : IOccuranceCounting
     {
         public int Occurances(string searchTerm, string text)
         {
+            if (searchTerm == null || text == null)
+            {
+                throw new ArgumentNullException("searchTerm or text", "The value cannot be null!");
+            }
+
             int result = 0;
             int startFromIndex = 0;
 
