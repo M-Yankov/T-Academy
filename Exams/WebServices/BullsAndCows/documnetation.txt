@@ -1,0 +1,2 @@
+In the task no where says where notifications are read.
+ToDo ResponseDetailModel
