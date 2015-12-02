@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreesTask", "TreesTask\Tree
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogeTask", "DogeTask\DogeTask.csproj", "{A2A0BCB3-32A7-47BD-8593-1EE81A2C58A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxIncreasingSubsequence", "MaxIncreasingSubsequence\MaxIncreasingSubsequence.csproj", "{C357765D-65BC-4A8E-B733-984140E6A4D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A2A0BCB3-32A7-47BD-8593-1EE81A2C58A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2A0BCB3-32A7-47BD-8593-1EE81A2C58A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2A0BCB3-32A7-47BD-8593-1EE81A2C58A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
