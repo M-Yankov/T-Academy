@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogeTask", "DogeTask\DogeTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxIncreasingSubsequence", "MaxIncreasingSubsequence\MaxIncreasingSubsequence.csproj", "{C357765D-65BC-4A8E-B733-984140E6A4D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogeCoin", "DogeCoin\DogeCoin.csproj", "{F7420AA6-CCA4-4845-AF51-35BCE448A2DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C357765D-65BC-4A8E-B733-984140E6A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7420AA6-CCA4-4845-AF51-35BCE448A2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7420AA6-CCA4-4845-AF51-35BCE448A2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7420AA6-CCA4-4845-AF51-35BCE448A2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7420AA6-CCA4-4845-AF51-35BCE448A2DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

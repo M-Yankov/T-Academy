@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Market", "Market\Market.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GirlsGoneWild", "GirlsGoneWild\GirlsGoneWild.csproj", "{90D3B303-79FA-4FD3-85AE-710C5201A2ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Towns", "Towns\Towns.csproj", "{6E000E3C-6FB2-4F3A-A409-E62653FE1796}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{20C7180E-EA7A-47AD-A0C5-EAEEFFE21E29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{90D3B303-79FA-4FD3-85AE-710C5201A2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D3B303-79FA-4FD3-85AE-710C5201A2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90D3B303-79FA-4FD3-85AE-710C5201A2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E000E3C-6FB2-4F3A-A409-E62653FE1796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E000E3C-6FB2-4F3A-A409-E62653FE1796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E000E3C-6FB2-4F3A-A409-E62653FE1796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E000E3C-6FB2-4F3A-A409-E62653FE1796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C7180E-EA7A-47AD-A0C5-EAEEFFE21E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C7180E-EA7A-47AD-A0C5-EAEEFFE21E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C7180E-EA7A-47AD-A0C5-EAEEFFE21E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C7180E-EA7A-47AD-A0C5-EAEEFFE21E29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
