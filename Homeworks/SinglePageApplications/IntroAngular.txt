@@ -1,0 +1,76 @@
+MV* model, view, * -what ever-
+
+one way - auto - binding on change(rising an event)
+two way - User makes changes to server.
+
+docs.angularjs.org/tutorial
+docs.angularjs.org/api -->  Develop/api tutorial.
+
+modules are like namespace in C#; 
+if no dependencies - provides a empty array []
+
+Two types DI
+First:
+function parameters - some problems with minificators. Angular stops working
+Second: 
+myModule.controller('Home', ['$scope', '$http', 'myOtherModule', function HomeController(a = $scope, b = $http) {
+}])
+
+controller - page logic NOT HTML! Manages $scope object.
+
+
+if we use this.hello = 'contet';
+
+<div ng-controller="controllerName as vm">
+{{vm.hello}}
+</div>
+
+ng-cloak hides unbinded data -> {{hello}}. <body ng-app="aaaaa" ng-cloak>
+must refer script in the head
+
+do not write JS in brackets -> {{}}
+
+ng-show - uses display block/hide
+ng-if 
+
+ng-class-odd  - for tables & rows
+ng-class-even - for tables & rows
+
+ngFrom - allows nested forms
+
+vm-href="{{vm.url}}"  // vm.url = 'http://telerik.com';
+
+['$timeout', function($timeout){
+$timeout(function () {
+ // code 
+})
+}];
+
+$score.$apply(function () { }) //force update HTML
+
+filters 
+ text | number : 2 // 3.14 rounds to second digit after decimal point
+ if you see [Object object ] use | json
+ 
+ module.filter('name', function() {
+	return function(input, optsParams) {
+	// code here
+	}
+ });; // make own filters
+
+ {{vm.text | name : opts}}
+ 
+ Building a object from input;
+ 
+Validation : required, ngPattern, on input
+paste whole input in form tag.
+$pristine - is form chnaged.
+paste form in parameters in function(user, form){
+	if(form.$valid)
+	{
+		// send to server... 
+	}
+}
+
+on each page new instance is created of controllers (they are not singleTon); 
+ 
