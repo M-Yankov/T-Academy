@@ -1,0 +1,14 @@
+Notes From WorkShop.
+
+admin role in identity-service.js
+
+when('/cats/add', {
+
+	resolve : {
+		authenticated: ['$q', 'auth', function($q, auth) {
+			if(auth.isAuthenticated()) {
+				return true;
+			}
+			return $q.reject('authorised') // attach on $rootScope.$on('$routeChangeError', function()))
+			}]}
+})
