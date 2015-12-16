@@ -1,0 +1,70 @@
+div.jumbotron {
+    padding: 50px;
+}
+/* background of invalid and valid inputs. Should it be white.
+.ng-invalid.ng-touched {
+    background-color: rgba(255, 132, 115, 1);
+}
+
+.ng-valid.ng-touched {
+    background-color: rgba(126, 250, 61, 1);
+}
+*/
+.ng-invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+.ng-valid {
+    border-color: green;
+    outline-color: green;
+}
+
+.messages {
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: red;
+}
+
+body {
+    padding: 5% 0;
+}
+
+input {
+    max-width: 400px;
+}
+
+div[role="alert"].ng-active {
+    /*float: left;*/
+    left: 72%;
+    /* margin-top: -2%; */
+    /* position: absolute; */
+    height: 20px;
+    top: -30px;
+    position: relative;
+    width: 50%;
+
+}
+
+div[role="alert"].ng-active div[ng-message].ng-scope:before {
+    content: "";
+    border-right: 10px solid #ccc;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    display: inline-block;
+    /*float: left;*/
+    position: relative;
+    left: -22px;
+
+}
+
+div[role="alert"].ng-active div[ng-message].ng-scope {
+    background: #ccc;
+    display: inline;
+    color: #C00;
+    padding:  10px;
+    border-radius: 6px;
+    box-shadow: white 0px 0px 9px 0px;
+    border: 1px solid #FFF;
+}
