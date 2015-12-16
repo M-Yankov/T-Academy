@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="WinApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:col ="using:WinApp.ViewModels"
+    mc:Ignorable="d">
+
+    
+    <Page.Resources>
+        
+        <ControlTemplate x:Key="ellipseStyleButton" TargetType="Button">
+            <Grid>
+                <Ellipse Width="{TemplateBinding Width}"
+                             Height="{TemplateBinding Height}"
+                             Fill="{TemplateBinding Background}"/>
+                <ContentPresenter  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+    </Page.Resources>
+
+    <StackPanel 
+        Padding="20" 
+        Background="{StaticResource orangeToGreenBrush}">
+        
+        <Button Content="Sign up" Style="{StaticResource greenButtonStyle}" />
+        <Button Content="Sign in" Style="{StaticResource greenButtonStyle}"/>
+        <Button Content="Show all" Style="{StaticResource greenButtonStyle}" Click="Button_Click"/>
+        
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Visible" Height="300" Name="listBoxUsers" ItemsSource="{Binding Users}" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel >
+                        <TextBlock Text="{Binding Name}" TextAlignment="Center" />
+                        <Image Width="250" Source="{Binding ImageUrl}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
+    </StackPanel>
+</Page>
