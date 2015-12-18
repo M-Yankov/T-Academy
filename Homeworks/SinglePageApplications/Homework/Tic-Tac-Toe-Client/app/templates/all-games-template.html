@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="list-group" ng-show="vm.allGames && vm.allGames.length > 0">
+        <div  class="list-group-item" ng-repeat="game in vm.allGames">
+
+            <p class="lead"><strong>{{ game.FirstPlayerName }} : {{ game.SecondPlayerName }}</strong></p>
+            <p class="text-center"><strong>FirstPlayer</strong>:  <span class="text-danger"> {{ game.FirstPlayerName }} </span></p>
+            <p class="text-center"><strong>SecondPlayer</strong>:  <span class="text-success"> {{ game.SecondPlayerName }} </span></p>
+            <p class="text-center"><strong>GameState</strong>:  <span class="text-warning"> {{ game.State | gameStateFilter }} </span></p>
+
+            <!--<p>{{hm.globallySetCurrentUser.Email || 'Nema nikoi'}}</p>-->
+            <div class="text-center" ttt-board  info="game" ></div>
+
+            <br/>
+            <br/>
+            <div class="row text-center">
+                <a href="/game/{{game.Id}}" ng-show="hm.globallySetCurrentUser.Email == game.FirstPlayerName || hm.globallySetCurrentUser.Email == game.SecondPlayerName" class="btn btn-primary">Details</a>
+                <!--  TODO server joins in first free game - currently not applicable-->
+                <!--<a href="#" ng-click="vm.join()" ng-show="game.State < 3 && game.FirstPlayerName != hm.globallySetCurrentUser.Email" class="btn btn-primary">Join</a>-->
+            </div>
+        </div>
+    </div>
+    <div ng-hide="vm.allGames && vm.allGames.length > 0" >
+
+        <div class="text-center">
+        <p class="leaad text-warning ">There are no games</p>
+        <a href="/games/all" class="btn btn-primary">Check all games</a>
+        </div>
+    </div>
+</div>

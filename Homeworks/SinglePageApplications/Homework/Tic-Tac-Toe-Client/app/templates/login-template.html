@@ -1,0 +1,58 @@
+<div class="row" style="width: 100%">
+    <div class="col-md-6 col-md-offset-3">
+        <form class="form-horizontal" novalidate name="regForm">
+            <fieldset>
+                <legend>Login</legend>
+
+                <div class="form-group">
+                    <label for="username" class="col-lg-2 control-label">Username</label>
+                    <div class="col-md-5">
+                        <input class="form-control" id="username" name="uName" ng-minlength="6" ng-maxlength="50"
+                               placeholder="Username" required="required" ng-model="user.username" type="text"/>
+                    </div>
+                    <div ng-show="regForm.uName.$dirty || regForm.$submitted" ng-messages="regForm.uName.$error"  role="alert">
+                        <div ng-messages-include="my-custom-messages"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-md-5">
+                        <input class="form-control" ng-minlength="6" ng-maxlength="50" id="inputPassword" name="pass"
+                               required="required" ng-model="user.password" placeholder="Password" type="password"/>
+                    </div>
+                    <div ng-show="regForm.pass.$dirty || regForm.$submitted" ng-messages="regForm.pass.$error" role="alert">
+                        <div ng-messages-include="my-custom-messages"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-5 col-md-offset-2">
+                        <button ng-click="vm.return()" title="Returns to home" class="btn btn-default">Cancel</button>
+                        <button ng-click="vm.logUser(user, regForm)"
+                                ng-disabled="regForm.$invalid"
+                                class="btn btn-primary">Login
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-show="regForm.$submitted && regForm.$valid && !vm.hasError">
+                    <div class="progress progress-striped active col-md-offset-2" style="width: 400px;">
+                        <div class="progress-bar col-md-3" style="width: 100%">
+                            <div>Processing</div>
+                        </div>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</div>
+<!-- a generic template of error messages known as "my-custom-messages" -->
+<script type="text/ng-template" id="my-custom-messages">
+    <div ng-message="required">This field is required</div>
+    <div ng-message="minlength">This field is too short</div>
+    <div ng-message="maxlength">Too long</div>
+    <div ng-message="email">Invalid email address example: JohnDoe@mail.com</div>
+    <div ng-message="compareTo">Must match the previous entry</div>
+</script>

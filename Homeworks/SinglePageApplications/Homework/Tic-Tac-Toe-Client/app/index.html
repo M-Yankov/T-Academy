@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe-Game</title>
+    <base href="/"/>
+
+    <!--<link href="lib/bootstrap-3.3.6-dist/css/bootstrap.css" type="text/css" rel="stylesheet"/>-->
+    <link href="lib/bootstrap-3.3.6-dist/css/bootstrap-theme.css" type="text/css" rel="stylesheet"/>
+    <link href="lib/toastr/toastr.css" type="text/css" rel="stylesheet"/>
+
+    <link href="css/main.css" type="text/css" rel="stylesheet"/>
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="any"/>
+</head>
+<body ng-app="tttGame" ng-controller="HomeController as hm"> <!--oshte spim...-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">TTT Game</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/games/all">Games</a></li>
+                <li><a href="/game/add">Create</a></li>
+                <li><a href="/game/join">Join</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a ng-if="!hm.globallySetCurrentUser" href="/register">Register</a></li>
+                <li><a ng-if="!hm.globallySetCurrentUser" href="/login">Login</a></li>
+                <li ng-if="hm.globallySetCurrentUser.Email" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        {{hm.globallySetCurrentUser.Email || 'Not Working. Contact with administrator'}}
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="/games/profile/usergames">Your games</a></li>
+                        <li><a href="/games/profile">Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a ng-click="hm.logout()" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="container" ng-view>
+
+</div>
+
+
+<footer>
+    <div class="text-center">
+        Footer
+    </div>
+</footer>
+
+<script src="lib/jquery-1.11.3.js"></script>
+<script src="lib/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+<script src="lib/toastr/toastr.js"></script>
+<script src="lib/angular-1.4.8/angular.js"></script>
+<script src="lib/angular-1.4.8/angular-cookies.js"></script>
+<script src="lib/angular-1.4.8/angular-route.js"></script>
+<script src="lib/angular-1.4.8/angular-resource.js"></script>
+<script src="lib/angular-1.4.8/angular-messages.js"></script>
+
+<script src="lib/ui-bootstrap-0.14.3.js"></script>
+
+<script src="app.js"></script>
+
+<script src="helpers/rounding.js"></script>
+
+<script src="services/auth-service.js"></script>
+<script src="services/identity-service.js"></script>
+<script src="services/notify-service.js"></script>
+<script src="services/game-service.js"></script>
+
+<script src="filters/filter-symbol.js"></script>
+<script src="filters/filter-game-state.js"></script>
+<script src="filters/percentage-wining-games-filter.js"></script>
+
+<script src="controllers/homeController.js"></script>
+<script src="controllers/register-controller.js"></script>
+<script src="controllers/login-controller.js"></script>
+<script src="controllers/game-controller.js"></script>
+<script src="controllers/all-games-controller.js"></script>
+<script src="controllers/user-games-controller.js"></script>
+<script src="controllers/user-details-controller.js"></script>
+</body>
+</html>
+

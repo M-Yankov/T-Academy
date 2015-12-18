@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Profile - {{vm.fullInformation.Username | limitTo:15}}</h3>
+        </div>
+        <div class="panel-body " style="padding: 30px;">
+            <ul class="list-group" >
+                <li class="list-group-item"> <span class="badge">{{ vm.fullInformation.GamesWon }}</span>GamesWon</li>
+                <li class="list-group-item"> <span class="badge">{{ vm.fullInformation.GamesLose }}</span>GamesLose</li>
+                <li class="list-group-item"> <span class="badge">{{ vm.fullInformation.GamesDraw}}</span> GamesDraw</li>
+                <li class="list-group-item"> <span class="badge">{{ vm.fullInformation.TotalGames}}</span>Total</li>
+                <li class="list-group-item"> <span class="badge bg-success" style="background-color: #77b300">{{ vm.fullInformation.GamesWon | gamesWonPercentageFilter:vm.fullInformation.TotalGames}}%</span>Wining</li>
+            </ul>
+
+        </div>
+        <div class="text-center"><a href="/games/profile/usergames"  class="btn btn-default">Check your games</a></div>
+        <hr/>
+    </div>
+</div>

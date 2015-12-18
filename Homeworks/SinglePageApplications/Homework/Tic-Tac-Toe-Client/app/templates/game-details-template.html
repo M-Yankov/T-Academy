@@ -1,0 +1,39 @@
+<div class="panel panel-primary ">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tic-Tac-Toe Game:
+            <div class="row text-center"> {{vm.gameInfo.FirstPlayerName}} - {{vm.gameInfo.SecondPlayerName}}</div>
+        </h3>
+    </div>
+    <div class="panel-body " style="padding: 30px;">
+        <!-- TODO 'X' must be a picture or something cool-->
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="bs-component">
+                    <p class="lead"><strong>FirstPlayer</strong>:  <span class="text-danger"> {{ vm.gameInfo.FirstPlayerName }} </span></p>
+                    <p class="lead"><strong>SecondPlayer</strong>:  <span class="text-success"> {{ vm.gameInfo.SecondPlayerName }} </span></p>
+                    <p class="lead"><strong>GameState</strong>:  <span class="text-warning"> {{ vm.gameInfo.State | gameStateFilter }} </span></p>
+                    <div style="display: none;" id="source-button" class="btn btn-primary btn-xs">&lt; &gt;</div>
+                </div>
+            </div>
+            <form novalidate name="playTileForm" class="col-md-4">
+                <div class="row text-center">
+                    <div>
+                        <div ttt-board info="vm.gameInfo"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="row">
+            <div class="text-center">
+                <a href="#" ng-disabled="!playTileForm.$dirty || vm.gameInfo.State === 0 || vm.gameInfo.State === 3|| vm.gameInfo.State === 4 || vm.gameInfo.State === 5" ng-click="vm.play(vm.tile, playTileForm)" class="btn btn-primary">Play</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>

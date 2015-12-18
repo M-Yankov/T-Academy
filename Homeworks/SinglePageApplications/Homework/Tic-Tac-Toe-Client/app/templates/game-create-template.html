@@ -1,0 +1,62 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Game rules & description</h3>
+    </div>
+    <div class="panel-body " style="padding: 30px;">
+            <!-- 'X' must be a picture or something cool-->
+            <div class="row" >You first start with 'X'</div>
+            <div class="row" > Allowed Symbols are 'X' & 'O'
+                <div  style="width: 20%">
+                <table class="table table-striped table-bordered table-hover  ">
+                    <tbody class="text-center">
+                    <tr >
+                        <td class="text-success">O</td>
+                        <td class="text-success">O</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="text-danger">X</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="text-danger">X</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="row" > Your task is to make first three of your symbols in a row <span class="text-info">(horizontal, vertical, diagonal)</span>;
+                <div  style="width: 20%">
+                    <table class="table table-striped table-bordered table-hover  ">
+                        <tbody class="text-center">
+                        <tr class="text-success">
+                            <td></td>
+                            <td>O</td>
+                            <td></td>
+                        </tr>
+                        <tr class="success text-danger">
+                            <td>X</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr class="text-success">
+                            <td></td>
+                            <td>O</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                How to play: click on the tile, then <em>Play</em> button.<a href="#" class="btn btn-primary disabled">Play</a>
+            </div>
+    </div>
+    <div class="text-center"><a href="#" ng-click="vm.createGame()" class="btn btn-info">Create</a></div>
+    <hr/>
+</div>
