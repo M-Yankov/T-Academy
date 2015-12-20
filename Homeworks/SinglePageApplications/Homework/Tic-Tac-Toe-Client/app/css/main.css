@@ -67,3 +67,19 @@ div.btn-group label.btn.btn-default.active{
     border: 2px solid #2a9fd6;
     box-shadow: white 0 0 2px 2px;
 }
+
+label.green-circle-background {
+    background-size: 40px 40px !important;
+    background-image: url("../img/greenCircle_128.png") !important;
+    background: no-repeat 5px 5px;
+}
+
+label.red-X-symbol-background {
+    background-size: 40px 40px !important;
+    background-image: url("../img/reg_X_symbol_128.png") !important;
+    background:  no-repeat 5px 5px ;
+}
+
+label.btn.btn-default.tile-hove-warning:hover {
+    box-shadow: #ff8800 0 0 2px 2px inset;
+}

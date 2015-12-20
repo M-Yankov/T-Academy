@@ -5,17 +5,15 @@
     function GameController($location, $routeParams, $interval, notifier, gameManager, $scope) {
         var vm = this;
 
-        var promiseToDestroy ;
-
+        var promiseToDestroy;
+        vm.tile = {};
 
         if ($routeParams.id) {
             GameDetails();
             promiseToDestroy = $interval(GameDetails, 3000);
         }
-        vm.tile = {};
 
-
-        $scope.$on('$destroy', function() {
+        $scope.$on('$destroy', function () {
             // Make sure that the interval is destroyed too
             $interval.cancel(promiseToDestroy);
             console.log('DEEEEESTORUYYYYYYYY');
@@ -44,11 +42,10 @@
                 });
         };
 
-
         vm.play = function (tile, playTileForm) {
             if (!playTileForm.$dirty) {
                 notifier.warning('First chose a tile!', 'Warning');
-            	return;
+                return;
             }
 
             if (vm.gameInfo.State >= 3) {
@@ -64,7 +61,7 @@
             tile.gameId = vm.gameInfo.Id;
             gameManager.play(tile)
                 .then(function (response) {
-                    /// Succes play
+                    /// Success play
                     GameDetails();
 
                     // start waiting again
@@ -90,7 +87,7 @@
 
             function stopIntervalIfBoardChanged(newGameInfo) {
                 if (!vm.gameInfo) {
-                	return;
+                    return;
                 }
 
                 // If game is finished stop!
@@ -101,6 +98,7 @@
 
                 // if opponent comes stop!
                 if (vm.gameInfo.SecondPlayerName !== newGameInfo.SecondPlayerName) {
+                    notifier.warning('Opponent just join', 'Info');
                     $interval.cancel(promiseToDestroy);
                     return;
                 }
@@ -119,7 +117,7 @@
             }
 
             if (!idOfTheGame) {
-            	return;
+                return;
             }
 
             gameManager.gameDetails(idOfTheGame)
@@ -136,7 +134,7 @@
                 }, function (error) {
                     $interval.cancel(GameDetails);
                     notifier.error('Reasons: id or you are not participate in the game', 'Game not found!');
-                    $location.path('/'); // TODO: games
+                    $location.path('/games/all');
                 });
         }
     }

@@ -87,60 +87,15 @@
         }
     }
 
-    angular.module('tttGame', ['ui.bootstrap', 'ngRoute', 'ngResource', 'ngCookies', 'ngMessages', 'tttGame.controllers', 'tttGame.services', 'tttGame.filters'])
+    angular.module('tttGame', ['ui.bootstrap', 'ngRoute', 'ngResource', 'ngCookies', 'ngMessages', 'tttGame.directives', 'tttGame.controllers', 'tttGame.services', 'tttGame.filters'])
         .config(['$routeProvider', '$locationProvider', configuration])
         .run(['$http', '$cookies', '$rootScope', '$location', 'auth', 'notifier', run])
         .value('toastr', toastr)
-        .constant('domain', 'http://localhost:3331/')
-        .directive('compareTo', function () {  /// separate
-            return {
-                require: "ngModel",
-                scope: {
-                    otherModelValue: "=compareTo"
-                },
-                link: function (scope, element, attributes, ngModel) {
+        .constant('domain', 'http://localhost:3331/');
 
-                    ngModel.$validators.compareTo = function (modelValue) {
-                        return (modelValue === scope.otherModelValue);
-                    };
+    angular.module('tttGame.directives', []);
 
-                    scope.$watch("otherModelValue", function () {
-                        ngModel.$validate();
-                    });
-                }
-            };
-        })
-        .directive('tttBoard', function () {
-            return {
-                restrict: 'A',
-                templateUrl: 'templates/board.html',
-                scope: {
-                    gameInfo: '=info'
-                },
-                link: function (scope, element, attrs, ctrl, transclude) {
-                    scope.setTile = function (row, col) {
-                        if (scope.$parent.vm.tile) {
-                            scope.$parent.vm.tile.row = row;
-                            scope.$parent.vm.tile.col = col;
-                        }
-                    };
-
-                    /*scope.tile = {
-                     name: 'Directive Joe',
-                     profession: 'Scope guy'
-                     };*/
-
-                }
-            };
-        })
-        .directive('tttAllGames', function () {
-            return {
-                restrict: 'A',
-                templateUrl: 'templates/all-games-template.html'
-            };
-        });
-
-    angular.module('tttGame.controllers', []); // controller needs a service? for now -No!
+    angular.module('tttGame.controllers', []);
 
     angular.module('tttGame.services', []);
 

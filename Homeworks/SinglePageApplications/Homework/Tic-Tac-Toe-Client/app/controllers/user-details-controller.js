@@ -9,7 +9,6 @@
         getFullDetails();
 
         function getFullDetails() {
-            /* TODO: from server to return games won, games lose, games participate (% win can be on the client)*/
             auth.userFullInformation()
                 .then(function (response) {
                     vm.fullInformation = response;

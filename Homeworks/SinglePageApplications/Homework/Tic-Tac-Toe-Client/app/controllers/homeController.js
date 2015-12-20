@@ -3,13 +3,17 @@
     'use strict';
 
     function HomeController($location, auth, identity) {
-        var vm = this;
-        vm.hello = 'Hello';
+        var hm = this;
+        hm.hello = 'Hello';
+        hm.screen1 = '../img/screen1.png';
+        hm.screen2 = '../img/screen2.png';
+        hm.screen3 = '../img/screen3.png';
+        hm.logo = '../img/back.png';
 
         waitForLogin();
 
-        vm.logout = function () {
-            vm.globallySetCurrentUser = undefined;
+        hm.logout = function () {
+            hm.globallySetCurrentUser = undefined;
             auth.logout();
             waitForLogin(); // this is for second login
             $location.path('/');
@@ -18,7 +22,7 @@
         function waitForLogin() {
             identity.getUser()
                 .then(function (user) {
-                    vm.globallySetCurrentUser = user;
+                    hm.globallySetCurrentUser = user;
                 });
         }
     }

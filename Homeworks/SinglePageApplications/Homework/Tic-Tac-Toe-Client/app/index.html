@@ -12,7 +12,7 @@
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
     <link rel="icon" href="favicon.ico" type="image/gif" sizes="any"/>
 </head>
-<body ng-app="tttGame" ng-controller="HomeController as hm"> <!--oshte spim...-->
+<body ng-app="tttGame" ng-controller="HomeController as hm" ng-cloak>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -70,6 +70,10 @@
 
 <script src="helpers/rounding.js"></script>
 
+<script src="directives/compare-To-directive.js"></script>
+<script src="directives/board-directive.js"></script>
+<script src="directives/all-games-directive.js"></script>
+
 <script src="services/auth-service.js"></script>
 <script src="services/identity-service.js"></script>
 <script src="services/notify-service.js"></script>
@@ -78,6 +82,7 @@
 <script src="filters/filter-symbol.js"></script>
 <script src="filters/filter-game-state.js"></script>
 <script src="filters/percentage-wining-games-filter.js"></script>
+<script src="filters/filter-background-image.js"></script>
 
 <script src="controllers/homeController.js"></script>
 <script src="controllers/register-controller.js"></script>
