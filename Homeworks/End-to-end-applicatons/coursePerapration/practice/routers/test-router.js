@@ -1,7 +1,8 @@
 'use strict';
-let express = require('express');
 
-let router = express.Router();
+// this router was made for testing purposes, you can create one like that for practice. It should work without any other configuration.
+let express = require('express'),
+    router = express.Router();
 
 router
     .get('/', function (req, res) {
