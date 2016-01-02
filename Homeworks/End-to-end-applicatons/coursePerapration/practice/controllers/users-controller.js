@@ -58,7 +58,7 @@ let controller = {
 				return;
 			}
 
-			// When user is registered it does'n have a token.
+			// When user is registered it doesn't have a token.
 			// When logs in it receives a token and it is saved to the db.
 			if (!user.token) {
 				user.token = generateNewToken();
