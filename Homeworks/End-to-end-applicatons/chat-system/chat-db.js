@@ -15,7 +15,6 @@ module.exports = {
 				}
 
 				if (user.length) {
-					console.log(user);
 					return reject({
 						message: 'Username already exist'
 					});
