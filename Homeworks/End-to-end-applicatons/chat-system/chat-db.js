@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
 	Message = mongoose.model('Message'),
 	BBPromise = require('bluebird');
 
-// BBPromise = Blue Bird promise - there are already a Object Promise in ES6. Just to not overwrite it.
+// BBPromise = Blue Bird promise - there are already a Object 'Promise' in ES6. Just to not overwrite it.
 module.exports = {
 	registerUser: function (newUser) {
 		return new BBPromise(function (resolve, reject) {

@@ -2,15 +2,12 @@
 
 var express = require('express'),
 	router = express.Router(),
-	mongoose = require('mongoose'),
-	User = mongoose.model('User'),
-	chatDb = require('../chat-db'),
 	url =  require('url');
 
 router.post('/register', function (req, res) {
 		// gets data from the body
 		var user = req.body;
-
+		console.log(user);
 		if (!(user.username) || !(user.password)) {
 			res.status(400)
 				.json({
@@ -19,7 +16,7 @@ router.post('/register', function (req, res) {
 			return;
 		}
 
-		chatDb.registerUser(user).then(function (savedUser) {
+		router.data.registerUser(user).then(function (savedUser) {
 			res.status(201)
 				.json({
 					username: savedUser.username
@@ -36,7 +33,7 @@ router.post('/register', function (req, res) {
 			return;
 		}
 
-		chatDb.sendMessage(bodyMessage.from, bodyMessage.to, bodyMessage.message)
+		router.data.sendMessage(bodyMessage.from, bodyMessage.to, bodyMessage.message)
 			.then(function (successInfo) {
 				res.json(successInfo);
 			}, function (err) {
@@ -54,7 +51,7 @@ router.post('/register', function (req, res) {
 
 		var queryParams = parsedUrl.query;
 
-		chatDb.getMessages(queryParams.and, queryParams.with)
+		router.data.getMessages(queryParams.and, queryParams.with)
 			.then(function (messages) {
 				res.json(messages);
 			}, function (error) {
@@ -63,6 +60,7 @@ router.post('/register', function (req, res) {
 			});
 	});
 
-module.exports = function (app) {
+module.exports = function (app, data) {
+	router.data = data;
 	app.use('/api/users', router);
 };
