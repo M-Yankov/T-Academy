@@ -1,57 +1,112 @@
-(function () {
+var formidable = require('formidable'),
+	http = require('http'),
+	util = require('util'),
+	fs = require('fs');
+
+fs.mkdir('files', function (err) {
 	'use strict';
-	let http = require('http'),
-		url = require('url'),
-		fs = require('fs'),
-		querystring = require('querystring'),
-		port = 1222;
+	if (err && err.code !== 'EEXIST') {
+		throw err;
+	}
+});
 
-	var server = http.createServer();
+http.createServer(function (req, res) {
+	'use strict';
+	if (req.url === '/upload' && req.method.toLowerCase() === 'post') {
+		// parse a file upload
+		var form = new formidable.IncomingForm();
+		form.encoding = 'utf-8';
+		form.uploadDir = "./files/";
+		var hasError = false;
 
-	server.on('request', function (request, response) {
-		var urlObj = url.parse(request.url);
+		form.on('file', function (name, file) {
+			if (!file.size) {
+				res.writeHead(400);
+				res.write('<div>Noting to send!</div>');
+				res.write('<a href="/">Upload</a>');
+				res.end();
+				hasError = true;
+				return;
+			}
 
-		request.on('data', function(data) {
-			console.log(data);
+			file.path = form.uploadDir + file.name;
 		});
 
-		response.writeHead(200, {
-			'Content-type': 'text/html'
+		form.parse(req, function (err, fields, files) {
+			if (hasError) {
+				return;
+			}
+
+			if (err) {
+				res.write(err);
+				res.end();
+				return;
+			}
+
+			if (!req) {
+				res.write('<div>Noting to send!</div>');
+				res.write('<a href="/">Upload</a>');
+				res.end();
+				return;
+			}
+
+			res.writeHead(201, {'content-type': 'text/html'});
+			res.write('<div>UploadComplete:</div> <br />');
+			res.write('<a href="/files">Files</a>');
+			//res.end(util.inspect({fields: fields, files: files}));
+			res.end();
 		});
 
-		if (urlObj.path === '/upload') {
-			fs.readFile('./index.html', 'utf8', function (err, data) {
-				if (err) {
-					throw  err;
-				}
-				response.write(data);
-				response.end();
-			});
-		} else if (urlObj.path === '/api/upload') {
-			var body = '';
+		return;
+	}
 
-			request.on('data', function(data){
-				body += data;
-			});
+	if (req.url.toString().includes('/file/') && req.url.length > 7) {
+		var fileName = req.url.substr(6);
+		fs.readFile('./files/' + fileName, 'utf8', function (err, fileContent) {
+			if (err) {
+				res.writeHead(404);
+				res.write('Cannot read file: <b>' + fileName + '</b>');
+				res.end();
+				return;
+			}
 
-			request.on('end', function() {
-				var note = querystring.parse(body);
-				console.log("Body data: " + note);
-				var newPath = "./files/file.txt";
-				fs.writeFile( newPath, body, function (err) {
-					if (err) {
-						throw err;
-					}
-				});
-			});
-		} else {
-			response.write(urlObj.path || 'Welcome Node js');
-			response.write('<br/> <a href="/upload">Go to upload page</a>');
-			response.end();
-		}
-	});
+			res.write('<div style="width: 500px">' + fileContent + '</div>');
+			res.end();
+		});
 
-	server.listen(port);
+		return;
+	}
 
-	console.log(`Server is running on port: ${port}`);
-}());
+	if (req.url === '/files') {
+		fs.readdir('./files', function (err, files) {
+			if (err) {
+				res.writeHead(401);
+				res.write('cannot read directory');
+				res.end();
+				return;
+			}
+
+			res.writeHead(200, {'content-type': 'text/html'});
+			res.write('<ul>');
+			for (var i = 0; i < files.length; i += 1) {
+				res.write('<li><a href="/file/' + files[i] + '">' + files[i] + '</a></li>');
+			}
+
+			res.write('</ul>');
+
+			res.end();
+		});
+
+		return;
+	}
+
+	// show a file upload form
+	res.writeHead(200, {'content-type': 'text/html'});
+	res.end(
+		'<form action="/upload" enctype="multipart/form-data" method="post">' +
+		'<input type="text" name="title"><br>' +
+		'<input type="file" name="upload"><br>' +
+		'<input type="submit" value="Upload">' +
+		'</form><br>' +
+		'<a href="/files" >Files</a>');
+}).listen(8080);
