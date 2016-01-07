@@ -1,0 +1,16 @@
+{
+  "name": "view-engines",
+  "version": "0.0.1",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "MY",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}

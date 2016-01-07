@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        title
+            | Homework-IT-shop
+        link(rel='stylesheet', href=bootstrapCssLink)
+        link(rel='stylesheet', href=bootstrapCssThemeLink)
+        script(src=jQueryCDN)
+        script(src=bootstrapJsLink)
+        style
+            include style.css
+    body
+        include ./includes/navigaiton.jade
+        #container.jumbotron.text-center
+            if technologies
+                div.row
+                    each tech in technologies
+                        div.col-md-3.text-center
+                            h3= tech.name
+                            div.image(style='background-image: url(' + tech.img + '); background')
+                                p.price(class='text-' + colorStyle)= tech.price + '$'
+                                each br in [1,1,1,1,1,1]
+                                    br
+                                a.btn.pull-left(class='btn-' + colorStyle)= 'Buy'
+            else
+                h1= 'Welcome to our e-shop'
+                p= 'Choose from large collection of phones, tables, wearables'
+        include ./includes/footer
