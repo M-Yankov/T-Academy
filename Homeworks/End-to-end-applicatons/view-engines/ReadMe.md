@@ -1,5 +1,5 @@
 ## Homework Shop
-how to run
+### how to run:
 [nodeJS](http://nodejs.org) is required
 
 * **_`npm install`_**
