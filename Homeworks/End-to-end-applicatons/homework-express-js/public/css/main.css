@@ -1,0 +1,33 @@
+form#login {
+    display: none;
+    position: absolute;
+}
+
+a#hidden:hover form#login {
+    display: block;
+    z-index: 1234;
+}
+
+div.ad img{
+    cursor: pointer;
+}
+
+form textarea.comment {
+    font-weight: 800;
+    font-size: 20px;
+    max-width: 100%;
+    max-height: 100px;
+    width: 100%;
+}
+
+input.reg {
+    height: 34px;
+}
+
+div.col-md-8 section div.images {
+    padding: 5%;
+    border: 15px solid #e36b23;
+    border-radius: 5px;
+    height: 85vh;
+    overflow-y: scroll;
+}

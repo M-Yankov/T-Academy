@@ -1,0 +1,46 @@
+doctype html
+html
+    head
+        title= 'Nine gag'
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+        link(rel='stylesheet', href='https://bootswatch.com/2/superhero/bootstrap.min.css')
+        link(rel='stylesheet', href="/css/main.css")
+    body
+        .navbar.navbar-inverse
+            .navbar-inner
+                .container(style='width: auto;')
+
+                    .nav-collapse
+                        ul.nav
+                            li.active
+                                a(href='/home') Home
+                            li
+                                a(href='/images') Fun
+                        ul.nav.pull-right
+                            if !user
+                                li
+                                    a#hidden Login
+                                        form.well#login(action='/auth/login', method='POST')
+                                            input.input-small(placeholder='username', type='text', name='username')
+                                            input.input-small(placeholder='Password', type='password', name='password')
+                                            button.btn.btn-primary(type='submit') Go
+                                li
+                                    a(href='/auth/register') Register
+                                li.divider-verticalr
+                            else
+                                li.dropdown
+                                    a.dropdown-toggle(href='#', data-toggle='dropdown')= user.username
+                                        b.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='#') Your Images
+                                        li
+                                            a(href='/images/add') Upload
+                                        li.divider
+                                        li
+                                            form(action='/auth/logout', method='POST')
+                                                button.btn-block.btn-primary Logout
+
+
+        block content
+        include scripts

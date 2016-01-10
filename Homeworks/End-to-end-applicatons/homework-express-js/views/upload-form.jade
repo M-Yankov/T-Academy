@@ -1,0 +1,24 @@
+extends ./includes/layout
+block content
+    div.container
+        if error
+            .alert.alert-error.alert-block
+                a.close ×
+                h4.alert-heading Error
+                p= error
+
+        form.form-horizontal.well(action='/images/add', method='POST', enctype="multipart/form-data")
+            fieldset
+                legend Your awesome picture
+                div.control-group
+                    label.control-label(for='title') Title
+                    div.controls
+                        input#title.reg(type="text", name='title')
+                        p.help-block.text-primary At least 5 characters
+                div.control-group
+                    label.control-label(for='image') Image
+                    div.controls
+                        input#image(type="file", accept="image/png, image/jpg, image/jpeg, image/gif", name='image')
+                        p.help-block.text-primary * PNG, JPG, JPEG, GIF
+                div.control-gruop.text-center
+                    button.btn.btn-primary Upload

@@ -1,0 +1,19 @@
+extends ./includes/layout
+block content
+    div.container
+        div.row
+            form.form-horizontal(action='/auth/register' method='POST')
+                fieldset
+                    legend Registraton
+                    .form-group
+                        label.col-lg-2.control-label(for='inputEmail') Username
+                        .col-lg-10
+                            input#inputEmail.form-control.reg(placeholder='username', type='text', name='username')
+                    .form-group
+                        label.col-lg-2.control-label(for='inputPass') Password
+                        .col-lg-10
+                            input#inputPass.form-control.reg(placeholder='password', type='password', name='password')
+                    .form-group
+                        .col-lg-10.col-lg-offset-2
+                            a.btn.btn-default(href='/images') Cancel
+                            button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,6 @@
+extends ./includes/layout
+block content
+    p.text-center.text-primary Success. Redirect to images in 2 seconds.
+    a.btn.btn-info(href='/images') If fails click here.
+    script
+        include ./includes/redirect.js

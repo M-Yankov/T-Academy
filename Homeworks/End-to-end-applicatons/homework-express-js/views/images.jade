@@ -1,0 +1,18 @@
+extends ./includes/layout
+block content
+    div.col-md-2.ad
+        if !user
+            img(src='/pic/nacepin.jpg')
+            a.btn-default.pull-right(href='/auth/register') Remove Ads
+    div.col-md-8
+        section
+            div.images
+                each image in images
+                    div.row.text-center
+                        h3= image.title
+                        a(href='/images/' + image._id)
+                            img(src= '../' + image.path.substr(9), width=200)
+    div.col-md-2.ad
+        if !user
+            img(src='/pic/ZByRq.jpg')
+            a.btn-default.pull-right(href='/auth/register') Remove Ads

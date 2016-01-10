@@ -1,0 +1,28 @@
+extends ./includes/layout
+block content
+    div.container
+        div.jumbotron
+            div.text-center
+                h3.text-primary= image.title
+                img(src= '../' + image.path.substr(9), width=400)
+                div.row.text-info
+                    div.pull-right!= 'By&nbsp;&nbsp;'
+                        span.badge.badge-info= image.user.username
+                br
+                form.form-horizontal(action='/images/' + image._id +'/comment', method='POST')
+                    .control-group
+                        label.control-label.text-info(for='textarea') Comment
+                        .controls
+                            textarea#textarea.comment(rows='3', name='comment')
+                    .control-group
+                        button.btn.btn-info Comment
+            each comment in image.comments
+                div.row
+                    div.col-md-2.text-center
+                        h4.text-primary
+                            strong= comment.username
+                        img(src='/pic/avatar.jpg' width=50)
+                    div.col-md-10.well-lg.well
+                        p.text-warning= comment.text
+                br
+                br
