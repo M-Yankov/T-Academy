@@ -32,6 +32,6 @@ require('./routes/home-route')(app);
 
 app.listen(port, () => console.log(`server is running on http://localhost:${port}/`));
 
-// Opens project in default browser. TODO:
+// Opens project in default browser.
 const exec = require('child_process').exec;
 exec(`explorer.exe http://localhost:${port}/home`);
