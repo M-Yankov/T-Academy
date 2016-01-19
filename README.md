@@ -1,3 +1,3 @@
-# T-Academy
+# Telerik-Academy
 Homeworks
 #This Is My HOMEWORKS
