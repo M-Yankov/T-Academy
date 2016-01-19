@@ -1,0 +1,13 @@
+﻿@model MVC.Models.ResultModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h2>
+        <span class="text-info">@Model.FirstNumber</span>
+        <span class="text-primary">@Model.Operator</span>
+        <span class="text-info">@Model.SecondNunmber  =</span>
+        <strong class="text-warning">@Model.Result</strong>
+    </h2>
+</div>
