@@ -1,0 +1,16 @@
+{
+  "name": "web-server-node-js",
+  "version": "1.0.0",
+  "description": "Homework",
+  "main": "fileUpload.js",
+  "dependencies": {
+    "formidable": "^1.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"node fileUpload.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
