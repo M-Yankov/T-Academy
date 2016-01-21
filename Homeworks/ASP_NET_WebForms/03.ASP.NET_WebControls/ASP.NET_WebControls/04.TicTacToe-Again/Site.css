@@ -1,0 +1,63 @@
+﻿.big-text {
+    font-size: 2em;
+}
+
+select.board {
+    overflow: hidden;
+    width: 135px;
+    height: 160px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+p::selection {
+    background-color: red;
+}
+
+select option.closed:checked {
+    border-style: inset;
+    background: #f00;
+}
+
+select option.closed {
+    border: 3px outset #ccc;
+    background: #A9A4A4;
+    width: 25px;
+    border-radius: 15px;
+}
+
+#btnPlay {
+    width: 20%;
+    background-color: #ce2;
+    border: 3px solid #cc2;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: inherit;
+}
+
+#btnPlay:hover {
+    cursor: pointer;
+    background-color: #d3fc04
+}
+
+.sky-color {
+    color: deepskyblue
+}
+
+.joint-color {
+/*it's darker but*/
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+select option {
+    margin: 5px;
+    float: left;
+    border: 3px groove rgba(0,0,0,0);
+}
