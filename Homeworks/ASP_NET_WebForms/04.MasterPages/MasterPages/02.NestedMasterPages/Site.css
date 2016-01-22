@@ -1,0 +1,37 @@
+﻿body {
+}
+
+ul li {
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: inline-block;
+}
+
+.header {
+ text-align:center;
+}
+
+.footer {
+    clear:both;
+    display: block;
+    text-align:center;
+}
+
+.sidebar {
+    float: right;
+    border: 2px ridge orange;
+}
+
+#english {
+    background-image: url('imgs/flag-of-the-united-kingdom.png');
+}
+
+#bulgarian {
+    background-image: url('imgs/bulgaria.gif');
+}
+
+#france {
+    background-image: url('imgs/flag-of-france.png');
+}

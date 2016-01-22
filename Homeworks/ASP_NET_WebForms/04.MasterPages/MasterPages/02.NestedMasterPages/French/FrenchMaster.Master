@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" %>
+
+<asp:Content ContentPlaceHolderID="head" runat="server" >
+    <style>
+        .header {
+            background-color: #cd5c5c;
+            color: #fff;
+        }
+
+        .sidebar {
+            border: 2px ridge  #cd5c5c;
+        }
+        
+    </style>
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolder"  runat="server">
+    <header class="header">
+        <h2>Bienvenue sur notre entreprise </h2>
+        <p> Coups de coeur et les ventes! </p>
+    </header>
+    <div class="content"> 
+        <asp:ContentPlaceHolder ID="ContentFrench" runat="server" />
+    </div>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="Home.aspx">Commence</a></li>
+            <li><a href="About.aspx">Nous connaître</a></li>
+            <li><a href="Contacts.aspx">Nous contacter</a></li>
+        </ul>
+    </aside>
+</asp:Content>

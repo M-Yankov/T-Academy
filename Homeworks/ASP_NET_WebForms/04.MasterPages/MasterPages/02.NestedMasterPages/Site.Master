@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="NestedMasterPages.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Nested Master Pages - Task 2</title>
+    <link rel="stylesheet" type="text/css" href="Site.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:DropDownList ID="ddLang" AutoPostBack="true" EnableViewState="true"  runat="server" OnTextChanged="ChangeLang">
+            <asp:ListItem Value="/English/Home.aspx" Text="English" />
+            <asp:ListItem Value="/Bulgarian/Home.aspx" Text="Български" />
+            <asp:ListItem  Value="/French/Home.aspx" Text="Français" />
+        </asp:DropDownList>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+    <footer class="footer">
+        Google  <a href="https://translate.google.bg/">translator</a> was used!
+    </footer>
+</body>
+</html>
