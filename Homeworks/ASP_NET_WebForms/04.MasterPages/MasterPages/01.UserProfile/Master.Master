@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="UserProfile.Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Pages - Task 1</title>
+    <link rel="stylesheet" href="Site.css" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <aside>
+        <nav>
+            <asp:BulletedList DisplayMode="HyperLink" BulletStyle="Circle" runat="server">
+                <asp:ListItem Text="HOME" Value="/Home.aspx" runat="server"/>
+                <asp:ListItem Text="Personal Info" Value="/Info.aspx" runat="server" />
+                <asp:ListItem Text="Friends" Value="/Friends.aspx" runat="server"/>
+                <asp:ListItem Text="Additional Info" Value="/MoreInfo.aspx" runat="server"/>
+            </asp:BulletedList>
+        </nav>
+    </aside>
+    <main>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </main>
+    </form>
+    <footer>
+        <p>
+            Telerik Academy &copy; 2016
+        </p>
+    </footer>
+</body>
+</html>

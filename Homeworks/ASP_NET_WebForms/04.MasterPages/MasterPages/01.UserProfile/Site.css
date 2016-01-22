@@ -1,0 +1,28 @@
+﻿body {
+    font-family: Consolas;
+    font-size: 20px;
+}
+
+body aside {
+    padding: 0 10px;
+    border: 1px solid #f82;
+    display: inline-block;
+        float: left;
+    margin-right: 10px;
+}
+
+body main {
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
