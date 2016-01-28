@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Cars", "01.Cars\01.Cars.csproj", "{DFAED52F-43A4-48B5-87F9-C01905CC7EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Employees", "02.Employees\02.Employees.csproj", "{B3C9217C-B8EB-4737-8142-C6153C2369D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.XML_TreeView", "03.XML_TreeView\03.XML_TreeView.csproj", "{AD310D8A-632D-4820-9628-34200FCECE9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.EmployeesWithHoverEffects", "04.EmployeesWithHoverEffects\04.EmployeesWithHoverEffects.csproj", "{519530FA-8E7D-4278-8B14-342985450C98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFAED52F-43A4-48B5-87F9-C01905CC7EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFAED52F-43A4-48B5-87F9-C01905CC7EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFAED52F-43A4-48B5-87F9-C01905CC7EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFAED52F-43A4-48B5-87F9-C01905CC7EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C9217C-B8EB-4737-8142-C6153C2369D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C9217C-B8EB-4737-8142-C6153C2369D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C9217C-B8EB-4737-8142-C6153C2369D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C9217C-B8EB-4737-8142-C6153C2369D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD310D8A-632D-4820-9628-34200FCECE9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD310D8A-632D-4820-9628-34200FCECE9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD310D8A-632D-4820-9628-34200FCECE9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD310D8A-632D-4820-9628-34200FCECE9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519530FA-8E7D-4278-8B14-342985450C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519530FA-8E7D-4278-8B14-342985450C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519530FA-8E7D-4278-8B14-342985450C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519530FA-8E7D-4278-8B14-342985450C98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

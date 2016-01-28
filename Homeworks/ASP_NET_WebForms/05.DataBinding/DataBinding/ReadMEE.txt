@@ -1,0 +1,1 @@
+MoreEmployees.sql adds 5 entities to Northwind. It's for task 4. Just to see paging works.
