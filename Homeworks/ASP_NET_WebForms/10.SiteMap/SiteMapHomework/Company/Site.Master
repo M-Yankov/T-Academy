@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Company.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Title</title>
+    <style>
+        nav ul.menu {
+            display: block;
+        }
+
+        nav ul.hidden {
+            display: none;
+        }
+
+        nav li {
+            text-align: center;
+            border: 1px solid aqua;
+            padding: 5px;
+            display: inline-block;
+            width: 100px;
+            position: relative;
+            margin: 0 5px;
+            background-color: cornflowerblue;
+            color: aqua;
+            font-size: 20px;
+            font-family: Impact;
+            border-radius: 5px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+
+          nav  ul li:hover > ul li:hover ul {
+                position: absolute;
+                left: 60%;
+                top: 0;
+            }
+
+        nav li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+            nav li a:hover {
+                text-decoration: underline;
+            }
+
+        header {
+            background-color: darkgrey;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            left: 0;
+        }
+
+        #container {
+            padding: 5%;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="description" content="The description of my page" />
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+        <header>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Home.aspx">Home</a> </li>
+                    <li>
+                        <a href="/Offices.aspx">Offices↓</a>
+                        <ul class="hidden">
+                            <li>
+                                <a href="/Offices/Bulgaria.aspx">Bulgaria↓</a>
+
+                                <ul class="hidden">
+                                    <li><a href="/Offices/Bulgaria/Sofia.aspx">Sofia</a></li>
+                                    <li><a href="/Offices/Bulgaria/Varna.aspx">Varna</a></li>
+                                    <li><a href="/Offices/Bulgaria/Plovdiv.aspx">Plovdiv</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="/Offices/Uk.aspx">U.K.↓</a>
+                                <ul class="hidden">
+                                    <li><a href="/Offices/Uk/London.aspx">London</a></li>
+                                    <li><a href="/Offices/Uk/Bristol.aspx">Bristol</a></li>
+                                    <li><a href="/Offices/Uk/Manchester.aspx">Manchester</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/About.aspx">About</a>
+                    </li>
+                    <li>
+                        <a href="/Contacts.aspx">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    <div class="siteMap">
+        <asp:Menu runat="server"
+             DataSourceID="mapSource">
+
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="mapSource" runat="server" ShowStartingNode="false" />
+    </div>
+    </form>
+
+</body>
+</html>
