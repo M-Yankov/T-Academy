@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Categories</h2>
+
+<ul>
+    <li>Categorie1</li>
+    <li>Categorie2</li>
+    <li>Categorie3</li>
+    <li>Categorie4</li>
+    <li>Categorie5</li>
+    <li>Categorie6</li>
+    <li>Categorie7</li>
+</ul>
+
+@Html.ActionLink("Search", "Search")
+
+@section breadcrumb
+    {
+        <ul class="breadcrumb">
+            <li><a href="#">Shop</a></li>
+            <li class="active">Categories</li>
+        </ul>
+    }
+

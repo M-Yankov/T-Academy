@@ -1,0 +1,48 @@
+﻿@model BitCalculator.Models.BitsModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Bit Calculator</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3> My Implementation</h3>
+        @using (@Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.LabelFor(c => c.Value, new { @class = "label-control" })
+                @Html.TextBoxFor(c => c.Value, new { @class = "form-control", @type = "Number" })
+
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(c => c.TypeSize, new { @class = "label-control" })
+                @Html.EnumDropDownListFor(b => b.TypeSize, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary">Click me!</button>
+            </div>
+
+            <div class="row">
+                <table class="table table-striped table-bordered">
+                    @foreach (var item in Model.Result)
+                    {
+                        <tr>
+                            <td>@item.Key</td>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+    </div>
+
+    <div class="pull-right">
+        <h3>Compare with result</h3>
+        <iframe id="bit-site" src="http://www.gwebtools.com/bit-calculator" width="500" height="900"></iframe>
+    </div>
+
+</div>

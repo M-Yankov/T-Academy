@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Products</h2>
+
+<ul>
+    <li>SDK tools</li>
+    <li>License Terms & conditions</li>
+    <li>External plug-ins</li>
+    <li>Data Storage</li>
+</ul>
+
+@Html.Partial("Partial")
+
+@section breadcrumb
+    {
+    <ul class="breadcrumb">
+        <li><a href="#">Shop</a></li>
+        <li class="active">Products</li>
+    </ul>
+}

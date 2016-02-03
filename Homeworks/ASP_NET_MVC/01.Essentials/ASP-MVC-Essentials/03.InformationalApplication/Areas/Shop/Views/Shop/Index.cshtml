@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Welcome to your shop</h2>
+<img src="~/Images/shop.png" />
+<br />
+@Html.ActionLink("Products", "Index", "Products")
+@Html.ActionLink("Categories", "Index", "Categories")
+
+
+@section breadcrumb
+    {
+    <ul class="breadcrumb">
+        <li  class="active">Shop</li>
+    </ul>
+}
