@@ -1,0 +1,104 @@
+﻿@using Movies.Models;
+
+@model IEnumerable<Movies.Models.MovieViewModel>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+
+<p>
+    @Ajax.ActionLink("Create New", "Create", "Movies", null,
+            new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "data-view",
+                HttpMethod = "GET",
+                LoadingElementId = "loading",
+            })
+</p>
+<div id="all-movies">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Director)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadeingMaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Studio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudioAdress)
+            </th>
+            <th>
+                Options
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Director)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LeadeingMaleRole)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LeadingFemaleRole)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Studio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudioAdress)
+                </td>
+                <td>
+                    @Ajax.ActionLink("Edit", "Edit", "Movies", new { id = item.Id },
+            new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "data-view",
+                HttpMethod = "GET",
+                LoadingElementId = "loading",
+            })
+                    |
+                    @Ajax.ActionLink("Details", "Details", "Movies", new { id = item.Id },
+            new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "data-view",
+                HttpMethod = "GET",
+                LoadingElementId = "loading",
+            })
+
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+<div id="data-view">
+</div>
+<div class="progress progress-striped active hidden" id="loading">
+    <div class="progress-bar" style="width: 100%"></div>
+</div>

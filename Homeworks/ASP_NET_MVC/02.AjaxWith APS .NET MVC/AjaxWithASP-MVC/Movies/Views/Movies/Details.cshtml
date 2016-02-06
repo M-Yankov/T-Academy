@@ -1,0 +1,94 @@
+﻿@model Movies.Models.MovieViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MovieViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadeingMaleRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadeingMaleRole)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadingFemaleRole)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Studio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Studio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudioAdress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudioAdress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Ajax.ActionLink("Edit", "Edit", "Movies", new { id = this.Model.Id },
+            new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "data-view",
+                HttpMethod = "GET",
+            })
+
+    @using (Ajax.BeginForm("Delete", "Movies", new { id = this.Model.Id }, new AjaxOptions()
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "data-view",
+        HttpMethod = "POST",
+        OnComplete = "OnAjaxRequestComplete"
+    }))
+    {
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    }
+
+    @Html.ActionLink("Back to List", "All")
+</p>
+
+@Scripts.Render("~/bundles/custom")
