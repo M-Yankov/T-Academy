@@ -1,0 +1,56 @@
+﻿@using Microsoft.AspNet.Identity;
+
+@model IEnumerable<Data.Models.Tweet>
+
+@{
+    ViewBag.Title = "YourTweets";
+}
+
+<h2>My Tweets</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatePosted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>Tags</th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatePosted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @foreach(var tag in item.Tags)
+            {
+                <a href="#" class="badge label label-info">#@tag.Name </a>
+            }
+        </td>
+        <td>
+            @if (Request.IsAuthenticated && User.Identity.GetUserId() == item.UserId)
+            {
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) 
+            }
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+        </td>
+    </tr>
+}
+
+</table>

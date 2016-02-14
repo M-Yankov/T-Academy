@@ -1,0 +1,10 @@
+I using a local Db stored in App_Data
+use (LocalDb)\MSSQLLocalDB  to log in from SQL Management studio
+
+also to login with admin - use:
+  |------------------|
+  |* username: admin |
+  |* pass: admin     |
+  |------------------|
+
+if Kendo.Mvc.dll missing, add reference in Solution folder /Kendo/Kendo.Mvc.dll
