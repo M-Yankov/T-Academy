@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="row">
+    <div class="col-md-5">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Messages:</div>
+            <div class="panel-body" id="messages" style="overflow: auto;height: 150px;"></div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <input type="text" id="message" value="message" />
+    <button id="send-message">Send</button>
+    <label for="scrollDown">Scroll down on new message?</label>
+    <input type="checkbox" id="scrollDown" />
+</div>
+
+
+<script>
+
+    window.onload = function () {
+        var chat = $.connection.chatHub;
+
+        chat.client.addMessage = addMessage;
+
+        $.connection.hub.start().done(function () {
+            $('#send-message').click(function () {
+                var msg = $('#message').val();
+                chat.server.sendMessage(msg);
+            });
+        });
+    };
+
+    var shouldScrollDown = false;
+
+    $('#scrollDown').on('click', function () {
+        shouldScrollDown = !shouldScrollDown;
+    })
+
+    function addMessage(message, userDb) {
+        var username = getUsername();
+        if (userDb == username) {
+            $('#messages').append($('<div>').addClass('row text-right').text(userDb + ': ' + message));
+        } else {
+            $('#messages').append($('<div>').addClass('row text-left').text(userDb + ': ' + message));
+        }
+
+        if (shouldScrollDown) {
+            var messages = document.getElementById('messages');
+            messages.scrollTop = messages.scrollHeight;
+        }
+    }
+
+    function getUsername() {
+        var key = "name=";
+        var start = document.cookie.indexOf(key);
+        var end = document.cookie.indexOf(";", start);
+
+        var username = document.cookie.substring(start + key.length, end < 0 ? document.cookie.length : end);
+        return username;
+    }
+
+</script>
