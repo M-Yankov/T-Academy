@@ -117,3 +117,11 @@ Homeworks
  2. [Web Storage](./Homeworks/JavaScriptApplications/WebStorages)
 
 ## [Databases](./Homeworks/DataBases%202015)
+
+check url links 
+```js
+$('#readme a[href*="M-Yankov"]')
+  .each(function (ind, el) {
+    var link = 'https://github.com/' +  $(el).attr('href'); console.log(link)
+    })
+```
