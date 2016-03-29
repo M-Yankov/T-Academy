@@ -135,8 +135,8 @@ Homeworks
  1. [Intoduction to Web API](./Homeworks/WebServicesAndCloud%202015/IntroductionAsp.NET%20Web%20Api)
  2. [Consuming Web Service](./Homeworks/WebServicesAndCloud%202015/02.ConsumingWebServiceCSharp/ConsumingWebService)
  3. [Unit Testing (MyTestedWebApi)](./Homeworks/WebServicesAndCloud%202015/03.UnitTestsServices/Web-Services-Testing-Demos)
- 4. [WCF services](./WebServicesAndCloud%202015/04.WCFServices/WCFHomework)
- 5. [Cloud Services](./WebServicesAndCloud%202015/05.CloudServices/CloudServices)
+ 4. [WCF services](./Homeworks/WebServicesAndCloud%202015/04.WCFServices/WCFHomework)
+ 5. [Cloud Services](./Homeworks/WebServicesAndCloud%202015/05.CloudServices/CloudServices)
 
 ## [Single Page Applications with Angular JS (1.48)](./Homeworks/SinglePageApplications)
  1. [Tic Tac Toe game](./Homeworks/SinglePageApplications/Homework)
@@ -175,6 +175,15 @@ check url links
 ```js
 $('#readme a[href*="M-Yankov"]')
   .each(function (ind, el) {
-    var link = 'https://github.com/' +  $(el).attr('href'); console.log(link)
-    })
+     var link = 'https://github.com/' +  $(el).attr('href');
+     $.get(link, function() {
+       // alert("success");
+     })
+     .done(function() {
+       console.info(link + ' has passed the test!');
+     })
+     .fail(function() {
+       console.error(link + ' is not correct');
+     })
+})
 ```
