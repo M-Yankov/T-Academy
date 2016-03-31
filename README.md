@@ -1,7 +1,10 @@
 # Telerik-Academy 2015/2016
-Homeworks
-#This Is My HOMEWORKS
 
+## This Is My HOMEWORKS
+
+`The build status checks that all url links below are correct (not 404).`
+
+[![Build Status](https://travis-ci.org/M-Yankov/T-Academy.svg?branch=master)](https://travis-ci.org/M-Yankov/T-Academy)
 
 ## [C# Part 1 - Basics](./Homeworks/C%23%20Part%201)
 
