@@ -1,0 +1,50 @@
+<div class="container">
+
+<div id="movies-container" class=" text-center row">
+
+    <div class="col-sm-6 col-sm-offset-2">
+        <h2>Top iMDB Movies</h2>
+
+        <div class="row">
+            <label for="search-input" class="label-control"> Search
+                <input (keyup)="filterMovies(titleInput.value, sort.value, order.value)" #titleInput type="text" id="search-input" class="form-control" />
+            </label>
+        </div>
+        <div>       
+           
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <label for="sort-input" class="label-control"> Sort
+                    <select (change)="filterMovies(titleInput.value, sort.value, order.value)" #sort  name="sort" id="sort-input" class="form-control" >
+                        <option value="Year">Year</option>
+                        <!--<option value="imdbRating">Rating</option>-->
+                        <option value="Title">Title</option>
+                    </select>
+                </label>
+            </div>
+            <div class="col-sm-6">
+                <label for="order-input" class="label-control"> Order
+                    <select (change)="filterMovies(titleInput.value, sort.value, order.value)" #order name="order" id="order-input" class="form-control" >
+                        <option value="desc">Descending</option>
+                        <option value="asc">Ascending</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+
+        <table class="table table-bordered">
+            <tr>
+                <th>Poster</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+            </tr>
+            <tr *ngFor="let mov of movies" movie [movieItem]="mov">
+              
+            </tr>
+        </table>
+    </div>
+</div>
+</div>

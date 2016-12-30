@@ -1,0 +1,56 @@
+<div class="container" [ngStyle]="{ 'width.px': 320, 'margin-bottom.px' : 22}">
+
+
+<div class="row">
+    <div class="col text-center">
+        <h2>{{ model.Title}} </h2>
+        <img [src]="model.Poster" [alt]="model.Title">
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="">
+        <table class="table text-center" [ngStyle]="{ 'margin': 'auto' }">
+
+            <tr>
+                <td>Year</td>
+                <td> {{model.Year}} </td>
+            </tr>
+            <tr>
+                <td> Released </td>
+                <td> {{model.Released}} </td>
+            </tr>
+            <tr>
+                <td>Runtime</td>
+                <td> {{ model.Runtime}} </td>
+            </tr>
+            <tr>
+                <td> Genre </td>
+                <td> {{model.Genre}} </td>
+            </tr>
+            <tr>
+                <td>Country </td>
+                <td> {{ model.Country}} </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col text-justify">
+        <p [ngStyle]="{ 'font-size.px' : 22, 'margin': 'auto'}" >
+            {{ model.Plot}}
+        </p>
+    </div>
+</div>
+
+
+        <div class="row">
+
+            <ac-stars></ac-stars>
+        </div>
+<hr>
+<a   [routerLink]="['/']" class="btn btn-primary">Back</a>
+</div>

@@ -1,0 +1,2 @@
+I had problems with remote REST Api http://www.omdbapi.com/  - getting all movies - so it works for batman only
+Not all tasks are finished, because I want to use the time left for my team project.

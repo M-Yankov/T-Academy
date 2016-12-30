@@ -1,0 +1,7 @@
+<td> <img [src]="movieItem.Poster" [alt]="movieItem.Title" [width]="120"> </td>
+<td>
+    <a   [routerLink]="[ '/' + movieItem.Title + '/details' ]">  {{movieItem.Title}} </a> 
+  
+    </td>
+<td> {{movieItem.Year}} </td>
+<td> Not Provided </td>
