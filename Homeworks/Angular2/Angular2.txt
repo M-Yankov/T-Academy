@@ -1,0 +1,52 @@
+﻿ts-node - interpretation 
+
+Code Runner
+
+VS CODE = F5 execute code (suggested environments)
+Ctrl + Shift + B
+
+tsc --init  (generates tsconfig.json)
+
+super = "base" in C#
+
+extends - when one class inherits another class
+implements - when a class implements an interface
+
+class ca implement many classes 
+interface can extend many classes 
+
+abstract class same as C#
+
+
+Component: 
+
+We can get the html file with require('./app.html'). The file is separated and not HTTP request needed.
+example:
+@Component({
+  selector: 'app',
+  styles: [require('./app.css')],
+  templateUrl: './app.html'      // will be same as: template: require('./app.html')   
+}) 
+
+
+Naming conventions
+file [name].component.ts (dash-case)
+class [Name]Component
+
+
+Binding 
+[style.font-size.px]="100"  
+[style.fontSize.px]="100" Same as above
+
+local variable: myInput
+<input type="text" #myInput />
+
+
+// "foreground": "#b5cea8"
+
+
+ng lint - Are all files passing the lints warnings
+#BoxInput - localVariable
+
+@Injectable() във сървиса могат да бъдат инжектирани други модули, съвриси ...
+
