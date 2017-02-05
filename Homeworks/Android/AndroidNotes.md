@@ -112,3 +112,92 @@ Adapter - Java code to view
 Fragment - part of activity, may contain content View or Not.  
    - `onCreateView()`
 Loaders 
+
+
+### 8. Activities, UI компоненти, adapters, събития
+    
+- packages for data, activities, fragments
+- by logic
+
+**At least one activity is required to run android application**
+
+- Naming convetions: all classes should ends with the type of the component
+Exmaple:  
+SuperHeroActivity, SuperHeroService etc.
+
+**Keep in mind to set the initial activity in the AndroidManifest.xml**
+
+Need to import using for `R` class  
+
+#### UI:
+
+`TextView` should be us for textbox  
+Linner Layout - all elemnts are on new line
+Each element souhld have `layout_width` and `layout_height`  
+_Use control in Emulator to make Two fingers getstures_  
+To center a contetnt use `RelativeLayout` 
+ - then `layout_centerInParent`=`"true"`  
+ - and `gravity`=`"center"`
+
+To add content from code  
+To set the id in xml use `android:id="@+id/tv_welcome"`
+
+```java
+  TextView tv_welcome = (TextView) this.findViewvById(R.id.tv_welcome);
+  tv_welcome.setText("From code");
+```
+
+`EditText` - input text box.  
+To attach `onclick` event use code:
+
+```java
+    // announimous class
+    btn.setOnClickListener(new OnClicklListener() {
+        @Overload
+        public void onclick(View v) {
+            // code here
+        }
+    });
+
+    // custom implementation
+    btn.setOnClickListener(new MyNewClickHandler());
+
+    // or like lambda, where only one method is allowed (recommended) - enable jackOptions, set targetCompatibility 1.8 and sourceCompatibility 1.8
+    btn.setOnClickListener(view -> {
+        // code here
+    };
+
+    // or current activity can implemets OnClicklListener - but not a good option for many buttons 
+``` 
+
+`Toast` notification class in Android (Toastr in JS);  
+To group radio buttons they should be wrapped in `RadioGroup` element  
+`ToggleButton`  
+
+#### Styles
+```xml
+<style name="myName">
+    <item name="android:padding"> 5dp</item>
+</style>
+
+<Button style="@style/myName" />
+```
+
+Styles can be inherited 
+```xml
+
+<style name="...." parent="ParentStyle" >
+    <!-- Items -->
+</style>
+```
+
+ArrayAdapter<T> where T is on of String, Int, Boolean - i.e. priomitive types otherwise need ot implement custom Adapter  
+_android.R.layout  - more options_  
+
+Custom adapters allow to render new views with complex Object.  
+We can use partial .xml
+
+inflater - allow to laod a layout
+
+
+**Google samples android**
